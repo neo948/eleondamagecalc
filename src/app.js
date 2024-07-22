@@ -527,7 +527,6 @@ function loadDropdowns() {
     for (let ability in abilities) {
         abilityDropdown1.options[abilityDropdown1.options.length] = new Option(abilities[ability]);
         abilityDropdown2.options[abilityDropdown2.options.length] = new Option(abilities[ability]);
-        abilityBPDropdown.options[abilityBPDropdown.options.length] = new Option(abilities[ability]);
     }
 
     for (let move in moves) {
@@ -537,7 +536,6 @@ function loadDropdowns() {
     for (let item in items) {
         item1.options[item1.options.length] = new Option(items[item]);
         item2.options[item2.options.length] = new Option(items[item]);
-        itemBP.options[itemBP.options.length] = new Option(items[item]);
     }
 
     moveNames.sort();
@@ -551,10 +549,7 @@ function loadDropdowns() {
         moveThreeDropdown2.options[moveThreeDropdown2.options.length] = new Option(moveNames[move]);
         moveFourDropdown1.options[moveFourDropdown1.options.length] = new Option(moveNames[move]);
         moveFourDropdown2.options[moveFourDropdown2.options.length] = new Option(moveNames[move]);
-        moveBPDropdown.options[moveBPDropdown.options.length] = new Option(moveNames[move]);
-        moveBPDropdown2.options[moveBPDropdown2.options.length] = new Option(moveNames[move]);
-        moveBPDropdown3.options[moveBPDropdown3.options.length] = new Option(moveNames[move]);
-        moveBPDropdown4.options[moveBPDropdown4.options.length] = new Option(moveNames[move]);
+        
     }
 }
 
@@ -1079,10 +1074,7 @@ function loadMoves(updatePower = false) {
     let moveTwo2 = findMove(moveTwoDropdown2.value);
     let moveThree2 = findMove(moveThreeDropdown2.value);
     let moveFour2 = findMove(moveFourDropdown2.value);
-    let moveBreakpoint = findMove(moveBPDropdown.value);
-    let moveBreakpoint2 = findMove(moveBPDropdown2.value);
-    let moveBreakpoint3 = findMove(moveBPDropdown3.value);
-    let moveBreakpoint4 = findMove(moveBPDropdown4.value);
+   
 
     if (firstSoul) {
         soulMove1 = findMove(firstSoul);
