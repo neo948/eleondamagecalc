@@ -169,8 +169,7 @@
                                     </span>
                                 </th>    
                                 <th>Base</th>
-                                <th>UPs</th>
-                                <th>TPs</th>
+                                <th>Tvs</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -182,12 +181,7 @@
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="HPIV1" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="HPEV1" value=0 type=number min=0 max=200 step=4
+                                    <input id="HPEV1" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -206,12 +200,7 @@
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="atkIV1" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="atkEV1" value=0 type=number min=0 max=200 step=4
+                                    <input id="atkEV1" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -238,19 +227,14 @@
                             </tr>
 
                             <tr>
-                                <th>M Defense</th>
+                                <th>Defense</th>
                                 <td>
                                     <input id="baseDef1" value=0 type=number min=1 max=999 
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="defIV1" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="defEV1" value=0 type=number min=0 max=200 step=4
+                                    <input id="defEV1" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -277,19 +261,14 @@
                             </tr>
 
                             <tr>
-                                <th>R Attack</th>
+                                <th>M Attack</th>
                                 <td>
                                     <input id="baseAtkR1" value=0 type=number min=1 max=999 
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="atkRIV1" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="atkREV1" value=0 type=number min=0 max=200 step=4
+                                    <input id="atkREV1" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -316,19 +295,14 @@
                             </tr>
 
                             <tr>
-                                <th>R Defense</th>
+                                <th>M Defense</th>
                                 <td>
                                     <input id="baseDefR1" value=0 type=number min=1 max=999 
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="defRIV1" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="defREV1" value=0 type=number min=0 max=200 step=4
+                                    <input id="defREV1" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -362,12 +336,7 @@
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="spdIV1" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="spdEV1" value=0 type=number min=0 max=200 step=4
+                                    <input id="spdEV1" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -398,58 +367,22 @@
 
                 <div class="infogroup">
                     <div>
-                        <label class="divAlign">Personality: </label>
+                        <label class="divAlign">Skill: </label>
                         <select id="posNat1" onchange="update()">
-                            <option value="none">None</option>
-                            <option value="hyper">Hyper</option>
-                            <option value="brawny">Brawny</option>
-                            <option value="robust">Robust</option>
-                            <option value="smart">Smart</option>
+                            <option value="well-rounded">Well-rounded</option>
+                            <option value="strong">Strong</option>
+                            <option value="resilient ">Resilient </option>
+                            <option value="adept">Adept</option>
                             <option value="clever">Clever</option>
-                            <option value="nimble">Nimble</option>
-                            <option value="dull">Dull</option>
-                            <option value="frail">Frail</option>
-                            <option value="tender">Tender</option>
-                            <option value="clumsy">Clumsy</option>
-                            <option value="foolish">Foolish</option>
-                            <option value="sluggish">Sluggish</option>
-                            <option value="indifferent">Indifferent</option>
+                            <option value="tenacious">Tenacious</option>
+							<option value="swift">Swift</option>
+                            
                         </select>
-                        <select id="negNat1" onchange="update()">
-                            <option value="none">None</option>
-                            <option value="dull">Dull</option>
-                            <option value="frail">Frail</option>
-                            <option value="tender">Tender</option>
-                            <option value="clumsy">Clumsy</option>
-                            <option value="foolish">Foolish</option>
-                            <option value="sluggish">Sluggish</option>
-                            <option value="hyper">Hyper</option>
-                            <option value="brawny">Brawny</option>
-                            <option value="robust">Robust</option>
-                            <option value="smart">Smart</option>
-                            <option value="clever">Clever</option>
-                            <option value="nimble">Nimble</option>
-                            <option value="indifferent">Indifferent</option>
-                        </select>
-                        <select id="veryNat1" onchange="update()">
-                            <option value="none">None</option>
-                            <option value="vHyper">Very Hyper</option>
-                            <option value="vDull">Very Dull</option>
-                            <option value="vBrawny">Very Brawny</option>
-                            <option value="vFrail">Very Frail</option>
-                            <option value="vRobust">Very Robust</option>
-                            <option value="vTender">Very Tender</option>
-                            <option value="vSmart">Very Smart</option>
-                            <option value="vClumsy">Very Clumsy</option>
-                            <option value="vClever">Very Clever</option>
-                            <option value="vFoolish">Very Foolish</option>
-                            <option value="vNimble">Very Nimble</option>
-                            <option value="vSluggish">Very Sluggish</option>
-                        </select>
+                        
                     </div>
 
                     <div>
-                        <label class="divAlign">Ability: </label>
+                        <label class="divAlign">Passive: </label>
                         <select class="trait" id="ability1" onchange="updateAbility('ability1')">
                             <option>None</option>
                         </select>
@@ -502,17 +435,13 @@
                     <label id="totalHP1">321</label>
                     <input id="percentHP1" type="number" min=0 max=100 onkeyup="this.value = restrict(this.value, this.min, this.max)" onchange="updateNumber()">%
                     <br>
-                    <br>
-                    <br>
-
+					<br>
                     Health
                     <div class="hpBar greenHPBar" id="hpBar1" style="background: linear-gradient(to right, green 100%, white 0%);">
 
                     
                     </div>
                 </div>
-                <br>
-                <br>
                 <div class="infogroup">
 
                     <div>
@@ -653,9 +582,9 @@
                 <br>
                 <div align="center">
                     <input type="checkbox" class="hiddenToUser" id="levelCheck" onchange="updateLevel()">
-                    <label class="radiolbl btn-left" style="padding: 8px 8px;" for="levelCheck" title="Default to level 100?">Level 100</label>
+                    <label class="radiolbl" style="padding: 8px 8px;" for="levelCheck" title="Default to level 100?">Level 100</label>
                     <input type="checkbox" class="hiddenToUser" id="gsbCheck" onchange="update(undefined, true)">
-                    <label class="radiolbl btn-right" style="padding: 8px 8px;" for="gsbCheck" title="Provide post PvP 2.0 stats">2.0 Stats</label>
+                    <label class="radiolbl btn-right" style="padding: 8px 8px;display:none;" for="gsbCheck" title="Provide post PvP 2.0 stats">2.0 Stats</label>
                 </div>
 
                 <hr>
@@ -678,27 +607,27 @@
                      <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="rest1" onchange="update()">
-                            <label class="radiolbl fieldlbl rest" for="rest1">Rest</label>
+                            <label class="radiolbl fieldlbl rest" style="display: none;"for="rest1">Rest</label>
                         </div>
         
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="rest2" onchange="update()">
-                            <label class="radiolbl fieldlbl rest" for="rest2">Rest</label>
+                            <label class="radiolbl fieldlbl rest" style="display: none;"for="rest2">Rest</label>
                         </div>
                     </div>                    
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="iceTrap1" onchange="changeButton(this)">
-                            <label class="radiolbl fieldlbl icetrap btn-left" for="iceTrap1" title="Is this side affected by Icicle Trap">Icicle Trap</label>
+                            <label class="radiolbl fieldlbl icetrap btn-left" style="display: none;" for="iceTrap1" title="Is this side affected by Icicle Trap">Icicle Trap</label>
                             <input type="checkbox" class="hiddenToUser" id="halfIce1" onchange="changeButton(this)">
-                            <label class="radiolbl fieldlbl btn-right" id="halfStyle1" style="width: 3em;" for="halfIce1" title="Are Icicle Traps halved">Halved</label>
+                            <label class="radiolbl fieldlbl btn-right" id="halfStyle1" style="width: 3em;display:none;" for="halfIce1" title="Are Icicle Traps halved">Halved</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="halfIce2" onchange="changeButton(this)">
-                            <label class="radiolbl fieldlbl btn-left" id="halfStyle2" style="width: 3em;" for="halfIce2" title="Are Icicle Traps halved">Halved</label>
+                            <label class="radiolbl fieldlbl btn-left" id="halfStyle2" style="width: 3em; display:none;" for="halfIce2" title="Are Icicle Traps halved">Halved</label>
                             <input type="checkbox" class="hiddenToUser" id="iceTrap2" onchange="changeButton(this)">
-                            <label class="radiolbl fieldlbl icetrap btn-right" for="iceTrap2" title="Is this side affected by Icicle Trap">Icicle Trap</label>
+                            <label class="radiolbl fieldlbl icetrap btn-right" style="display: none;" for="iceTrap2" title="Is this side affected by Icicle Trap">Icicle Trap</label>
                         </div>
                     </div>
                     <div>
@@ -706,20 +635,20 @@
                             <input type="radio" class="hiddenToUser" name="barbsL" value="0" id="leftBarb0" checked="checked" onchange="update()">
                             <label class="radiolbl fieldlbl btn-left" style="width: 1em;" for="leftBarb0">0</label>
                             <input type="radio" class="hiddenToUser" name="barbsL" value="1" id="leftBarb1" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-mid" style="width: 1em;" for="leftBarb1" title="1 layer of barbs.">1</label>
+                            <label class="radiolbl fieldlbl btn-mid" style="width: 1em;" for="leftBarb1" title="1 layer of caltrops.">1</label>
                             <input type="radio" class="hiddenToUser" name="barbsL" value="2" id="leftBarb2" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-mid" style="width: 1em;" for="leftBarb2" title="2 layers of barbs.">2</label>
+                            <label class="radiolbl fieldlbl btn-mid" style="width: 1em;" for="leftBarb2" title="2 layers of caltrops.">2</label>
                             <input type="radio" class="hiddenToUser" name="barbsL" value="3" id="leftBarb3" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-right" style="width: 4em;" for="leftBarb3" title="3 layers of barbs.">3 Barbs</label>
+                            <label class="radiolbl fieldlbl btn-right" style="width: 5em;" for="leftBarb3" title="3 layers of caltrops.">3 Caltrops</label>
                         </div>
 
                         <div class="right">
                             <input type="radio" class="hiddenToUser" name="barbsR" value="3" id="rightBarb3" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-left" style="width: 4em;" for="rightBarb3" title="3 layers of barbs.">3 Barbs</label>
+                            <label class="radiolbl fieldlbl btn-left" style="width: 5em;" for="rightBarb3" title="3 layers of caltrops.">3 Caltrops</label>
                             <input type="radio" class="hiddenToUser" name="barbsR" value="2" id="rightBarb2" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-mid" style="width: 1em;" for="rightBarb2" title="2 layers of barbs.">2</label>
+                            <label class="radiolbl fieldlbl btn-mid" style="width: 1em;" for="rightBarb2" title="2 layers of caltrops.">2</label>
                             <input type="radio" class="hiddenToUser" name="barbsR" value="1" id="rightBarb1" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-mid" style="width: 1em;" for="rightBarb1" title="1 layer of barbs.">1</label>
+                            <label class="radiolbl fieldlbl btn-mid" style="width: 1em;" for="rightBarb1" title="1 layer of caltrops.">1</label>
                             <input type="radio" class="hiddenToUser" name="barbsR" value="0" id="rightBarb0" checked="checked" onchange="update()">
                             <label class="radiolbl fieldlbl btn-right" style="width: 1em;" for="rightBarb0">0</label>
                         </div>
@@ -738,99 +667,99 @@
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="wall1" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-left" style="font-size: 0.6em;" for="wall1" title="Is this side protected by Near Enchantment?">Near Enchant</label>
+                            <label class="radiolbl fieldlbl btn-left" style="font-size: 0.6em;" for="wall1" title="Is this side protected by Forcefield?">Forcefield</label>
                             <input type="checkbox" class="hiddenToUser" id="shield1" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-right" style="font-size: 0.6em;" for="shield1" title="Is this side protected by Far Enchantment?">Far Enchant</label>
+                            <label class="radiolbl fieldlbl btn-right" style="font-size: 0.6em;" for="shield1" title="Is this side protected by Energy Shield?">Energy Shield</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="shield2" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-left" style="font-size: 0.6em;" for="shield2" title="Is this side protected by Magical Shield?">Far Enchant</label>
+                            <label class="radiolbl fieldlbl btn-left" style="font-size: 0.6em;" for="shield2" title="Is this side protected by Energy Shield?">Energy Shield</label>
                             <input type="checkbox" class="hiddenToUser" id="wall2" onchange="update()">
-                            <label class="radiolbl fieldlbl btn-right" style="font-size: 0.6em;" for="wall2" title="Is this side protected by Near Enchantment?">Near Enchant</label>
+                            <label class="radiolbl fieldlbl btn-right" style="font-size: 0.6em;" for="wall2" title="Is this side protected by Forcefield?">Forcefield</label>
                         </div>
                     </div>
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="sapPlant1" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="sapPlant1" title="Is this side affected by Sap Plant">Sap Plant</label>
+                            <label class="radiolbl fieldlbl icetrap" for="sapPlant1" title="Is this side affected by Sap Seed">Sap Seed</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="sapPlant2" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="sapPlant2" title="Is this side affected by Sap Plant">Sap Plant</label>
+                            <label class="radiolbl fieldlbl icetrap" for="sapPlant2" title="Is this side affected by Sap Seed">Sap Seed</label>
                         </div>
                     </div>
 
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="bloodDrain1" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="bloodDrain1" title="Is this side affected by Blood Drain?">Blood Drain</label>
+                            <label class="radiolbl fieldlbl icetrap" style="display: none;" for="bloodDrain1" title="Is this side affected by Blood Drain?">Blood Drain</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="bloodDrain2" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="bloodDrain2" title="Is this side affected by Blood Drain?">Blood Drain</label>
+                            <label class="radiolbl fieldlbl icetrap" style="display: none;" for="bloodDrain2" title="Is this side affected by Blood Drain?">Blood Drain</label>
                         </div>
                     </div>
 
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="pestilence1" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="pestilence1" title="Is this side affected by Pestilence?">Pestilence</label>
+                            <label class="radiolbl fieldlbl icetrap"  for="pestilence1" title="Is this side affected by Vine Bind?">Vine Bind</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="pestilence2" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="pestilence2" title="Is this side affected by Pestilence?">Pestilence</label>
+                            <label class="radiolbl fieldlbl icetrap"  for="pestilence2" title="Is this side affected by Vine Bind?">Vine Bind</label>
                         </div>
                     </div>
 
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="quicksand1" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="quicksand1" title="Is this side affected by Quicksand?">Quicksand</label>
+                            <label class="radiolbl fieldlbl icetrap" style="display: none;" for="quicksand1" title="Is this side affected by Quicksand?">Quicksand</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="quicksand2" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="quicksand2" title="Is this side affected by Quicksand?">Quicksand</label>
+                            <label class="radiolbl fieldlbl icetrap" style="display: none;" for="quicksand2" title="Is this side affected by Quicksand?">Quicksand</label>
                         </div>
                     </div>
 
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="buzzolen1" onchange="update()">
-                            <label class="radiolbl fieldlbl entered" for="buzzolen1" title="Was this side stung by Buzzolen?">Stung by Buzzolen</label>
+                            <label class="radiolbl fieldlbl entered" style="display: none;" for="buzzolen1" title="Was this side stung by Buzzolen?">Stung by Buzzolen</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="buzzolen2" onchange="update()">
-                            <label class="radiolbl fieldlbl entered" for="buzzolen2" title="Was this side stung by Buzzolen?">Stung by Buzzolen</label>
+                            <label class="radiolbl fieldlbl entered" style="display: none;" for="buzzolen2" title="Was this side stung by Buzzolen?">Stung by Buzzolen</label>
                         </div>
                     </div>
 
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="hellstorm1" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="hellstorm1" title="Is this side affected by Hellstorm?">Hellstorm</label>
+                            <label class="radiolbl fieldlbl icetrap" style="display: none;" for="hellstorm1" title="Is this side affected by Hellstorm?">Hellstorm</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="hellstorm2" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="hellstorm2" title="Is this side affected by Hellstorm?">Hellstorm</label>
+                            <label class="radiolbl fieldlbl icetrap" style="display: none;" for="hellstorm2" title="Is this side affected by Hellstorm?">Hellstorm</label>
                         </div>
                     </div>
 
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="softWater1" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="softWater1" title="Is this side affected by Soft Water?">Soft Water</label>
+                            <label class="radiolbl fieldlbl icetrap" for="softWater1" title="Is this side affected by Hydrotherapy?">Hydrotherapy</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="softWater2" onchange="update()">
-                            <label class="radiolbl fieldlbl icetrap" for="softWater2" title="Is this side affected by Soft Water?">Soft Water</label>
+                            <label class="radiolbl fieldlbl icetrap" for="softWater2" title="Is this side affected by Hydrotherapy?">Hydrotherapy</label>
                         </div>
                     </div>
 
@@ -849,23 +778,23 @@
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="tagTeam1" onchange="update()">
-                            <label class="radiolbl fieldlbl entered" for="tagTeam1">Team Has Conspire</label>
+                            <label class="radiolbl fieldlbl entered" style="display: none;" for="tagTeam1">Team Has Conspire</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="tagTeam2" onchange="update()">
-                            <label class="radiolbl fieldlbl entered" for="tagTeam2">Team Has Conspire</label>
+                            <label class="radiolbl fieldlbl entered" style="display: none;" for="tagTeam2">Team Has Conspire</label>
                         </div>
                     </div>
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="dawn1" onchange="update()">
-                            <label class="radiolbl fieldlbl entered" for="dawn1">Ally Has Dusk/Dawn</label>
+                            <label class="radiolbl fieldlbl entered" style="display: none;" for="dawn1">Ally Has Dusk/Dawn</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="dawn2" onchange="update()">
-                            <label class="radiolbl fieldlbl entered" for="dawn2">Ally Has Dusk/Dawn</label>
+                            <label class="radiolbl fieldlbl entered" style="display: none;" for="dawn2">Ally Has Dusk/Dawn</label>
                         </div>
                     </div>
                     <div>
@@ -942,8 +871,7 @@
                                     </span>
                                 </th>
                                 <th>Base</th>
-                                <th>UPs</th>
-                                <th>TPs</th>
+                                <th>Tvs</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -955,12 +883,7 @@
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="HPIV2" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="HPEV2" value=0 type=number min=0 max=200 step=4
+                                    <input id="HPEV2" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -978,12 +901,7 @@
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="atkIV2" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="atkEV2" value=0 type=number min=0 max=200 step=4
+                                    <input id="atkEV2" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -1017,12 +935,7 @@
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="defIV2" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="defEV2" value=0 type=number min=0 max=200 step=4
+                                    <input id="defEV2" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -1049,19 +962,14 @@
                             </tr>
 
                             <tr>
-                                <th>R Attack</th>
+                                <th>M Attack</th>
                                 <td>
                                     <input id="baseAtkR2" value=0 type=number min=1 max=999 
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="atkRIV2" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="atkREV2" value=0 type=number min=0 max=200 step=4
+                                    <input id="atkREV2" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -1088,19 +996,14 @@
                             </tr>
 
                             <tr>
-                                <th>R Defense</th>
+                                <th>M Defense</th>
                                 <td>
                                     <input id="baseDefR2" value=0 type=number min=1 max=999 
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="defRIV2" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="defREV2" value=0 type=number min=0 max=200 step=4
+                                    <input id="defREV2" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -1134,12 +1037,7 @@
                                         onchange="update()">
                                 </td>
                                 <td>
-                                    <input id="spdIV2" value=40 type=number min=0 max=40
-                                        onkeyup="this.value = restrict(this.value, this.min, this.max)"
-                                        onchange="update()">
-                                </td>
-                                <td>
-                                    <input id="spdEV2" value=0 type=number min=0 max=200 step=4
+                                    <input id="spdEV2" value=0 type=number min=0 max=100 step=2
                                         onkeyup="this.value = restrict(this.value, this.min, this.max)"
                                         onchange="update()">
                                 </td>
@@ -1170,58 +1068,21 @@
 
                 <div class="infogroup">
                     <div>
-                        <label class="divAlign">Personality: </label>
+                        <label class="divAlign">Skill: </label>
                         <select id="posNat2" onchange="update()">
-                            <option value="none">None</option>
-                            <option value="hyper">Hyper</option>
-                            <option value="brawny">Brawny</option>
-                            <option value="robust">Robust</option>
-                            <option value="smart">Smart</option>
+                            <option value="well-rounded">Well-rounded</option>
+                            <option value="strong">Strong</option>
+                            <option value="resilient ">Resilient </option>
+                            <option value="adept">Adept</option>
                             <option value="clever">Clever</option>
-                            <option value="nimble">Nimble</option>
-                            <option value="dull">Dull</option>
-                            <option value="frail">Frail</option>
-                            <option value="tender">Tender</option>
-                            <option value="clumsy">Clumsy</option>
-                            <option value="foolish">Foolish</option>
-                            <option value="sluggish">Sluggish</option>
-                            <option value="indifferent">Indifferent</option>
+                            <option value="tenacious">Tenacious</option>
+							<option value="swift">Swift</option>
                         </select>
-                        <select id="negNat2" onchange="update()">
-                            <option value="none">None</option>
-                            <option value="dull">Dull</option>
-                            <option value="frail">Frail</option>
-                            <option value="tender">Tender</option>
-                            <option value="clumsy">Clumsy</option>
-                            <option value="foolish">Foolish</option>
-                            <option value="sluggish">Sluggish</option>
-                            <option value="hyper">Hyper</option>
-                            <option value="brawny">Brawny</option>
-                            <option value="robust">Robust</option>
-                            <option value="smart">Smart</option>
-                            <option value="clever">Clever</option>
-                            <option value="nimble">Nimble</option>
-                            <option value="indifferent">Indifferent</option>
-                        </select>
-                        <select id="veryNat2" onchange="update()">
-                            <option value="none">None</option>
-                            <option value="vHyper">Very Hyper</option>
-                            <option value="vDull">Very Dull</option>
-                            <option value="vBrawny">Very Brawny</option>
-                            <option value="vFrail">Very Frail</option>
-                            <option value="vRobust">Very Robust</option>
-                            <option value="vTender">Very Tender</option>
-                            <option value="vSmart">Very Smart</option>
-                            <option value="vClumsy">Very Clumsy</option>
-                            <option value="vClever">Very Clever</option>
-                            <option value="vFoolish">Very Foolish</option>
-                            <option value="vNimble">Very Nimble</option>
-                            <option value="vSluggish">Very Sluggish</option>
-                        </select>
+                        
                     </div>
 
                     <div>
-                        <label class="divAlign">Ability: </label>
+                        <label class="divAlign">Passive: </label>
                         <select class="trait" id="ability2" onchange="updateAbility('ability2')">
                             <option>None</option>
                         </select>
@@ -1275,7 +1136,6 @@
                     <input id="percentHP2" type="number" min=0 max=100 onkeyup="this.value = restrict(this.value, this.min, this.max)" onchange="updateNumber()">%
                     <br>                    
                     <br>
-                    <br>
 
                     Health
                     <div class="hpBar greenHPBar" id="hpBar2" style="background: linear-gradient(to right, green 100%, white 0%);">
@@ -1284,8 +1144,7 @@
 
                     </div>
                 </div>
-                <br>
-                <br>
+
                 <div class="infogroup">
 
                     <div>
