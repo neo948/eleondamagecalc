@@ -1318,8 +1318,8 @@ var loomians = {
         }
     },
 	
-	cattelvinm: {
-        name: "Cattelvin M",
+	"cattelvin-m": {
+        name: "Cattelvin-M",
         number: 69,
 	    types: ["Pyro"],
         abilities: ["Airborne"],
@@ -1337,8 +1337,8 @@ var loomians = {
         }
     },
 	
-	cattelvinf: {
-        name: "Cattelvin F",
+	"cattelvin-f": {
+        name: "Cattelvin-F",
         number: 69,
 	    types: ["Ice"],
         abilities: ["Airborne"],
