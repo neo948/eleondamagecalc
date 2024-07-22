@@ -35,7 +35,7 @@ For move data, follow this template:
     rapidFire: {
         name: "Rapid Fire",
         power: 20,
-        type: "Fire",
+        type: "Pyro",
         mr: "Ranged",
         contact: true,
         hits: 3,
