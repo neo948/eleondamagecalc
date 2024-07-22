@@ -18,53 +18,43 @@ var loomians = {
         }
     },
  
-    rabburn: {
-        name: "Rabburn",
+  fowlous: {
+        name: "Fowlous",
         number: 02,
-        types: ["Fire"],
-        abilities: ["Awakening"],
+        types: ["Nature"],
+         abilities: ["Awakening"],
         sAbility: ["Terrifying"],
         finalEvo: false,
         weight: 39,
         height: 59,
         baseStats: {
-            hp: 61,
-            energy: 67,
-            attack: 75,
-            defense: 95,
-            attackR: 46,
-            defenseR: 68,
-            speed: 60
+            hp: 55,
+            attack: 48,
+            defense: 50,
+            attackR: 95,
+            defenseR: 60,
+            speed: 102
         }
     },
- 
-    searknight: {
-        name: "Searknight",
+    pavreless: {
+        name: "Pavreless",
         number: 03,
-        types: ["Fire", "Metal"],
-        abilities: ["Awakening"],
+        types: ["Nature", "Light"],
+       abilities: ["Awakening"],
         sAbility: ["Terrifying"],
-        weight: 98,
-        height: 82,
+        finalEvo: true,
+        weight: 39,
+        height: 59,
         baseStats: {
-            hp: 88,
-            energy: 88,
-            attack: 102,
-            defense: 125,
-            attackR: 60,
-            defenseR: 82,
-            speed: 65
-        },
-        gsbStats: {
-            hp: 89,
-            energy: 88,
-            attack: 102,
-            defense: 125,
-            attackR: 71,
-            defenseR: 85,
-            speed: 65
+            hp: 80,
+            attack: 73,
+            defense: 64,
+            attackR: 115,
+            defenseR: 73,
+            speed: 125
         }
     },
+	
  
     dripple: {
         name: "Dripple",
@@ -8458,7 +8448,7 @@ var moves = {
         power: 90,
         energy: 50,
         accuracy: 100,
-        type: "Fire",
+        type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
