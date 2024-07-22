@@ -1,21 +1,20 @@
-var loomians = {
+var loomians= {
     cotail: {
         name: "Cotail",
         number: 01,
-        types: ["nature"],
-        abilities: ["Awakening"],
-        sAbility: ["Terrifying"],
+        types: ["Nature"],
+        passive: ["Floromancy"],
+        hPassive: ["Pirouette"],
         finalEvo: false,
         weight: 20,
         height: 33,
         baseStats: {
-            hp: 57,
-            energy: 51,
-            attack: 60,
-            defense: 67,
-            attackR: 36,
-            defenseR: 50,
-            speed: 40
+            hp: 39,
+            attack: 34,
+            defense: 42,
+            attackM: 75,
+            defenseM: 50,
+            speed: 70
         }
     },
  
