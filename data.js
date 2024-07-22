@@ -11177,125 +11177,89 @@ var moves = {
 
 
 var types = {
-    simple: {
-        weaknesses: ["mind", "brawler"],
+    basic: {
+        weaknesses: ["martial"],
         resistances: [],
-        immunities: [],
-        otherName: "plain"
+        immunities: ["soul"],
+        
     },
 
-    fire: {
-        weaknesses: ["water", "earth", "air"],
-        resistances: ["fire", "plant", "ice", "metal", "bug"],
+    pyro: {
+        weaknesses: ["hydro", "wind", "geo", "light", "mystic"],
+        resistances: ["pyro", "nature", "ice", "metal", "dark"],
         immunities: [],
-        otherName: "flame"
+        
     },
 
-    water: {
-        weaknesses: ["plant", "electric", "toxic"],
-        resistances: ["fire", "water", "ice", "metal"],
+    hydro: {
+        weaknesses: ["nature", "electric", "mystic"],
+        resistances: ["pyro", "hydro", "ice", "metal"],
         immunities: [],
-        otherName: "wave"
+       
     },
 
-    plant: {
-        weaknesses: ["fire", "ice", "dark", "bug", "toxic"],
-        resistances: ["plant", "water", "earth", "electric", "light"],
-        immunities: ["light"],
-        otherName: "blossom"
+    nature: {
+        weaknesses: ["pyro", "wind", "ice", "dark", "toxic"],
+        resistances: ["nature", "hydro", "geo", "electric", "light", "mystic"],
+        immunities: [],
+        
     },
 
     electric: {
-        weaknesses: ["water", "earth"],
-        resistances: ["electric", "metal", "air"],
+        weaknesses: ["geo"],
+        resistances: ["electric", "metal", "wind"],
         immunities: [],
-        otherName: "volt"
+        
+    },
+
+    martial: {
+        weaknesses: ["psychic", "toxic"],
+        resistances: ["mystic"],
+        immunities: [],
+        
+    },
+
+    geo: {
+        weaknesses: ["hydro", "nature", "ice"],
+        resistances: ["toxic", "wind"],
+        immunities: ["electric"],
+        
+    },
+
+    soul: {
+        weaknesses: ["soul", "light"],
+        resistances: ["toxic", "dark"],
+        immunities: ["basic", "martial"],
+        
+    },
+
+    psychic: {
+        weaknesses: ["martial", "light", "psychic"],
+        resistances: ["soul", "dark", "mystic"],
+        immunities: [],
+        
     },
 
     ice: {
-        weaknesses: ["fire", "metal", "brawler"],
-        resistances: ["ice", "air", "simple"],
+        weaknesses: ["pyro", "martial", "metal"],
+        resistances: ["wind", "ice"],
         immunities: [],
-        otherName: "frost"
-    },
-
-    earth: {
-        weaknesses: ["water", "plant", "ice"],
-        resistances: ["toxic"],
-        immunities: ["electric"],
-        otherName: "terra"
-    },
-
-    light: {
-        weaknesses: ["dark", "metal"],
-        resistances: ["fire", "light", "ancient"],
-        immunities: ["spirit"],
-        otherName: "shine"
-    },
-
-    dark: {
-        weaknesses: ["fire", "light", "bug"],
-        resistances: ["dark", "mind", "spirit"],
-        immunities: [],
-        otherName: "shade"
-    },
-
-    bug: {
-        weaknesses: ["ice", "air", "brawler"],
-        resistances: ["earth", "dark", "plant", "bug"],
-        immunities: [],
-        otherName: "web"
+        
     },
 
     metal: {
-        weaknesses: ["fire", "electric", "earth", "brawler"],
-        resistances: ["air", "bug", "metal", "ancient", "simple", "ice", "mind"],
+        weaknesses: ["pyro", "electric", "geo", "martial"],
+        resistances: ["basic", "nature", "metal", "wind", "mystic", "psychic"],
         immunities: [],
-        otherName: "metalic"
+        
     },
 
-    air: {
+    wind: {
         weaknesses: ["ice", "electric"],
-        resistances: ["brawler", "bug"],
-        immunities: ["earth"],
-        otherName: "draft"
-    },
-
-    toxic: {
-        weaknesses: ["earth", "mind"],
-        resistances: ["toxic", "plant", "brawler"],
+        resistances: ["martial", "nature", "geo",],
         immunities: [],
-        otherName: "noxious"
+        
     },
-
-    spirit: {
-        weaknesses: ["light", "ancient", "spirit"],
-        resistances: ["dark", "toxic", "electric", "simple"],
-        immunities: ["brawler"],
-        otherName: "spectral"
-    },
-
-    mind: {
-        weaknesses: ["dark", "bug", "spirit"],
-        resistances: ["light", "mind", "brawler"],
-        immunities: [],
-        otherName: "mental"
-    },
-
-    ancient: {
-        weaknesses: ["light", "metal", "ancient"],
-        resistances: ["fire", "water", "plant", "spirit", "electric"],
-        immunities: [],
-        otherName: "archaic"
-    },
-
-    brawler: {
-        weaknesses: ["air", "spirit", "mind", "toxic"],
-        resistances: ["bug", "ice"],
-        immunities: [],
-        otherName: "martial"
-    },
-};
 
 var abilities = ["Ability Thief", "Ace", "Adorable", "Aggressive", "Ambush", "Analyze", "Anomaly", "Applied Frustration", "Apprehension", "Aqua Body", "Awakening", "Baneful", "Bitter Touch",
                  "Bloodsucker", "Boast", "Brute Force", "Bug Fever", "Bully", "Burglar", "Bursting Seams", "Caddie", "Chaperone", "Chill", "Circadian", "Clingy", "Clutch", "Combative", "Combustible",
