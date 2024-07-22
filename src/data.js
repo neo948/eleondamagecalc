@@ -1,4 +1,4 @@
-var Eleons = {
+var eleons = {
     cotail: {
         name: "Cotail",
         number: 01,
