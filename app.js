@@ -1,4 +1,4 @@
-const STAB = 1.25;
+const STAB = 1.5;
 
 var pokeDropdown1 = document.getElementById("pokes1");
 var pokeDropdown2 = document.getElementById("pokes2");
