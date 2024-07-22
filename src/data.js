@@ -1318,8 +1318,8 @@ var loomians = {
         }
     },
 	
-	"cattelvin-m": {
-        name: "Cattelvin-M",
+	cattelvinm: {
+        name: "Cattelvin M",
         number: 69,
 	    types: ["Pyro"],
         abilities: ["Airborne"],
@@ -1337,8 +1337,8 @@ var loomians = {
         }
     },
 	
-	"cattelvin-f": {
-        name: "Cattelvin-F",
+	cattelvinf: {
+        name: "Cattelvin F",
         number: 69,
 	    types: ["Ice"],
         abilities: ["Airborne"],
@@ -1491,4282 +1491,727 @@ var loomians = {
  
 
 var moves = {
-    pounce: {
-        name: "Pounce",
-        power: 40,
-        energy: 15,
+		lastResort: {
+        name: "Last Resort",
+        power: 50,
         accuracy: 100,
-        type: "Simple",
+        type: "Various",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true
-    },
-
-    singe: {
-        name: "Singe",
-        power: 40,
-        energy: 20,
-        accuracy: 100,
-        type: "Fire",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
+        contact: false,
         secondaryEffect: true
     },
-
-    eruption: {
-        name: "Eruption",
-        power: 125,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Fire",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    hellstorm: {
-        name: "Hellstorm",
-        power: 100,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Fire",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    spray: {
-        name: "Spray",
-        power: 40,
-        energy: 20,
+	
+		specialAttackpyro: {
+        name: "Special Attack Pyro",
+        power: 60,
         accuracy: 100,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    strike: {
-        name: "Strike",
-        power: 40,
-        energy: 15,
-        accuracy: 100,
-        type: "Simple",
+        type: "Pyro",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true
-    },
-
-    shine: {
-        name: "Shine",
-        power: 40,
-        energy: 20,
-        accuracy: 100,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    novaBlast: {
-        name: "Nova Blast",
-        power: 95,
-        energy: 52,
-        accuracy: 100,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
+        contact: false,
         secondaryEffect: true
     },
-
-    lightspeedRay: {
-        name: "Lightspeed Ray",
-        power: 40,
-        energy: 25,
+	
+	    specialAttackhydro: {
+        name: "Special Attack Hydro",
+        power: 60,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttacknature: {
+        name: "Special Attack Nature",
+        power: 60,
+        accuracy: 100,
+        type: "Nature",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttackgeo: {
+        name: "Special Attack Geo",
+        power: 60,
+        accuracy: 100,
+        type: "Geo",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialattackRartial: {
+        name: "Special Attack Martial",
+        power: 60,
+        accuracy: 100,
+        type: "Martial",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttackelectric: {
+        name: "Special Attack Electric",
+        power: 60,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttacksoul: {
+        name: "Special Attack Soul",
+        power: 60,
+        accuracy: 100,
+        type: "Soul",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttackpsychic: {
+        name: "Special Attack Psychic",
+        power: 60,
+        accuracy: 100,
+        type: "Psychic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttacktoxic: {
+        name: "Special Attack Toxic",
+        power: 60,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialattackRetal: {
+        name: "Special Attack Metal",
+        power: 60,
+        accuracy: 100,
+        type: "Metal",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	specialAttackwind: {
+        name: "Special Attack Wind",
+        power: 60,
+        accuracy: 100,
+        type: "Wind",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialattackRystic: {
+        name: "Special Attack Mystic",
+        power: 60,
+        accuracy: 100,
+        type: "Mystic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttackice: {
+        name: "Special Attack Ice",
+        power: 60,
+        accuracy: 100,
+        type: "Ice",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttacklight: {
+        name: "Special Attack Light",
+        power: 60,
         accuracy: 100,
         type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
     },
-
-    gnaw: {
-        name: "Gnaw",
-        power: 40,
-        energy: 15,
+	
+	specialAttackdark: {
+        name: "Special Attack Dark",
+        power: 60,
         accuracy: 100,
-        type: "Simple",
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+    },
+	
+	specialAttackbasic: {
+        name: "Special Attack Basic",
+        power: 60,
+        accuracy: 100,
+        type: "Basic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: false,
+        secondaryEffect: true
+	},
+	
+	supriseAttack: {
+        name: "Surprise Attack",
+        power: 40,
+        accuracy: 100,
+        type: "Basic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        bite: true
-    },
-
-    chomp: {
-        name: "Chomp",
+        secondaryEffect: true,
+		dash: true
+	},
+	
+	bodyBash: {
+        name: "Body Bash",
         power: 45,
-        energy: 20,
         accuracy: 100,
-        type: "Dark",
+        type: "Basic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        secondaryEffect: true,
-        bite: true
-    },
-
-    trickyTactics: {
-        name: "Tricky Tactics",
-        power: 95,
-        energy: 55,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    gnarlyGash: {
-        name: "Gnarly Gash",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true,
-    },
-
-    flurry: {
-        name: "Flurry",
-        power: 40,
-        energy: 22,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true,
-        secondaryEffect: true
-    },
-
-    outOfOrder: {
-        name: "Out of Order",
-        power: 150,
-        energy: 60,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    petalPummel: {
-        name: "Petal Pummel",
-        power: 40,
-        energy: 20,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense"
-    },
-
-    thornSlam: {
-        name: "Thorn Slam",
-        power: 110,
-        energy: 55,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    staticShock: {
-        name: "Static Shock",
-        power: 40,
-        energy: 20,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    swipe: {
+        secondaryEffect: false
+	},
+	
+	swipe: {
         name: "Swipe",
-        power: 60,
-        energy: 22,
+        power: 45,
         accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    bugBite: {
-        name: "Bug Bite",
-        power: 30,
-        energy: 20,
-        accuracy: 100,
-        type: "Bug",
+        type: "Basic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        bite: true,
-        drain: 1/2
-    },
-
-    carnivorousSnap: {
-        name: "Carnivorous Snap",
-        power: 100,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Plant",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        bite: true,
-        drain: 1/2,
-    },
-
-    peck: {
-        name: "Peck",
-        power: 35,
-        energy: 15,
-        accuracy: 100,
-        type: "Air",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    sting: {
-        name: "Sting",
-        power: 15,
-        energy: 10,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        secondaryEffect: true,
-        contact: true
-    },
-
-    pestilence: {
-        name: "Pestilence",
-        power: 60,
-        energy: 35,
-        accuracy: 100,
-        type: "Bug",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    discordance: {
-        name: "Discordance",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Bug",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    bloodDrain: {
-        name: "Blood Drain",
-        power: 20,
-        energy: 34,
-        accuracy: 90,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    diveBomb: {
-        name: "Dive Bomb",
+        secondaryEffect: false,
+		slash: true
+	},
+	
+	holdBack: {
+        name: "Hold Back",
         power: 50,
-        energy: 26,
-        accuracy: 90,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    bamboozle: {
-        name: "Bamboozle",
-        power: 60,
-        energy: 26,
-        accuracy: "N/A",
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    scavenge: {
-        name: "Scavenge",
-        power: 60,
-        energy: 32,
         accuracy: 100,
-        type: "Air",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    doubleBeat: {
-        name: "Double Beat",
-        power: 40,
-        energy: 40,
-        accuracy: 90,
-        type: "Air",
+        type: "Basic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        hits: 2
-    },
-
-    submerge: {
-        name: "Submerge",
+        secondaryEffect: false
+	},
+	
+	chowDown: {
+        name: "Chow Down",
+        power: 60,
+        accuracy: 100,
+        type: "Basic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        secondaryEffect: false,
+		bite: true
+	},
+	
+	stomp: {
+        name: "Stomp",
+        power: 60,
+        accuracy: 100,
+        type: "Basic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        secondaryEffect: true
+	},
+	
+	hitAndrun: {
+        name: "Hit and Run",
+        power: 70,
+        accuracy: 100,
+        type: "Basic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+        secondaryEffect: false,
+		dash: true
+	},
+	
+	wideSlash: {
+        name: "Wide Slash",
         power: 75,
-        energy: 38,
         accuracy: 100,
-        type: "Water",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    heedlessRush: {
-        name: "Heedless Rush",
-        power: 100,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Water",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    torrentialSlash: {
-        name: "Torrential Slash",
-        power: 95,
-        energy: 50,
-        accuracy: 100,
-        type: "Water",
+        type: "Basic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        secondaryEffect: true
-    },
-
-    mudSpatter: {
-        name: "Mud Spatter",
-        power: 55,
-        energy: 30,
-        accuracy: 100,
-        type: "Earth",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    landslide: {
-        name: "Landslide",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Earth",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    doubleSting: {
-        name: "Double Sting",
-        power: 25,
-        energy: 28,
-        accuracy: 100,
-        type: "Bug",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        hits: 2,
-        secondaryEffect: true,
-        contact: true
-    },
-
-    lusterLoot: {
-        name: "Luster Loot",
-        power: 50,
-        energy: 35,
-        accuracy: 100,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        drain: 3/4
-    },
-
-    mysticBreeze: {
-        name: "Mystic Breeze",
-        power: 60,
-        energy: 30,
-        accuracy: 100,
-        type: "Bug",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    pilfer: {
-        name: "Pilfer",
-        power: 60,
-        energy: 32,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    tase: {
-        name: "Tase",
-        power: 20,
-        energy: 35,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    radiantForecast: {
-        name: "Radiant Forecast",
-        power: 110,
-        energy: 44,
-        accuracy: 100,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    corrode: {
-        name: "Corrode",
-        power: 40,
-        energy: 24,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true,
-        secondaryEffect: true
-    },
-
-    quickPounce: {
-        name: "Quick Pounce",
-        power: 40,
-        energy: 25,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        priority: true
-    },
-
-    nab: {
-        name: "Nab",
-        power: 75,
-        energy: 35,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    cycloneSlam: {
-        name: "Cyclone Slam",
-        power: 60,
-        energy: 26,
-        accuracy: "N/A",
-        type: "Air",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    stormSummon: {
-        name: "Storm Summon",
-        power: 50,
-        energy: 46,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true,
-        secondaryEffect: true
-    },
-
-    chillyChomp: {
-        name: "Chilly Chomp",
-        power: 70,
-        energy: 35,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true,
-        bite: true
-    },
-
-    naturesRage: {
-        name: "Nature's Rage",
-        power: 70,
-        energy: 55,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    slime: {
-        name: "Slime",
-        power: 65,
-        energy: 32,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    rapidFire: {
-        name: "Rapid Fire",
-        power: 20,
-        energy: 32,
-        accuracy: 95,
-        type: "Fire",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        hits: 3,
-        secondaryEffect: true
-    },
-
-    pepperBurst: {
-        name: "Pepper Burst",
-        power: 35,
-        energy: 40,
-        accuracy: 100,
-        type: "Fire",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        hits: 2,
-    },
-
-    waterBomb: {
-        name: "Water Bomb",
-        power: 60,
-        energy: 26,
-        accuracy: 100,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-        bomb: true
-    },
-
-    leafBarrage: {
-        name: "Leaf Barrage",
-        power: 65,
-        energy: 30,
-        accuracy: 90,
-        type: "Plant",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    spare: {
-        name: "Spare",
-        power: 40,
-        energy: 15,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    hopKick: {
-        name: "Hop Kick",
-        power: 60,
-        energy: 30,
-        accuracy: 90,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    airWhip: {
-        name: "Air Whip",
-        power: 60,
-        energy: 32,
-        accuracy: 100,
-        type: "Air",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    airShot: {
-        name: "Air Shot",
-        power: 40,
-        energy: 20,
-        accuracy: 100,
-        type: "Air",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    gloomFangs: {
-        name: "Gloom Fangs",
-        power: 75,
-        energy: 36,
-        accuracy: 90,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        bite: true
-    },
-
-    holySlash: {
-        name: "Holy Slash",
-        power: 75,
-        energy: 32,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        typeModifier: { type: "Dark", modifier: 2 },
-        contact: true
-    },
-
-    muckBuck: {
-        name: "Muck Buck",
-        power: 85,
-        energy: 50,
-        accuracy: 95,
-        type: "Earth",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        aoe: true,
-        contact: true,
-        recoil: 3/20
-    },
-
-    quicksand: {
-        name: "Quicksand",
-        power: 60,
-        energy: 35,
-        accuracy: 100,
-        type: "Earth",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    rant: {
-        name: "Rant",
-        power: 55,
-        energy: 32,
-        accuracy: 95,
-        type: "Dark",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-        sound: true
-    },
-
-    eggStorm: {
-        name: "Egg Storm",
-        power: 90,
-        energy: 52,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-        aoe: true
-    },
-
-    lightDash: {
-        name: "Light Dash",
-        power: 40,
-        energy: 25,
-        accuracy: 100,
-        type: "Light",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        priority: true
-    },
-
-    pester: {
-        name: "Pester",
-        power: 50,
-        energy: 32,
-        accuracy: 100,
-        type: "Bug",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true,
-        secondaryEffect: true
-    },
-
-    slapDown: {
-        name: "Slap Down",
-        power: 65,
-        energy: 45,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        knockOff: true,
-        slap: true
-    },
-
-    startle: {
-        name: "Startle",
-        power: 30,
-        energy: 15,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    frightfulSurprise: {
-        name: "Frightful Surprise",
-        power: 100,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    shatter: {
-        name: "Shatter",
-        power: 70,
-        energy: 50,
-        accuracy: 90,
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    brainwash: {
-        name: "Brainwash",
-        power: 50,
-        energy: 24,
-        accuracy: 100,
-        type: "Mind",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    stupefy: {
-        name: "Stupefy",
-        power: 30,
-        energy: 25,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    apparition: {
-        name: "Apparition",
-        power: 90,
-        energy: 55,
-        accuracy: "N/A",
-        type: "Spirit",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        typeModifier: { type: "Dark", modifier: 4 }
-    },
-
-    bushWhack: {
-        name: "Bush Whack",
-        power: 65,
-        energy: 35,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        secondaryEffect: true
-    },
-
-    oppress: {
-        name: "Oppress",
-        power: 65,
-        energy: 44,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    spectralBurst: {
-        name: "Spectral Burst",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    phantomBlast: {
-        name: "Phantom Blast",
-        power: 110,
-        energy: 60,
-        accuracy: 80,
-        type: "Spirit",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    phantomSlash: {
-        name: "Phantom Slash",
-        power: 70,
-        energy: 36,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    harrow: {
-        name: "Harrow",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    venomChomp: {
-        name: "Venom Chomp",
-        power: 70,
-        energy: 35,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true,
-        bite: true
-    },
-
-    elementalBurst: {
-        name: "Elemental Burst",
-        power: 80,
-        energy: 48,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    parasitize: {
-        name: "Parasitize",
-        power: 80,
-        energy: 55,
-        accuracy: 100,
-        type: "Bug",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        bite: true,
-        drain: 1/2
-    },
-
-    headbutt: {
-        name: "Headbutt",
-        power: 60,
-        energy: 25,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    wingSlap: {
-        name: "Wing Slap",
-        power: 60,
-        energy: 26,
-        accuracy: 100,
-        type: "Air",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    gammaPulse: {
-        name: "Gamma Pulse",
-        power: 80,
-        energy: 50,
-        accuracy: 100,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    naturesForce: {
-        name: "Nature's Force",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    floraBlast: {
-        name: "Flora Blast",
-        power: 100,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Plant",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        typeModifier: { type: "Plant", modifier: 4 }
-    },
-
-    lifeDrain: {
-        name: "Life Drain",
-        power: 75,
-        energy: 48,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        drain: 1/2
-    },
-
-    snowdozer: {
-        name: "Snowdozer",
-        power: 30,
-        energy: 24,
-        accuracy: 90,
-        type: "Ice",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    searingSteel: {
-        name: "Searing Steel",
-        power: 85,
-        energy: 48,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        secondaryEffect: true,
-        typeModifier: { type: "Water", modifier: 2 }
-    },
-
-    wintersFury: {
-        name: "Winter's Fury",
-        power: 30,
-        energy: 55,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        hits: 3
-    },
-
-    thunderstrike: {
-        name: "Thunderstrike",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    electroBlast: {
-        name: "Electro Blast",
-        power: 125,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Electric",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    maroon: {
-        name: "Maroon",
-        power: 70,
-        energy: 45,
-        accuracy: 100,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    flashPulse: {
-        name: "Flash Pulse",
-        power: 85,
-        energy: 42,
-        accuracy: 90,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true,
-        secondaryEffect: true
-    },
-
-    sleetShot: {
-        name: "Sleet Shot",
-        power: 55,
-        energy: 28,
-        accuracy: 95,
-        type: "Ice",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    bodySlam: {
-        name: "Body Slam",
-        power: 90,
-        energy: 35,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    slash: {
+        slash: true 
+	},
+	
+	slash: {
         name: "Slash",
         power: 75,
-        energy: 36,
         accuracy: 100,
-        type: "Simple",
+        type: "Basic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true
-    },
-
-    nosedive: {
-        name: "Nosedive",
+        contact: true,
+        slash: true 
+	},
+	
+	superSlam: {
+        name: "Super Slam",
         power: 95,
-        energy: 40,
         accuracy: 100,
-        type: "Air",
+        type: "Basic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true,
-        recoil: 1/4
-    },
-
-    flamingKick: {
-        name: "Flaming Kick",
-        power: 80,
-        energy: 40,
+        contact: true		
+	},
+	
+	decimate: {
+        name: "Decimate",
+        power: 150,
         accuracy: 90,
-        type: "Fire",
+        type: "Basic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    boilingPress: {
-        name: "Boiling Press",
-        power: 75,
-        energy: 40,
-        accuracy: 100,
-        type: "Fire",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        typeModifier: { type: "Water", modifier: 4 }
-    },
-
-    yetisWrath: {
-        name: "Yeti's Wrath",
-        power: 120,
-        energy: 90,
-        accuracy: 100,
-        type: "Earth",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    junglejutsu: {
-        name: "Junglejutsu",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    ragingTackle: {
-        name: "Raging Tackle",
-        power: 120,
-        energy: 62,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        recoil: 1/3
-    },
-
-    megaChomp: {
-        name: "Mega Chomp",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true,
-        bite: true
-    },
-
-    revolution: {
-        name: "Revolution",
-        power: 70,
-        energy: 45,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    luminousRoar: {
-        name: "Luminous Roar",
-        power: 75,
-        energy: 36,
-        accuracy: 90,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        sound: true
-    },
-
-    fireSlam: {
-        name: "Fire Slam",
-        power: 65,
-        energy: 26,
-        accuracy: 100,
-        type: "Fire",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    shadowSprint: {
-        name: "Shadow Sprint",
+        contact: true		
+	},
+	
+	screech: {
+        name: "Screech",
         power: 40,
-        energy: 25,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        priority: true
-    },
-
-    airBlade: {
-        name: "Air Blade",
-        power: 70,
-        energy: 40,
-        accuracy: 100,
-        type: "Air",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    boulderBlast: {
-        name: "Boulder Blast",
-        power: 25,
-        energy: 25,
-        accuracy: 90,
-        type: "Earth",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        hits: 5
-    },
-
-    darkSurge: {
-        name: "Dark Surge",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    shadowLurk: {
-        name: "Shadow Lurk",
-        power: 100,
-        energy: 55,
         accuracy: "N/A",
-        type: "Dark",
+        type: "Basic",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-    },
-
-    shadowPulse: {
-        name: "Shadow Pulse",
-        power: 80,
-        energy: 40,
+		sound: true
+	},
+	
+	cantrip: {
+        name: "Cantrip",
+        power: 60,
         accuracy: 100,
-        type: "Dark",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    sinisterShackles: {
-        name: "Sinister Shackles",
-        power: 100,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Dark",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    earSlap: {
-        name: "Ear Slap",
-        power: 15,
-        energy: 18,
-        accuracy: 85,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        slap: true,
-        hits: 5
-    },
-
-    muckBlast: {
-        name: "Muck Blast",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    pheroblast: {
-        name: "Pheroblast",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Bug",
+        type: "Basic",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense"
-    },
-
-    pineShot: {
-        name: "Pine Shot",
-        power: 25,
-        energy: 25,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        hits: 5
-    },
-
-    quickPunch: {
-        name: "Quick Punch",
-        power: 40,
-        energy: 25,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        punch: true,
-        priority: true
-    },
-
-    ragingHowl: {
-        name: "Raging Howl",
-        power: 120,
-        energy: 62,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        sound: true,
-        recoil: 1/3
-    },
-
-    thunderChomp: {
-        name: "Thunder Chomp",
+	},
+	
+	rouletteBasic: {
+        name: "Roulette Basic",
         power: 70,
-        energy: 35,
         accuracy: 100,
-        type: "Electric",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true,
-        bite: true
-    },
-
-    thunderSlam: {
-        name: "Thunder Slam",
-        power: 65,
-        energy: 26,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        secondaryEffect: true
-    },
-
-    toxicTail: {
-        name: "Toxic Tail",
-        power: 50,
-        energy: 30,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    returnToSender: {
-        name: "Return to Sender",
-        power: 0,
-        energy: 25,
-        accuracy: 100,
-        type: "Mind",
+        type: "Basic",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense"
-    },
-
-    foulChant: {
-        name: "Foul Chant",
-        power: 110,
-        energy: 45,
-        accuracy: 70,
-        type: "Mind",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    earthquake: {
-        name: "Earthquake",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Earth",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        aoe: true,
-        grounded: true,
-    },
-
-    fireBreath: {
-        name: "Fire Breath",
-        power: 90,
-        energy: 50,
+	},
+	
+	roulettePyro: {
+        name: "Roulette Pyro",
+        power: 70,
         accuracy: 100,
         type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    geyser: {
-        name: "Geyser",
-        power: 75,
-        energy: 40,
-        accuracy: 100,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    shellShrapnel: {
-        name: "Shell Shrapnel",
-        power: 110,
-        energy: 56,
-        accuracy: 100,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    hydroSlash: {
-        name: "Hydro Slash",
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteHydro: {
+        name: "Roulette Hydro",
         power: 70,
-        energy: 36,
         accuracy: 100,
-        type: "Water",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    shellBash: {
-        name: "Shell Bash",
-        power: 0,
-        energy: 40,
-        accuracy: "N/A",
-        type: "Water",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    magmaBurst: {
-        name: "Magma Burst",
-        power: 85,
-        energy: 45,
-        accuracy: 100,
-        type: "Fire",
+        type: "Hydro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    tripRoot: {
-        name: "Trip Root",
-        power: 1,
-        energy: 30,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        weightBased: true
-    },
-
-    savageGreed: {
-        name: "Savage Greed",
-        power: 95,
-        energy: 52,
-        accuracy: 90,
-        type: "Ancient",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    expertOnslaught: {
-        name: "Expert Onslaught",
-        power: 50,
-        energy: 40,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    goopSpout: {
-        name: "Goop Spout",
-        power: 50,
-        energy: 35,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-        aoe: true
-    },
-
-    energyBreak: {
-        name: "Energy Break",
-        power: 85,
-        energy: 54,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    blazeChomp: {
-        name: "Blaze Chomp",
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteNature: {
+        name: "Roulette Nature",
         power: 70,
-        energy: 35,
         accuracy: 100,
-        type: "Fire",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true,
-        bite: true
-    },
-
-    primalSlash: {
-        name: "Primal Slash",
-        power: 80,
-        energy: 45,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    coconutBomb: {
-        name: "Coconut Bomb",
-        power: 90,
-        energy: 45,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        secondaryEffect: true,
-        contact: true,
-        bomb: true,
-        recoil: 1/4
-    },
-
-    lavaSlash: {
-        name: "Lava Slash",
+        type: "Nature",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteWind: {
+        name: "Roulette Wind",
         power: 70,
-        energy: 45,
         accuracy: 100,
-        type: "Fire",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    electroburst: {
-        name: "Electroburst",
-        power: 85,
-        energy: 50,
-        accuracy: 95,
+        type: "Wind",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteGeo: {
+        name: "Roulette Geo",
+        power: 70,
+        accuracy: 100,
+        type: "Geo",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteElectric: {
+        name: "Roulette Electric",
+        power: 70,
+        accuracy: 100,
         type: "Electric",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-        aoe: true
-    },
-
-    thunderBlast: {
-        name: "Thunder Blast",
-        power: 110,
-        energy: 60,
-        accuracy: 80,
-        type: "Electric",
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteMartial: {
+        name: "Roulette Martial",
+        power: 70,
+        accuracy: 100,
+        type: "Martial",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-    },
-
-    chaseDown: {
-        name: "Chase Down",
-        power: 40,
-        energy: 30,
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteSoul: {
+        name: "Roulette Soul",
+        power: 70,
         accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    thunderCrash: {
-        name: "Thunder Crash",
-        power: 90,
-        energy: 38,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        recoil: 1/4
-    },
-
-    ghostlyHowl: {
-        name: "Ghostly Howl",
-        power: 75,
-        energy: 38,
-        accuracy: "N/A",
-        type: "Spirit",
+        type: "Soul",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        sound: true,
-        secondaryEffect: true
-    },
-
-    resonate: {
-        name: "Resonate",
-        power: 90,
-        energy: 50,
+        mr2: "Ranged Defense"
+	},
+	
+	roulettePsychic: {
+        name: "Roulette Psychic",
+        power: 70,
         accuracy: 100,
-        type: "Simple",
+        type: "Psychic",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        sound: true,
-        secondaryEffect: true
-    },
-
-    climateCannon: {
-        name: "Climate Cannon",
-        power: 90,
-        energy: 45,
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteMetal: {
+        name: "Roulette Metal",
+        power: 70,
         accuracy: 100,
-        type: "Simple",
+        type: "Metal",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    repeatingTune: {
-        name: "Repeating Tune",
-        power: 25,
-        energy: 25,
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteIce: {
+        name: "Roulette Ice",
+        power: 70,
         accuracy: 100,
-        type: "Simple",
+        type: "Ice",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        hits: 3,
-        sound: true,
-    },
-
-    gloominousRoar: {
-        name: "Gloominous Roar",
-        power: 85,
-        energy: 46,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        sound: true
-    },
-
-    gobbleGoop: {
-        name: "Gobble Goop",
-        power: 60,
-        energy: 36,
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteToxic: {
+        name: "Roulette Toxic",
+        power: 70,
         accuracy: 100,
         type: "Toxic",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    harmoniousChord: {
-        name: "Harmonious Chord",
-        power: 60,
-        energy: 35,
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteDark: {
+        name: "Roulette Dark",
+        power: 70,
         accuracy: 100,
-        type: "Simple",
+        type: "Dark",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        sound: true,
-        secondaryEffect: true
-    },
-
-    dissonantChord: {
-        name: "Dissonant Chord",
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteLight: {
+        name: "Roulette Light",
+        power: 70,
+        accuracy: 100,
+        type: "Light",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	rouletteMystic: {
+        name: "Roulette Mystic",
+        power: 70,
+        accuracy: 100,
+        type: "Mystic",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	starShot: {
+        name: "Star Shot",
         power: 80,
-        energy: 40,
         accuracy: 100,
-        type: "Simple",
+        type: "Basic",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        sound: true,
-        secondaryEffect: true
-    },
-
-    flabbergast: {
-        name: "Flabbergast",
-        power: 70,
-        energy: 36,
+		aoe: true,
+		bomb:true
+	},
+	
+	powerPulse: {
+        name: "Power Pulse",
+        power: 100,
         accuracy: 100,
-        type: "Mind",
+        type: "Basic",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    cerebralSlash: {
-        name: "Cerebral Slash",
-        power: 70,
-        energy: 36,
+		bomb:true
+	},
+	
+	megaRay: {
+        name: "Mega Ray",
+        power: 120,
         accuracy: 100,
-        type: "Mind",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense"
-    },
-
-    flashNFlee: {
-        name: "Flash 'n Flee",
-        power: 70,
-        energy: 50,
-        accuracy: 100,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    flare: {
-        name: "Flare",
-        power: 70,
-        energy: 50,
-        accuracy: 100,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    fadeAway: {
-        name: "Fade Away",
-        power: 70,
-        energy: 50,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    roughUp: {
-        name: "Rough Up",
-        power: 70,
-        energy: 40,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    heavyBash: {
-        name: "Heavy Bash",
-        power: 70,
-        energy: 36,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    razorSlash: {
-        name: "Razor Slash",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    bash: {
-        name: "Bash",
-        power: 50,
-        energy: 20,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    metalSwipes: {
-        name: "Metal Swipes",
-        power: 20,
-        energy: 20,
-        accuracy: 95,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        hits: 2
-    },
-
-    clamp: {
-        name: "Clamp",
-        power: 45,
-        energy: 22,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    dartBurst: {
-        name: "Dart Burst",
-        power: 35,
-        energy: 40,
-        accuracy: 90,
-        type: "Metal",
+        type: "Basic",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        hits: 3,
-        secondaryEffect: true
-    },
-
-    doubleWhack: {
-        name: "Double Whack",
-        power: 35,
-        energy: 34,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        hits: 2
-    },
-
-    completeDemolition: {
-        name: "Complete Demolition",
+		bomb: true
+	},
+	
+	starpower: {
+        name: "Starpower",
         power: 150,
-        energy: 60,
-        accuracy: 90,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    frostBeam: {
-        name: "Frost Beam",
-        power: 90,
-        energy: 50,
         accuracy: 100,
-        type: "Ice",
+        type: "Basic",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	detonate: {
+        name: "Detonate",
+        power: 300,
+        accuracy: 100,
+        type: "Basic",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    precisionBolt: {
-        name: "Precision Bolt",
-        power: 60,
-        energy: 26,
-        accuracy: "N/A",
-        type: "Electric",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    metalBlast: {
-        name: "Metal Blast",
-        power: 85,
-        energy: 42,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    airstrike: {
-        name: "Airstrike",
-        power: 125,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Metal",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    reflectionBurst: {
-        name: "Reflection Burst",
-        power: 60,
-        energy: 40,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    batteringRam: {
-        name: "Battering Ram",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Bug",
-        mr: "Melee",
-        mr1: "Melee Defense",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    graffiti: {
-        name: "Graffiti",
-        power: 70,
-        energy: 50,
-        accuracy: 90,
-        type: "Toxic",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true,
-        secondaryEffect: true
-    },
-
-    canisterBurst: {
-        name: "Canister Burst",
-        power: 25,
-        energy: 35,
+		aoe: true,
+		bomb:true 
+	},
+	
+	vineBind: {
+        name: "Vine Bind",
+        power: 35,
         accuracy: 95,
-        type: "Toxic",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        hits: 3
-    },
-
-    claySlap: {
-        name: "Clay Slap",
-        power: 60,
-        energy: 35,
+        type: "Nature",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true
+	},
+	
+	leafCutter: {
+        name: "Leaf Cutter",
+        power: 50,
         accuracy: 100,
-        type: "Earth",
+        type: "Nature",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    tailSlap: {
-        name: "Tail Slap",
-        power: 40,
-        energy: 10,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    energySurge: {
-        name: "Energy Surge",
-        power: 70,
-        energy: 40,
-        accuracy: 100,
-        type: "Light",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    illWill: {
-        name: "Ill Will",
-        power: 60,
-        energy: 40,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    stampede: {
-        name: "Stampede",
-        power: 1,
-        energy: 55,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    steelCrusher: {
-        name: "Steel Crusher",
-        power: 90,
-        energy: 50,
-        accuracy: 90,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    viceJaws: {
-        name: "Vice Jaws",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Metal",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        bite: true
-    },
-
-    frostPunch: {
-        name: "Frost Punch",
-        power: 70,
-        energy: 35,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        punch: true,
-        secondaryEffect: true
-    },
-
-    electroPunch: {
-        name: "Electro Punch",
-        power: 70,
-        energy: 35,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        punch: true,
-        secondaryEffect: true
-    },
-
-    megaPunch: {
-        name: "Mega Punch",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        punch: true,
-        secondaryEffect: true
-    },
-
-    telekineticSweep: {
-        name: "Telekinetic Sweep",
-        power: 90,
-        energy: 45,
-        accuracy: 90,
-        type: "Mind",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        aoe: true,
-        slap: true,
-        secondaryEffect: true
-    },
-
-    chop: {
-        name: "Chop",
-        power: 60,
-        energy: 30,
-        accuracy: 90,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    rogueAssault: {
-        name: "Rogue Assault",
-        power: 120,
-        energy: 60,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    pyrokinesis: {
-        name: "Pyrokinesis",
+		slash:true
+	},
+	
+	briarBash: {
+        name: "Briar Bash",
         power: 65,
-        energy: 38,
         accuracy: 100,
-        type: "Fire",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    flareBlast: {
-        name: "Flare Blast",
-        power: 110,
-        energy: 60,
-        accuracy: 80,
-        type: "Fire",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    clampClaw: {
-        name: "Clamp Claw",
-        power: 85,
-        energy: 55,
+        type: "Nature",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		dash: true
+	},
+	
+	parasiteFangs: {
+        name: "Parasite Fangs",
+        power: 75,
         accuracy: 100,
-        type: "Bug",
+        type: "Nature",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        bite: true
-    },
-
-    tsunami: {
-        name: "Tsunami",
-        power: 90,
-        energy: 60,
-        accuracy: 100,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    hydroBlast: {
-        name: "Hydro Blast",
-        power: 110,
-        energy: 60,
-        accuracy: 80,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    soulDrain: {
-        name: "Soul Drain",
-        power: 85,
-        energy: 50,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
+        bite: true,
         drain: 1/2
-    },
-
-    confound: {
-        name: "Confound",
-        power: 40,
-        energy: 18,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    dracoBeam: {
-        name: "Draco Beam",
-        power: 130,
-        energy: 60,
-        accuracy: 90,
-        type: "Ancient",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    piercingDrive: {
-        name: "Piercing Drive",
-        power: 75,
-        energy: 40,
-        accuracy: 90,
-        type: "Water",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    dinoClaws: {
-        name: "Dino Claws",
-        power: 45,
-        energy: 24,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    shrewdBlast: {
-        name: "Shrewd Blast",
-        power: 70,
-        energy: 42,
-        accuracy: "N/A",
-        type: "Ancient",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    aquaJaws: {
-        name: "Aqua Jaws",
-        power: 65,
-        energy: 38,
-        accuracy: 90,
-        type: "Water",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true,
-        bite: true
-    },
-
-    thunderClap: {
-        name: "Thunder Clap",
-        power: 80,
-        energy: 45,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        secondaryEffect: true,
-        contact: true
-    },
-
-    fulgurFangs: {
-        name: "Fulgur Fangs",
-        power: 100,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Electric",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        secondaryEffect: true,
-        contact: true,
-        bite: true
-    },
-
-    eggLob: {
-        name: "Egg Lob",
-        power: 100,
-        energy: 46,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-        bomb: true
-    },
-
-    marshWave: {
-        name: "Marsh Wave",
-        power: 75,
-        energy: 45,
-        accuracy: 100,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true,
-        secondaryEffect: true
-    },
-
-    psychalSlap: {
-        name: "Psychal Slap",
+	},
+	
+	rootJab: {
+        name: "Root Jab",
         power: 85,
-        energy: 45,
         accuracy: 100,
-        type: "Mind",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Ranged Defense",
-        slap: true
-    },
-
-    viciousSnap: {
-        name: "Vicious Snap",
-        power: 75,
-        energy: 45,
-        accuracy: 100,
-        type: "Water",
+        type: "Nature",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        bite: true
-    },
-
-    iceHammer: {
-        name: "Ice Hammer",
-        power: 95,
-        energy: 50,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-    },
-
-    icicleTremor: {
-        name: "Icicle Tremor",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        aoe: true
-    },
-
-    timberThrash: {
-        name: "Timber Thrash",
+        punch: true,
+        slash: true
+	},
+	
+	wildRush: {
+        name: "Wild Rush",
         power: 120,
-        energy: 60,
         accuracy: 100,
-        type: "Plant",
+        type: "Nature",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
         contact: true,
-        recoil: 1/3
-    },
-
-    douse: {
-        name: "Douse",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Water",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    rainbowBlast: {
-        name: "Rainbow Blast",
-        power: 100,
-        energy: 50,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    twirlyWhirl: {
-        name: "Twirly Whirl",
-        power: 75,
-        energy: 40,
-        accuracy: 100,
-        type: "Bug",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    peppermintBreath: {
-        name: "Peppermint Breath",
-        power: 75,
-        energy: 40,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    fieryFondant: {
-        name: "Fiery Fondant",
-        power: 90,
-        energy: 55,
-        accuracy: 100,
-        type: "Fire",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        recoil: 1/4,
-        secondaryEffect: true
-    },
-
-    flail: {
-        name: "Flail",
-        power: 30,
-        energy: 0,
-        accuracy: 100,
-        type: "Null",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-    },
-
-    heartBreak: {
-        name: "Heart Break",
-        power: 50,
-        energy: 25,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    powerSiphon: {
-        name: "Power Siphon",
-        power: 20,
-        energy: 32,
-        accuracy: 90,
-        type: "Electric",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    lastResort: {
-        name: "Last Resort",
-        power: 75,
-        energy: 35,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    meteorSmash: {
-        name: "Meteor Smash",
-        power: 90,
-        energy: 55,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        aoe: true
-    },
-
-    meteorCrash: {
-        name: "Meteor Crash",
-        power: 90,
-        energy: 55,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    psychoBlast: {
-        name: "Psycho Blast",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Mind",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    drivingForce: {
-        name: "Driving Force",
-        power: 60,
-        energy: 40,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    outburst: {
-        name: "Outburst",
-        power: 1,
-        energy: 60,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        regen: 1/5
-    },
-
-    blazePunch: {
-        name: "Blaze Punch",
-        power: 70,
-        energy: 35,
-        accuracy: 100,
-        type: "Fire",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        punch: true,
-        secondaryEffect: true
-    },
-
-    kindledRage: {
-        name: "Kindled Rage",
-        power: 70,
-        energy: 45,
-        accuracy: 100,
-        type: "Fire",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    boomBash: {
-        name: "Boom Bash",
-        power: 80,
-        energy: 45,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    banefulBash: {
-        name: "Baneful Bash",
-        power: 85,
-        energy: 45,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    venomSlash: {
-        name: "Venom Slash",
-        power: 70,
-        energy: 45,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    thistleSlash: {
-        name: "Thistle Slash",
-        power: 70,
-        energy: 36,
-        accuracy: 100,
-        type: "Plant",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    soulHarvest: {
-        name: "Soul Harvest",
-        power: 50,
-        energy: 30,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    soulStorm: {
-        name: "Soul Storm",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Spirit",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    brainFreeze: {
-        name: "Brain Freeze",
-        power: 80,
-        energy: 44,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        typeModifier: { type: "Mind", modifier: 2 }
-    },
-
-    deepFreeze: {
-        name: "Deep Freeze",
-        power: 75,
-        energy: 40,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-        typeModifier: { type: "Water", modifier: 4 }
-    },
-
-    snotShot: {
-        name: "Snot Shot",
-        power: 60,
-        energy: 30,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    frostBreath: {
-        name: "Frost Breath",
-        power: 60,
-        energy: 38,
-        accuracy: 100,
-        type: "Ice",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true,
-        aoe: true
-    },
-
-     bodyCrash: {
-        name: "Body Crash",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Defense",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    toxiblast: {
-        name: "Toxiblast",
-        power: 75,
-        energy: 36,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        bomb: true,
-        secondaryEffect: true
-    },
-
-    paintShower: {
-        name: "Paint Shower",
-        power: 100,
-        energy: 54,
-        accuracy: 100,
-        type: "Toxic",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    plunge: {
-        name: "Plunge",
-        power: 90,
-        energy: 40,
-        accuracy: 100,
-        type: "Water",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    waveWrecker: {
-        name: "Wave Wrecker",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Water",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    jetStream: {
-        name: "Jet Stream",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Air",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    tempest: {
-        name: "Tempest",
-        power: -1,
-        energy: 40,
-        accuracy: 100,
-        type: "Air",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    typhoon: {
-        name: "Typhoon",
-        power: 110,
-        energy: 60,
-        accuracy: 80,
-        type: "Air",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        aoe: true
-    },
-
-    counterStance: {
-        name: "Counter Stance",
-        power: 70,
-        energy: 40,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    clawber: {
-        name: "Clawber",
-        power: 100,
-        energy: 55,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        recoil: 1/3
-    },
-
-    bludgeon: {
-        name: "Bludgeon",
-        power: 65,
-        energy: 36,
-        accuracy: 90,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        secondaryEffect: true
-    },
-
-    swat: {
-        name: "Swat",
+        recoil: 1/2
+	},
+	
+	devitalize: {
+        name: "Devitalize",
         power: 45,
-        energy: 32,
         accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    preemptiveStrike: {
-        name: "Preemptive Strike",
-        power: 40,
-        energy: 25,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        priority: true,
-        secondaryEffect: true
-    },
-
-    hornDashi: {
-        name: "Horn-Dashi",
-        power: 60,
-        energy: 40,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    blindspotBatter: {
-        name: "Blindspot Batter",
-        power: 75,
-        energy: 38,
-        accuracy: 100,
-        type: "Light",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    radiantRush: {
-        name: "Radiant Rush",
-        power: 100,
-        energy: 50,
+        type: "Nature",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		drain: 1/2
+	},
+	
+	bloomBomb: {
+        name: "Bloom Bomb",
+        power: 65,
+        accuracy: 95,
+        type: "Nature",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		aoe: true,
+		bomb:true
+	},
+	
+	twiningRoots: {
+        name: "Twining Roots",
+        power: 80,
         accuracy: 90,
-        type: "Light",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    solarPunch: {
-        name: "Solar Punch",
-        power: 100,
-        energy: 50,
-        accuracy: 100,
-        type: "Light",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    hyperSting: {
-        name: "Hyper Sting",
-        power: 90,
-        energy: 55,
-        accuracy: 100,
-        type: "Light",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-    },
-
-    splittingHeadache: {
-        name: "Splitting Headache",
-        power: 60,
-        energy: 40,
-        accuracy: 100,
-        type: "Mind",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    mudslide: {
-        name: "Mudslide",
-        power: 70,
-        energy: 40,
-        accuracy: 100,
-        type: "Earth",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
-    },
-
-    dazzlingBarrage: {
-        name: "Dazzling Barrage",
-        power: 25,
-        energy: 25,
-        accuracy: 100,
-        type: "Light",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        hits: 5
-    },
-
-    stratagem: {
-        name: "Stratagem",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Mind",
-        mr: "Ranged",
-        mr1: "Ranged Defense",
-        mr2: "Ranged Defense"
-    },
-
-    pepJab: {
-        name: "Pep Jab",
-        power: 80,
-        energy: 55,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        punch: true,
-        regen: 1/5
-    },
-
-    vitalJab: {
-        name: "Vital Jab",
-        power: 80,
-        energy: 55,
-        accuracy: 100,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-        punch: true,
-        drain: 1/2
-    },
-
-    powerDraw: {
-        name: "Power Draw",
-        power: 80,
-        energy: 55,
-        accuracy: 100,
-        type: "Electric",
+        type: "Nature",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        regen: 1/5
-    },
-
-    powerSurge: {
-        name: "Power Surge",
+		dance: true
+	},
+	
+	naturePower: {
+        name: "Nature Power",
         power: 80,
-        energy: 50,
         accuracy: 100,
-        type: "Electric",
+        type: "Nature",
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-        aoe: true,
-        secondaryEffect: true
-    },
-
-    megaKick: {
-        name: "Mega Kick",
-        power: 90,
-        energy: 45,
+		bomb:true
+	},
+	
+	seedBurst: {
+        name: "Seed Burst",
+        power: 110,
+        accuracy: 85,
+        type: "Nature",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		bomb:true
+	},
+	
+	reclaim: {
+        name: "Reclaim",
+        power: 120,
         accuracy: 90,
-        type: "Brawler",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true
-    },
-
-    highPitchScreech: {
-        name: "High-Pitch Screech",
-        power: 80,
-        energy: 40,
-        accuracy: 100,
-        type: "Simple",
+        type: "Nature",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        sound: true,
-        secondaryEffect: true
-    },
-
-    spitOut: {
-        name: "Spit Out",
-        power: 90,
-        energy: 50,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-    spit: {
-        name: "Spit",
-        power: 50,
-        energy: 25,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        secondaryEffect: true
-    },
-
-    jolt: {
-        name: "Jolt",
-        power: 40,
-        energy: 25,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-        priority: true
-    },
-
-    zipZap: {
-        name: "Zip-Zap",
-        power: 70,
-        energy: 50,
-        accuracy: 100,
-        type: "Electric",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-
-
-
-    //Support Moves -----------------------------------------------------------------------------------------------------------------------------------------
-
-    noMove: {
+        mr2: "Ranged Defense"
+	},
+	
+	noMove: {
         name: "(No Move)",
         power: 0,
         energy: 0,
         accuracy: 100,
-        type: "Simple",
+        type: "Basic",
         mr: "Support"
     },
-
-    accelerate: {
-        name: "Accelerate",
-        power: 0,
-        energy: 25,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support"
-    },
-
-    daydream: {
-        name: "Daydream",
-        power: 0,
-        energy: 0,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support"
-    },
-
-    summon: {
-        name: "Summon",
-        power: 0,
-        energy: 25,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support"
-    },
-
-    aim: {
-        name: "Aim",
-        power: 0,
-        energy: 10,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    ancientRoar: {
-        name: "Ancient Roar",
-        power: 0,
-        energy: 50,
-        accuracy: 100,
-        type: "Ancient",
-        mr: "Support",
-        sound: true
-    },
-
-    brace: {
-        name: "Brace",
-        power: 0,
-        energy: 15,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    burrow: {
-        name: "Burrow",
-        power: 0,
-        energy: 15,
-        accuracy: "N/A",
-        type: "Earth",
-        mr: "Support"
-    },
-
-    tamp: {
-        name: "Tamp",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Earth",
-        mr: "Support"
-    },
-
-    charade: {
-        name: "Charade",
-        power: 0,
-        energy: 25,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Support"
-    },
-
-    dawdle: {
-        name: "Dawdle",
-        power: 0,
-        energy: 10,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support"
-    },
-
-    disperse: {
-        name: "Disperse",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Light",
-        mr: "Support"
-    },
-
-    flash: {
-        name: "Flash",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Light",
-        mr: "Support"
-    },
-
-    dodge: {
-        name: "Dodge",
-        power: 0,
-        energy: 20,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    recycle: {
-        name: "Recycle",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    eerieStare: {
-        name: "Eerie Stare",
-        power: 0,
-        energy: 25,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support"
-    },
-
-    energize: {
-        name: "Energize",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Electric",
-        mr: "Support"
-    },
-
-    thunderstorm: {
-        name: "Thunderstorm",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Electric",
-        mr: "Support"
-    },
-
-    examine: {
-        name: "Examine",
-        power: 0,
-        energy: 15,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    finalRuse: {
-        name: "Final Ruse",
-        power: 0,
-        energy: 40,
-        accuracy: "N/A",
-        type: "Spirit",
-        mr: "Support"
-    },
-
-    growl: {
-        name: "Growl",
-        power: 0,
-        energy: 10,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support",
-        sound: true
-    },
-
-    icicleTrap: {
-        name: "Icicle Trap",
-        power: 0,
-        energy: 45,
-        accuracy: "N/A",
-        type: "Ice",
-        mr: "Support"
-    },
-
-    mindsEye: {
-        name: "Mind's Eye",
-        power: 0,
-        energy: 15,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    peaceOfMind: {
-        name: "Peace Of Mind",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    brainExercise: {
-        name: "Brain Exercise",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    perch: {
-        name: "Perch",
-        power: 0,
-        energy: 72,
-        accuracy: "N/A",
-        type: "Air",
-        mr: "Support"
-    },
-
-    gust: {
-        name: "Gust",
-        power: 0,
-        energy: 25,
-        accuracy: 100,
-        type: "Air",
-        mr: "Support"
-    },
-
-    ruffledFeathers: {
-        name: "Ruffled Feathers",
-        power: 0,
-        energy: 35,
-        accuracy: "N/A",
-        type: "Air",
-        mr: "Support"
-    },
-
-    barbTrap: {
-        name: "Barb Trap",
-        power: 0,
-        energy: 35,
-        accuracy: "N/A",
-        type: "Toxic",
-        mr: "Support"
-    },
-
-    poison: {
-        name: "Poison",
-        power: 0,
-        energy: 25,
-        accuracy: 90,
-        type: "Toxic",
-        mr: "Support"
-    },
-
-    poisonBarbs: {
-        name: "Poison Barbs",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Toxic",
-        mr: "Support"
-    },
-
-    powerFocus: {
-        name: "Power Focus",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    provoke: {
-        name: "Provoke",
-        power: 0,
-        energy: 25,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Support"
-    },
-
-    revival: {
-        name: "Revival",
-        power: 0,
-        energy: 72,
-        accuracy: "N/A",
-        type: "Spirit",
-        mr: "Support"
-    },
-
-    sapPlant: {
-        name: "Sap Plant",
-        power: 0,
-        energy: 35,
-        accuracy: 90,
-        type: "Plant",
-        mr: "Support"
-    },
-
-    scapeGoat: {
-        name: "Scapegoat",
-        power: 0,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support",
-        contact: true
-    },
-
-    sharpen: {
-        name: "Sharpen",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Dark",
-        mr: "Support"
-    },
-
-    snoreSpores: {
-        name: "Snore Spores",
-        power: 0,
-        energy: 40,
-        accuracy: 75,
-        type: "Plant",
-        mr: "Support"
-    },
-
-    softWater: {
-        name: "Soft Water",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Water",
-        mr: "Support"
-    },
-
-    squawk: {
-        name: "Squawk",
-        power: 0,
-        energy: 10,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support",
-        sound: true
-    },
-
-    stare: {
-        name: "Stare",
-        power: 0,
-        energy: 10,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support"
-    },
-
-    battleChime: {
-        name: "Battle Chime",
-        power: 0,
-        energy: 50,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support"
-    },
-
-    staticSpores: {
-        name: "Static Spores",
-        power: 0,
-        energy: 25,
-        accuracy: 75,
-        type: "Plant",
-        mr: "Support"
-    },
-
-    stretch: {
-        name: "Stretch",
-        power: 0,
-        energy: 15,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    takeRoot: {
-        name: "Take Root",
-        power: 0,
-        energy: 40,
-        accuracy: "N/A",
-        type: "Plant",
-        mr: "Support"
-    },
-
-    tease: {
-        name: "Tease",
-        power: 0,
-        energy: 20,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Support"
-    },
-
-    toxicSpores: {
-        name: "Toxic Spores",
-        power: 0,
-        energy: 25,
-        accuracy: 75,
-        type: "Toxic",
-        mr: "Support"
-    },
-
-    webShot: {
-        name: "Web Shot",
-        power: 0,
-        energy: 10,
-        accuracy: 90,
-        type: "Bug",
-        mr: "Support"
-    },
-
-    magmaBlock: {
-        name: "Magma Block",
-        power: 0,
-        energy: 30,
-        accuracy: "N/A",
-        type: "Fire",
-        mr: "Support"
-    },
-
-    wonderHerb: {
-        name: "Wonder Herb",
-        power: 0,
-        energy: 45,
-        accuracy: "N/A",
-        type: "Plant",
-        mr: "Support"
-    },
-
-    photosynthesis: {
-        name: "Photosynthesis",
-        power: 0,
-        energy: 72,
-        accuracy: "N/A",
-        type: "Plant",
-        mr: "Support"
-    },
-
-    healthGift: {
-        name: "Health Gift",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    energyGift: {
-        name: "Energy Gift",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    briarBlock: {
-        name: "Briar Block",
-        power: 0,
-        energy: 30,
-        accuracy: "N/A",
-        type: "Plant",
-        mr: "Support"
-    },
-
-    beastSlumber: {
-        name: "Beast's Slumber",
-        power: 0,
-        energy: 65,
-        accuracy: "N/A",
-        type: "Ancient",
-        mr: "Support"
-    },
-
-    burnUp: {
-        name: "Burn Up",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Fire",
-        mr: "Support"
-    },
-
-    ragingFlame: {
-        name: "Raging Flame",
-        power: 0,
-        energy: 35,
-        accuracy: 90,
-        type: "Fire",
-        mr: "Support"
-    },
-
-    battleHorn: {
-        name: "Battle Horn",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support",
-        sound: true
-    },
-
-    toneBarrier: {
-        name: "Tone Barrier",
-        power: 0,
-        energy: 20,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support",
-        sound: true
-    },
-
-    impersonate: {
-        name: "Impersonate",
-        power: 0,
-        energy: 45,
-        accuracy: "N/A",
-        type: "Spirit",
-        mr: "Support"
-    },
-
-    gainDrain: {
-        name: "Gain Drain",
-        power: 0,
-        energy: 45,
-        accuracy: "N/A",
-        type: "Dark",
-        mr: "Support"
-    },
-
-    magnify: {
-        name: "Magnify",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Light",
-        mr: "Support"
-    },
-
-    memorize: {
-        name: "Memorize",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    baneOfHaste: {
-        name: "Bane of Haste",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Ancient",
-        mr: "Support"
-    },
-
-    hypnotize: {
-        name: "Hypnotize",
-        power: 0,
-        energy: 40,
-        accuracy: 75,
-        type: "Mind",
-        mr: "Support"
-    },
-    
-    rejuvenate: {
-        name: "Rejuvenate",
-        power: 0,
-        energy: 72,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    metalShriek: {
-        name: "Metal Shriek",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Metal",
-        mr: "Support"
-    },
-
-    oilLeak: {
-        name: "Oil Leak",
-        power: 0,
-        energy: 10,
-        accuracy: "N/A",
-        type: "Toxic",
-        mr: "Support"
-    },
-
-    secondWind: {
-        name: "Second Wind",
-        power: 0,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Air",
-        mr: "Support"
-    },
-
-    tuneUp: {
-        name: "Tune-up",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Metal",
-        mr: "Support"
-    },
-
-    augment: {
-        name: "Augment",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Ancient",
-        mr: "Support"
-    },
-    
-    jumpStart: {
-        name: "Jump Start",
-        power: 0,
-        energy: 40,
-        accuracy: "N/A",
-        type: "Electric",
-        mr: "Support"
-    },
-    
-    barter: {
-        name: "Barter",
-        power: 0,
-        energy: 50,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support"
-    },
-
-    conclusion: {
-        name: "Conclusion",
-        power: 0,
-        energy: 40,
-        accuracy: 100,
-        type: "Simple",
-        mr: "Support",
-        sound: true
-    },
-
-    brawnBoost: {
-        name: "Brawn Boost",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Brawler",
-        mr: "Support"
-    },
-
-    molt: {
-        name: "Molt",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Bug",
-        mr: "Support"
-    },
-
-    baffle: {
-        name: "Baffle",
-        power: 0,
-        energy: 50,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Support"
-    },
-
-    phoenixFlame: {
-        name: "Phoenix Flame",
-        power: 0,
-        energy: 0,
-        accuracy: "N/A",
-        type: "Fire",
-        mr: "Support"
-    },
-
-    heatWave: {
-        name: "Heat Wave",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Fire",
-        mr: "Support"
-    },
-
-    squareOne: {
-        name: "Square One",
-        power: 0,
-        energy: 40,
-        accuracy: "N/A",
-        type: "Dark",
-        mr: "Support"
-    },
-
-    bulkUp: {
-        name: "Bulk Up",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Brawler",
-        mr: "Support"
-    },
-
-    shadowbox: {
-        name: "Shadowbox",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Brawler",
-        mr: "Support"
-    },
-
-
-    talentTrade: {
-        name: "Talent Trade",
-        power: 0,
-        energy: 40,
-        accuracy: "N/A",
-        type: "Dark",
-        mr: "Support"
-    },
-
-    bait: {
-        name: "Bait",
-        power: 0,
-        energy: 30,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    enamor: {
-        name: "Enamor",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    bequeath: {
-        name: "Bequeath",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    dejaVu: {
-        name: "Deja Vu",
-        power: 0,
-        energy: 30,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    dissipate: {
-        name: "Dissipate",
-        power: 0,
-        energy: 30,
-        accuracy: "N/A",
-        type: "Mind",
-        mr: "Support"
-    },
-
-    nearEnchantment: {
-        name: "Near Enchantment",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Ancient",
-        mr: "Support"
-    },
-
-    farEnchantment: {
-        name: "Far Enchantment",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Ancient",
-        mr: "Support"
-    },
-
-    fungusCurse: {
-        name: "Fungus Curse",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Plant",
-        mr: "Support"
-    },
-
-    steelTrap: {
-        name: "Steel Trap",
-        power: 0,
-        energy: 35,
-        accuracy: 95,
-        type: "Metal",
-        mr: "Support"
-    },
-
-    slumber: {
-        name: "Slumber",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    teamwork: {
-        name: "Teamwork",
-        power: 0,
-        energy: 20,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    buckUp: {
-        name: "Buck Up",
-        power: 0,
-        energy: 20,
-        accuracy: "N/A",
-        type: "Brawler",
-        mr: "Support"
-    },
-
-    bagOfTricks: {
-        name: "Bag of Tricks",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Ancient",
-        mr: "Support"
-    },
-
-    harvest: {
-        name: "Harvest",
-        power: 0,
-        energy: 72,
-        accuracy: "N/A",
-        type: "Plant",
-        mr: "Support"
-    },
-
-    barbs: {
-        name: "Barbs",
-        power: 0,
-        energy: 20,
-        accuracy: "N/A",
-        type: "Metal",
-        mr: "Support"
-    },
-
-    armorDown: {
-        name: "Armor Down",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Metal",
-        mr: "Support"
-    },
-
-    tearDown: {
-        name: "Tear Down",
-        power: 0,
-        energy: 45,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    drudge: {
-        name: "Drudge",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    tribute: {
-        name: "Tribute",
-        power: 0,
-        energy: 50,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    empathize: {
-        name: "Empathize",
-        power: 0,
-        energy: 40,
-        accuracy: "N/A",
-        type: "Simple",
-        mr: "Support"
-    },
-
-    emulate: {
-        name: "Emulate",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Spirit",
-        mr: "Support"
-    },
-
-    hazyShroud: {
-        name: "Hazy Shroud",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Spirit",
-        mr: "Support"
-    },
-
-    downpour: {
-        name: "Downpour",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Water",
-        mr: "Support"
-    },
-
-    galeForce: {
-        name: "Gale Force",
-        power: 0,
-        energy: 25,
-        accuracy: "N/A",
-        type: "Air",
-        mr: "Support"
-    },
-
-    spite: {
-        name: "Spite",
-        power: 0,
-        energy: 40,
-        accuracy: 90,
-        type: "Dark",
-        mr: "Support"
-    },
-
-};
-
-
+	
+	};
 var types = {
     basic: {
         weaknesses: ["martial"],
