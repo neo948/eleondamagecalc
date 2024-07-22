@@ -121,25 +121,12 @@ let moveFourSnowball2 = document.getElementById("moveFourSnowball2");
 let repeating1 = document.getElementById("repeating1");
 let repeating2 = document.getElementById("repeating2");
 
-let soulMove1;
-let soulMove2;
-let soulMovePower1;
-let soulMovePower2;
-let soulMoveType1;
-let soulMoveType2;
-let soulMoveMR1;
-let soulMoveMR2;
-
 let abilityBPDropdown = document.getElementById("abilityBPDropdown");
 let itemBP = document.getElementById("itemBP");
 let moveBPDropdown = document.getElementById("moveBPDropdown");
 let moveBPDropdown2 = document.getElementById("moveBPDropdown2");
 let moveBPDropdown3 = document.getElementById("moveBPDropdown3");
 let moveBPDropdown4 = document.getElementById("moveBPDropdown4");
-let moveBPEnergy = document.getElementById("moveBPEnergy");
-let moveBPEnergy2 = document.getElementById("moveBPEnergy2");
-let moveBPEnergy3 = document.getElementById("moveBPEnergy3");
-let moveBPEnergy4 = document.getElementById("moveBPEnergy4");
 let moveBPTimes = document.getElementById("moveBPTimes");
 let moveBPTimes2 = document.getElementById("moveBPTimes2");
 let moveBPTimes3 = document.getElementById("moveBPTimes3");
@@ -148,8 +135,6 @@ let moveBPResult = document.getElementById("moveBPResult");
 
 let baseHP1 = document.getElementById("baseHP1");
 let baseHP2 = document.getElementById("baseHP2");
-let baseEnergy1 = document.getElementById("baseEnergy1");
-let baseEnergy2 = document.getElementById("baseEnergy2");
 let baseAtk1 = document.getElementById("baseAtk1");
 let baseAtk2 = document.getElementById("baseAtk2");
 let baseDef1 = document.getElementById("baseDef1");
@@ -163,8 +148,6 @@ let baseSpd2 = document.getElementById("baseSpd2");
 
 let hpEV1 = document.getElementById("HPEV1");
 let hpIV1 = document.getElementById("HPIV1");
-let energyEV1 = document.getElementById("energyEV1");
-let energyIV1 = document.getElementById("energyIV1");
 let atkEV1 = document.getElementById("atkEV1");
 let atkIV1 = document.getElementById("atkIV1");
 let defEV1 = document.getElementById("defEV1");
@@ -178,8 +161,6 @@ let spdIV1 = document.getElementById("spdIV1");
 
 let hpEV2 = document.getElementById("HPEV2");
 let hpIV2 = document.getElementById("HPIV2");
-let energyEV2 = document.getElementById("energyEV2");
-let energyIV2 = document.getElementById("energyIV2");
 let atkEV2 = document.getElementById("atkEV2");
 let atkIV2 = document.getElementById("atkIV2");
 let defEV2 = document.getElementById("defEV2");
@@ -193,8 +174,6 @@ let spdIV2 = document.getElementById("spdIV2");
 
 let statHP1 = document.getElementById("statHP1");
 let statHP2 = document.getElementById("statHP2");
-let statEnergy1 = document.getElementById("statEnergy1");
-let statEnergy2 = document.getElementById("statEnergy2");
 let statAtk1 = document.getElementById("statAtk1");
 let statAtk2 = document.getElementById("statAtk2");
 let statDef1 = document.getElementById("statDef1");
@@ -231,14 +210,6 @@ let fog = document.getElementById("fog");
 let heat = document.getElementById("heat");
 let storm = document.getElementById("storm");
 
-let iceTrap1 = document.getElementById("iceTrap1");
-let iceTrap2 = document.getElementById("iceTrap2");
-
-let halfIce1 = document.getElementById("halfIce1");
-let halfStyle1 = document.getElementById("halfStyle1");
-let halfIce2 = document.getElementById("halfIce2");
-let halfStyle2 = document.getElementById("halfStyle2");
-
 let leftBarb0 = document.getElementById("leftBarb0");
 let leftBarb1 = document.getElementById("leftBarb1");
 let leftBarb2 = document.getElementById("leftBarb2");
@@ -274,39 +245,11 @@ let item2 = document.getElementById("item2");
 let sapPlant1 = document.getElementById("sapPlant1");
 let sapPlant2 = document.getElementById("sapPlant2");
 
-let pestilence1 = document.getElementById("pestilence1");
-let pestilence2 = document.getElementById("pestilence2");
-
-let quicksand1 = document.getElementById("quicksand1");
-let quicksand2 = document.getElementById("quicksand2");
-
-let buzzolen1 = document.getElementById("buzzolen1");
-let buzzolen2 = document.getElementById("buzzolen2");
-
-let hellstorm1 = document.getElementById("hellstorm1");
-let hellstorm2 = document.getElementById("hellstorm2");
-
-let bloodDrain1 = document.getElementById("bloodDrain1");
-let bloodDrain2 = document.getElementById("bloodDrain2");
-
 let softWater1 = document.getElementById("softWater1");
 let softWater2 = document.getElementById("softWater2");
 
 let teamwork1 = document.getElementById("teamwork1");
 let teamwork2 = document.getElementById("teamwork2");
-
-let dusk1 = document.getElementById("dusk1");
-let dusk2 = document.getElementById("dusk2");
-
-let dawn1 = document.getElementById("dawn1");
-let dawn2 = document.getElementById("dawn2");
-
-let guardian1 = document.getElementById("guardian1");
-let guardian2 = document.getElementById("guardian2");
-
-let motivational1 = document.getElementById("motivational1");
-let motivational2 = document.getElementById("motivational2");
-let motivational3 = document.getElementById("motivational3");
 
 let tagTeam1 = document.getElementById("tagTeam1");
 let tagTeam2 = document.getElementById("tagTeam2");
@@ -320,25 +263,13 @@ let totalHP2 = document.getElementById("totalHP2");
 let percentHP1 = document.getElementById("percentHP1");
 let percentHP2 = document.getElementById("percentHP2");
 
-let currentNRG1 = document.getElementById("currentNRG1");
-let currentNRG2 = document.getElementById("currentNRG2");
-
-let totalNRG1 = document.getElementById("totalNRG1");
-let totalNRG2 = document.getElementById("totalNRG2");
-
-let percentNRG1 = document.getElementById("percentNRG1");
-let percentNRG2 = document.getElementById("percentNRG2");
-
 let singleDouble = document.getElementById("singleDouble");
 let levelCheck = document.getElementById("levelCheck");
 let gsbCheck = document.getElementById("gsbCheck");
 
-let energyRegen1 = document.getElementById("energyRegen1");
-let energyRegen2 = document.getElementById("energyRegen2");
 
 let firstLoomian;
 let hp1;
-let energy1;
 let atk1;
 let def1;
 let atkR1;
@@ -479,8 +410,6 @@ function load() {
 
     currentHP1.addEventListener("keyup", updatePercent);
     currentHP2.addEventListener("keyup", updatePercent);
-    currentNRG1.addEventListener("keyup", updatePercent);
-    currentNRG2.addEventListener("keyup", updatePercent);
 
     percentHP1.addEventListener("keyup", updateNumber);
     percentHP2.addEventListener("keyup", updateNumber);
@@ -489,18 +418,14 @@ function load() {
 
     currentHP1.addEventListener("change", update);
     currentHP2.addEventListener("change", update);
-    currentNRG1.addEventListener("change", update);
-    currentNRG2.addEventListener("change", update);
-
+    
     percentHP1.addEventListener("change", update);
     percentHP2.addEventListener("change", update);
-    percentNRG1.addEventListener("change", update);
-    percentNRG2.addEventListener("change", update);
+  
 
     currentHP1.value = hp1;
     currentHP2.value = hp2;
-    currentNRG1.value = energy1;
-    currentNRG2.value = energy2;
+  
     updatePercent();
     update();
 }
@@ -621,19 +546,14 @@ function update(updatePower = false, updateBaseStats = false) {
 
     totalHP1.innerHTML = hp1;
     totalHP2.innerHTML = hp2;
-    totalNRG1.innerHTML = energy1;
-    totalNRG2.innerHTML = energy2;
-
+    
     currentHP1.max = hp1;
     currentHP2.max = hp2;
-    currentNRG1.max = energy1;
-    currentNRG2.max = energy2;
+   
 
     (currentHP1.value > hp1 ? currentHP1.value = hp1 : null);
     (currentHP2.value > hp2 ? currentHP2.value = hp2 : null);
-    (currentNRG1.value > energy1 ? currentNRG1.value = energy1 : null);
-    (currentNRG2.value > energy2 ? currentNRG2.value = energy2 : null);
-
+   
     loadMoves(updatePower);
     detailedReport();
 
@@ -761,31 +681,6 @@ function updateLevel() {
     update();
 }
 
-function changeButton(button) {
-    if (button == halfIce1) {
-        if (iceTrap1.checked) {
-            iceTrap1.checked = false;
-            halfIce1.checked = true;
-        }
-    } else if (button == halfIce2) {
-        if (iceTrap2.checked) {
-            iceTrap2.checked = false;
-            halfIce2.checked = true;
-        }
-    } else if (button == iceTrap1) {
-        if (halfIce1.checked) {
-            iceTrap1.checked = true;
-            halfIce1.checked = false;
-        }
-    } else if (button == iceTrap2) {
-        if (halfIce2.checked) {
-            iceTrap2.checked = true;
-            halfIce2.checked = false;
-        }    
-    }
-    update();
-}
-
 function importSets() {
     let importedSets;
     let newSets = [];
@@ -818,7 +713,7 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         let veryNat1 = document.getElementById("veryNat1");
 
         hpEV1.value = set1.evs.hp;
-        energyEV1.value = set1.evs.energy;
+
         atkEV1.value = set1.evs.attack;
         defEV1.value = set1.evs.defense;
         atkREV1.value = set1.evs.attackR;
@@ -826,7 +721,6 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         spdEV1.value = set1.evs.speed;
 
         hpIV1.value = set1.ivs.hp;
-        energyIV1.value = set1.ivs.energy;
         atkIV1.value = set1.ivs.attack;
         defIV1.value = set1.ivs.defense;
         atkRIV1.value = set1.ivs.attackR;
@@ -867,7 +761,6 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         }
 
         baseHP1.value = firstLoom.baseStats.hp;
-        baseEnergy1.value = firstLoom.baseStats.energy;
         baseAtk1.value = firstLoom.baseStats.attack;
         baseDef1.value = firstLoom.baseStats.defense;
         baseAtkR1.value = firstLoom.baseStats.attackR;
@@ -893,7 +786,6 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         let veryNat2 = document.getElementById("veryNat2");
 
         hpEV2.value = set2.evs.hp;
-        energyEV2.value = set2.evs.energy;
         atkEV2.value = set2.evs.attack;
         defEV2.value = set2.evs.defense;
         atkREV2.value = set2.evs.attackR;
@@ -901,7 +793,6 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         spdEV2.value = set2.evs.speed;
 
         hpIV2.value = set2.ivs.hp;
-        energyIV2.value = set2.ivs.energy;
         atkIV2.value = set2.ivs.attack;
         defIV2.value = set2.ivs.defense;
         atkRIV2.value = set2.ivs.attackR;
@@ -942,7 +833,6 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         }
 
         baseHP2.value = secondLoom.baseStats.hp;
-        baseEnergy2.value = secondLoom.baseStats.energy;
         baseAtk2.value = secondLoom.baseStats.attack;
         baseDef2.value = secondLoom.baseStats.defense;
         baseAtkR2.value = secondLoom.baseStats.attackR;
@@ -950,7 +840,6 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         baseSpd2.value = secondLoom.baseStats.speed;
         if (gsbCheck.checked && secondLoom.gsbStats) {
             baseHP2.value = secondLoom.gsbStats.hp;
-            baseEnergy2.value = secondLoom.gsbStats.energy;
             baseAtk2.value = secondLoom.gsbStats.attack;
             baseDef2.value = secondLoom.gsbStats.defense;
             baseAtkR2.value = secondLoom.gsbStats.attackR;
@@ -1005,9 +894,8 @@ function makeBlankSet(loomian) {
     let set = {
         name: loomian,
         setName: "Blank Set",
-        evs: {
+        tvs: {
             hp: 0,
-            energy: 0,
             attack: 0,
             defense: 0,
             attackR: 0,
@@ -1016,7 +904,6 @@ function makeBlankSet(loomian) {
         },
         ivs: {
             hp: 40,
-            energy: 40,
             attack: 40,
             defense: 40,
             attackR: 40,
@@ -1029,12 +916,10 @@ function makeBlankSet(loomian) {
             move3: "(No Move)",
             move4: "(No Move)"
         },
-        posNature: "none",
-        negNature: "none",
-        veryNature: "none",
+        skill: "none",
         ability: "None",
         item: "None",
-        level: 50
+        level: 100
     }
     return set;
 }
@@ -1042,14 +927,10 @@ function makeBlankSet(loomian) {
 function updateHealthBar() {
     let hpBar1 = document.getElementById("hpBar1");
     let hpBar2 = document.getElementById("hpBar2");
-    let nrgBar1 = document.getElementById("nrgBar1");
-    let nrgBar2 = document.getElementById("nrgBar2");
-
+  
     let percent1 = parseInt(percentHP1.value);
     let percent2 = parseInt(percentHP2.value);
-    let nrgPercent1 = parseInt(percentNRG1.value);
-    let nrgPercent2 = parseInt(percentNRG2.value);
-
+   
     if (percent1 > 50) {
         hpBar1.style = "background: linear-gradient(to right, green " + percent1 + "%, white 0%);";
         hpBar1.classList.remove(hpBar1.classList[hpBar1.classList.length - 1]);
@@ -1090,10 +971,6 @@ function updatePercent() {
     percentHP2.value = Math.floor(currentHP2.value / totalHP2.innerHTML * 100);
     if (totalNRG1.innerHTML == 0) {
         percentNRG1.value = 0;
-    } else percentNRG1.value = Math.floor(currentNRG1.value / totalNRG1.innerHTML * 100);
-    if (totalNRG2.innerHTML == 0) {
-        percentNRG2.value = 0;
-    } else percentNRG2.value = Math.floor(currentNRG2.value / totalNRG2.innerHTML * 100);
 
     updateHealthBar();
 }
@@ -1101,9 +978,7 @@ function updatePercent() {
 function updateNumber() {
     currentHP1.value = Math.ceil(totalHP1.innerHTML * percentHP1.value / 100);
     currentHP2.value = Math.ceil(totalHP2.innerHTML * percentHP2.value / 100);
-    currentNRG1.value = Math.ceil(totalNRG1.innerHTML * percentNRG1.value / 100);
-    currentNRG2.value = Math.ceil(totalNRG2.innerHTML * percentNRG2.value / 100);
-
+  
     updateHealthBar();
 }
 
@@ -1117,7 +992,6 @@ function loadBaseStats(side) {
     
     if (side == 1 || side == undefined) {
         baseHP1.value = firstLoom.baseStats.hp;
-        baseEnergy1.value = firstLoom.baseStats.energy;
         baseAtk1.value = firstLoom.baseStats.attack;
         baseDef1.value = firstLoom.baseStats.defense;
         baseAtkR1.value = firstLoom.baseStats.attackR;
@@ -1131,7 +1005,6 @@ function loadBaseStats(side) {
         }
         if (gsbCheck.checked && firstLoom.gsbStats) {
             baseHP1.value = firstLoom.gsbStats.hp;
-            baseEnergy1.value = firstLoom.gsbStats.energy;
             baseAtk1.value = firstLoom.gsbStats.attack;
             baseDef1.value = firstLoom.gsbStats.defense;
             baseAtkR1.value = firstLoom.gsbStats.attackR;
@@ -1147,7 +1020,6 @@ function loadBaseStats(side) {
     }
     if (side == 2 || side == undefined) {
         baseHP2.value = secondLoom.baseStats.hp;
-        baseEnergy2.value = secondLoom.baseStats.energy;
         baseAtk2.value = secondLoom.baseStats.attack;
         baseDef2.value = secondLoom.baseStats.defense;
         baseAtkR2.value = secondLoom.baseStats.attackR;
@@ -1161,7 +1033,6 @@ function loadBaseStats(side) {
         }
         if (gsbCheck.checked && secondLoom.gsbStats) {
             baseHP2.value = secondLoom.gsbStats.hp;
-            baseEnergy2.value = secondLoom.gsbStats.energy;
             baseAtk2.value = secondLoom.gsbStats.attack;
             baseDef2.value = secondLoom.gsbStats.defense;
             baseAtkR2.value = secondLoom.gsbStats.attackR;
@@ -1196,38 +1067,6 @@ function loadMoves(updatePower = false) {
     let moveBreakpoint3 = findMove(moveBPDropdown3.value);
     let moveBreakpoint4 = findMove(moveBPDropdown4.value);
 
-    if (firstSoul) {
-        soulMove1 = findMove(firstSoul);
-        soulMoveLbl1.style.display = "inline-block";
-        soulMoveDmg1.style.display = "inline";
-    } else {
-        soulMove1 = findMove("(No Move)");
-        soulMoveLbl1.style.display = "none";
-        soulMoveDmg1.style.display = "none";
-    }
-    if (secondSoul) {
-        soulMove2 = findMove(secondSoul);
-        soulMoveLbl2.style.display = "inline-block";
-        soulMoveDmg2.style.display = "inline";
-    } else {
-        soulMove2 = findMove("(No Move)");
-        soulMoveLbl2.style.display = "none";
-        soulMoveDmg2.style.display = "none";
-    }
-
-    if (updatePower) {
-        moveOnePower1.value = moveOne1.power;
-        moveTwoPower1.value = moveTwo1.power;
-        moveThreePower1.value = moveThree1.power;
-        moveFourPower1.value = moveFour1.power;
-        moveOnePower2.value = moveOne2.power;
-        moveTwoPower2.value = moveTwo2.power;
-        moveThreePower2.value = moveThree2.power;
-        moveFourPower2.value = moveFour2.power;
-        soulMovePower1 = soulMove1.power;
-        soulMovePower2 = soulMove2.power;
-    }
-
     moveOneType1.value = moveOne1.type;
     moveTwoType1.value = moveTwo1.type;
     moveThreeType1.value = moveThree1.type;
@@ -1239,33 +1078,7 @@ function loadMoves(updatePower = false) {
     soulMoveType1 = soulMove1.type;
     soulMoveType2 = soulMove2.type;
 
-    checkEnergy(moveOne1, moveTwo1, moveThree1, moveFour1, moveOne2, moveTwo2, moveThree2, moveFour2, moveBreakpoint, moveBreakpoint2, moveBreakpoint3, moveBreakpoint4);
-
-    moveOneMR1.value = moveOne1.mr;
-    moveTwoMR1.value = moveTwo1.mr;
-    moveThreeMR1.value = moveThree1.mr;
-    moveFourMR1.value = moveFour1.mr;
-    moveOneMR2.value = moveOne2.mr;
-    moveTwoMR2.value = moveTwo2.mr;
-    moveThreeMR2.value = moveThree2.mr;
-    moveFourMR2.value = moveFour2.mr;
-    soulMoveMR1 = soulMove1.mr;
-    soulMoveMR2 = soulMove2.mr;
-
-    moveOneLbl1.innerHTML = moveOne1.name;
-    moveTwoLbl1.innerHTML = moveTwo1.name;
-    moveThreeLbl1.innerHTML = moveThree1.name;
-    moveFourLbl1.innerHTML = moveFour1.name;
-    moveOneLbl2.innerHTML = moveOne2.name;
-    moveTwoLbl2.innerHTML = moveTwo2.name;
-    moveThreeLbl2.innerHTML = moveThree2.name;
-    moveFourLbl2.innerHTML = moveFour2.name;
-    soulMoveLbl1.innerHTML = soulMove1.name;
-    soulMoveLbl2.innerHTML = soulMove2.name;
-
-    calculateDamage(moveOne1, moveTwo1, moveThree1, moveFour1, moveOne2, moveTwo2, moveThree2, moveFour2, soulMove1, soulMove2);
-}
-
+    
 function loadStats() {
     let firstLoom = loomians[pokeDropdown1.value.toLowerCase()];
     let secondLoom = loomians[pokeDropdown2.value.toLowerCase()];
@@ -1274,19 +1087,10 @@ function loadStats() {
     let ability1 = abilities.find((x) => x == abilityDropdown1.value);
     let ability2 = abilities.find((x) => x == abilityDropdown2.value);
 
-    let posNat1 = document.getElementById("posNat1").value;
-    let negNat1 = document.getElementById("negNat1").value;
-    let posNat2 = document.getElementById("posNat2").value;
-    let negNat2 = document.getElementById("negNat2").value;
-    let veryNat1 = document.getElementById("veryNat1").value;
-    let veryNat2 = document.getElementById("veryNat2").value;
-    let wasMaxHP1 = (currentHP1.value == hp1 ? true : false);
-    let wasMaxHP2 = (currentHP2.value == hp2 ? true : false);
-    let wasMaxNRG1 = (currentNRG1.value == energy1 ? true : false);
-    let wasMaxNRG2 = (currentNRG2.value == energy2 ? true : false);
-
+    let skill = document.getElementById("skill").value;
+    let skill = document.getElementById("skill").value;
+    
     hp1 = calculateStat(baseHP1.value, hpIV1.value, hpEV1.value, level1.value, true, undefined, undefined, undefined, undefined);
-    energy1 = calculateStat(baseEnergy1.value, energyIV1.value, energyEV1.value, level1.value, undefined, posNat1, negNat1, veryNat1, undefined, undefined, true);
     atk1 = calculateStat(baseAtk1.value, atkIV1.value, atkEV1.value, level1.value, undefined, posNat1, negNat1, veryNat1, "AttackM");
     def1 = calculateStat(baseDef1.value, defIV1.value, defEV1.value, level1.value, undefined, posNat1, negNat1, veryNat1, "DefenseM");
     atkR1 = calculateStat(baseAtkR1.value, atkRIV1.value, atkREV1.value, level1.value, undefined, posNat1, negNat1, veryNat1, "AttackR");
@@ -1296,7 +1100,6 @@ function loadStats() {
     if (firstLoom.name == "Mistlebud" || firstLoom.name == "Hollibunch") atkR1 = 0;
 
     hp2 = calculateStat(baseHP2.value, hpIV2.value, hpEV2.value, level2.value, true, undefined, undefined, undefined, undefined);
-    energy2 = calculateStat(baseEnergy2.value, energyIV2.value, energyEV2.value, level2.value, undefined, posNat2, negNat2, veryNat2, undefined, undefined, true);
     atk2 = calculateStat(baseAtk2.value, atkIV2.value, atkEV2.value, level2.value, undefined, posNat2, negNat2, veryNat2, "AttackM");
     def2 = calculateStat(baseDef2.value, defIV2.value, defEV2.value, level2.value, undefined, posNat2, negNat2, veryNat2, "DefenseM");
     atkR2 = calculateStat(baseAtkR2.value, atkRIV2.value, atkREV2.value, level2.value, undefined, posNat2, negNat2, veryNat2, "AttackR");
@@ -1324,8 +1127,6 @@ function loadStats() {
 
     (wasMaxHP1 ? currentHP1.value = hp1 : null);
     (wasMaxHP2 ? currentHP2.value = hp2 : null);
-    (wasMaxNRG1 ? currentNRG1.value = energy1 : null);
-    (wasMaxNRG2 ? currentNRG2.value = energy2 : null);
     if (ability1 == "Festive Spirit") atkR1 = currentNRG1.value;
     if (ability2 == "Festive Spirit") atkR2 = currentNRG2.value;
     
@@ -1336,8 +1137,6 @@ function loadStats() {
     let multi = 1;
 
     statHP1.innerHTML = hp1;
-    statEnergy1.innerHTML = energy1;
-    energyRegen1.innerHTML = "(+" + Math.round(energy1 / 20) + ")";
     statAtk1.innerHTML = Math.floor(atk1 * multi);
     multi = 1;
     if (ability1 == "Trash Armor" || ability1 == "Hard Candy" || ability1 == "Safety Pot") multi *= 1.5;
@@ -1364,8 +1163,6 @@ function loadStats() {
     multi = 1;
 
     statHP2.innerHTML = hp2;
-    statEnergy2.innerHTML = energy2;
-    energyRegen2.innerHTML = "(+" + Math.round(energy2 / 20) + ")";
     statAtk2.innerHTML = Math.floor(atk2 * multi);
     multi = 1;
     if (ability2 == "Trash Armor" || ability2 == "Hard Candy" || ability2 == "Safety Pot") multi *= 1.5;
@@ -1392,144 +1189,37 @@ function loadStats() {
     multi = 1;
 }
 
-function calculateStat(base, IV, EV, level, isHP = false, posNat, negNat, veryNat, name, rest = false, isEnergy = false) {
-    let stat;
-
     IV = parseInt(IV);
     level = parseInt(level);
     if (isHP) {
         return Math.floor((2 * base + IV + Math.floor(EV / 4)) * level / 100) + level + 10;
     }
 
-    if (isEnergy) {
-        stat = Math.floor(Math.floor(2 * base + IV + Math.floor(EV / 4)) * (level == 5 ? 50 : level) / 65 + 80);
     }
     else {
         stat = Math.floor(Math.floor((2 * base + IV + Math.floor(EV / 4)) * level / 100 + 5));
     }
 
-    if (posNat == "brawny" && name == "AttackM") {
+    if (skill == "strong" && name == "AttackM") {
         stat = Math.floor(stat * 1.1);
     }
-    else if (posNat == "robust" && name == "DefenseM") {
+    else if (skill == "resilient " && name == "DefenseM") {
         stat = Math.floor(stat * 1.1);
     }
-    else if (posNat == "smart" && name == "AttackR") {
+    else if (posNat == "adept" && name == "AttackR") {
         stat = Math.floor(stat * 1.1);
     }
-    else if (posNat == "clever" && name == "DefenseR") {
+    else if (skill == "tenacious" && name == "DefenseR") {
         stat = Math.floor(stat * 1.1);
     }
-    else if (posNat == "nimble" && name == "Speed") {
+    else if (skill == "nimble" && name == "Speed") {
         stat = Math.floor(stat * 1.1);
-    }
-    else if (posNat == "hyper" && name == undefined) {
-        stat = Math.floor(stat * 1.1);
-    }
-    else if (posNat == "frail" && name == "AttackM") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (posNat == "tender" && name == "DefenseM") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (posNat == "clumsy" && name == "AttackR") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (posNat == "foolish" && name == "DefenseR") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (posNat == "sluggish" && name == "Speed") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (posNat == "dull" && name == undefined) {
-        stat = Math.floor(stat * 0.9);
-    }
-
-    if (negNat == "brawny" && name == "AttackM") {
-        stat = Math.floor(stat * 1.1);
-    }
-    else if (negNat == "robust" && name == "DefenseM") {
-        stat = Math.floor(stat * 1.1);
-    }
-    else if (negNat == "smart" && name == "AttackR") {
-        stat = Math.floor(stat * 1.1);
-    }
-    else if (negNat == "clever" && name == "DefenseR") {
-        stat = Math.floor(stat * 1.1);
-    }
-    else if (negNat == "nimble" && name == "Speed") {
-        stat = Math.floor(stat * 1.1);
-    }
-    else if (negNat == "hyper" && name == undefined) {
-        stat = Math.floor(stat * 1.1);
-    }
-    else if (negNat == "frail" && name == "AttackM") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (negNat == "tender" && name == "DefenseM") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (negNat == "clumsy" && name == "AttackR") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (negNat == "foolish" && name == "DefenseR") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (negNat == "sluggish" && name == "Speed") {
-        stat = Math.floor(stat * 0.9);
-    }
-    else if (negNat == "dull" && name == undefined) {
-        stat = Math.floor(stat * 0.9);
-    }
-
-    if (veryNat == "vBrawny" && name == "AttackM") {
-        stat = Math.floor(stat * 1.2);
-    }
-    else if (veryNat == "vRobust" && name == "DefenseM") {
-        stat = Math.floor(stat * 1.2);
-    }
-    else if (veryNat == "vSmart" && name == "AttackR") {
-        stat = Math.floor(stat * 1.2);
-    }
-    else if (veryNat == "vClever" && name == "DefenseR") {
-        stat = Math.floor(stat * 1.2);
-    }
-    else if (veryNat == "vNimble" && name == "Speed") {
-        stat = Math.floor(stat * 1.2);
-    }
-    else if (veryNat == "vHyper" && name == undefined) {
-        stat = Math.floor(stat * 1.2);
-    }
-    else if (veryNat == "vFrail" && name == "AttackM") {
-        stat = Math.floor(stat * 0.8);
-    }
-    else if (veryNat == "vTender" && name == "DefenseM") {
-        stat = Math.floor(stat * 0.8);
-    }
-    else if (veryNat == "vClumsy" && name == "AttackR") {
-        stat = Math.floor(stat * 0.8);
-    }
-    else if (veryNat == "vFoolish" && name == "DefenseR") {
-        stat = Math.floor(stat * 0.8);
-    }
-    else if (veryNat == "vSluggish" && name == "Speed") {
-        stat = Math.floor(stat * 0.8);
-    }
-    else if (veryNat == "vDull" && name == undefined) {
-        stat = Math.floor(stat * 0.8);
-    }
-
-    if (rest) {
-        stat = Math.floor(stat * 2 / 3);
-    }
-
+ 
     return stat;
 }
 
 
 function checkStages() {
-    let rest1 = document.getElementById("rest1").checked;
-    let rest2 = document.getElementById("rest2").checked;
     let ability1 = abilities.find((x) => x == abilityDropdown1.value);
     let ability2 = abilities.find((x) => x == abilityDropdown2.value);
 
