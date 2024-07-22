@@ -1,10 +1,10 @@
-var loomians = {
+var loomians= {
     cotail: {
         name: "Cotail",
         number: 01,
         types: ["Nature"],
-        passive: ["Floromancy"],
-        hPassive: ["Pirouette"],
+        abilities: ["Floromancy"],
+        sAbility: ["Pirouette"],
         finalEvo: false,
         weight: 20,
         height: 33,
@@ -12,18 +12,18 @@ var loomians = {
             hp: 39,
             attack: 34,
             defense: 42,
-            attackM: 75,
-            defenseM: 50,
+            attackR: 75,
+            defenseR: 50,
             speed: 70
         }
     },
-	
+ 
 	fowlous: {
         name: "Fowlous",
         number: 02,
         types: ["Nature"],
-        passive: ["Floromancy"],
-        hPassive: ["Pirouette"],
+        abilities: ["Floromancy"],
+        sAbility: ["Pirouette"],
         finalEvo: false,
         weight: 39,
         height: 59,
@@ -41,8 +41,8 @@ var loomians = {
         name: "Pavreless",
         number: 03,
         types: ["Nature", "Light"],
-        passive: ["Floromancy"],
-        hPassive: ["Pirouette"],
+        abilities: ["Floromancy"],
+        sAbility: ["Pirouette"],
         finalEvo: true,
         weight: 39,
         height: 59,
