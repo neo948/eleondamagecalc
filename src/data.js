@@ -1805,7 +1805,7 @@ var loomians = {
 	barbarippo: {
         name: "Barbarippo",
         number: 89,
-	    types: ["Basic"],
+	    types: ["Basic","Martial"],
         abilities: ["Rehydrate"],
 		sAbility: ["Savage Striker"],
         finalEvo: true,
@@ -1818,6 +1818,44 @@ var loomians = {
             attackR: 44,
             defenseR: 70,
             speed:50
+        }
+    },
+	
+	venurm: {
+        name: "Venurm",
+        number: 90,
+	    types: ["Toxic"],
+        abilities: ["Detox"],
+		sAbility: ["Bloodsucker"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 70,
+            attack: 100,
+            defense: 90,
+            attackR: 44,
+            defenseR: 52,
+            speed: 50
+        }
+    },
+	
+	explogrens: {
+        name: "Explogrens",
+        number: 91,
+	    types: ["Martial"],
+        abilities: ["Ballistic"],
+		sAbility: ["Poisonous"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 50,
+            attack: 52,
+            defense: 25,
+            attackR: 138,
+            defenseR: 70,
+            speed: 75
         }
     },
 };
@@ -2661,7 +2699,7 @@ var types = {
 
 var abilities = [
     "Abrasive", "Agile", "Airborne", "Altruistic", "Appeal", "Apathy", "Ashfall", 
-	"Ballistic", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", 
+	"Ballistic","Bloodsucker", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", 
 	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", 
 	"Empathy", "Enlighten", "Evaporative", "Extremophile", "Floromancy", "Flowerfall", "Godspeed",
 	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon"
