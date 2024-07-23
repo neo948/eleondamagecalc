@@ -2284,6 +2284,7 @@ var loomians = {
 };
  
 
+
 var moves = {
 		lastResort: {
         name: "Last Resort",
@@ -2345,7 +2346,7 @@ var moves = {
         secondaryEffect: true
     },
 	
-	specialattackmartial: {
+	specialattackRartial: {
         name: "Special Attack Martial",
         power: 60,
         accuracy: 100,
@@ -2573,7 +2574,8 @@ var moves = {
         mr2: "Melee Defense",
         contact: true,
         secondaryEffect: false,
-		dash: true
+		dash: true,
+		pivot: true
 	},
 	
 	wideSlash: {
@@ -2889,7 +2891,7 @@ var moves = {
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-		dash: true
+		dash: true,
 	},
 	
 	parasiteFangs: {
@@ -2983,7 +2985,7 @@ var moves = {
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-		bomb:true
+		bomb:true,
 	},
 	
 	reclaim: {
@@ -3064,8 +3066,8 @@ var types = {
     },
 
     psychic: {
-        weaknesses: ["martial", "psychic"],
-        resistances: ["soul", "dark", "mystic", "light", ],
+        weaknesses: ["martial", "light", "psychic"],
+        resistances: ["soul", "dark", "mystic"],
         immunities: [],
         
     },
@@ -3121,15 +3123,15 @@ var types = {
 };
 
 var abilities = [
-    "Abrasive", "Agile", "Airborne", "Altruistic", "Appeal", "Apathy", "Ashfall", 
-	"Ballistic","Bloodsucker", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", 
-	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", 
-	"Empathy", "Enlighten", "Evaporative", "Extremophile", "Floromancy", "Flowerfall", "Godspeed",
-	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon"
-	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Lead Foot", "Mastery", "Mirage", "Mountaineer"
-	, "Night Vision", "Petrifying", "Point Blank","Poisonous", "Quick Wit", "Raw Power", "Rehydrate", "Richochet", "Rockfall" ,"Oblivious", "Operating Drive",
-	, "Sadistic", "Sharp Teeth", "Savage Striker", "Snowfall","Specialist", "Spirit Affinity", "Spooky", "Starfall", "Stalker", "Supercharged", "Superconductor","Sweet Dreams",
-	, "Tainted", "Thermal Power", "Tread Lightly", "Triple Threat" ,"Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider"
+    "Abrasive", "Agile", "Altruistic", "Appeal", "Apathy", "Ashfall", "Prioritize", "Airborne", "Blood Drinker", "Last Stand", "Oblivious",
+	"Ballistic", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", "Operating Drive", "Cacophony", "Blistering", "Observant",
+	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "High Velocity",
+	"Empathy", "Enlighten", "Evaporative", "Floromancy", "Flowerfall", "Godspeed", "Triple Threat", "Extremophile", "Lead Foot",
+	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon", "Blood Rush", "Specialist",
+	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Mastery", "Mirage", "Mountaineer", "Soft Served", "Menacing",
+	, "Night Vision", "Petrifying", "Point Blank", "Raw Power", "Rehydrate", "Richochet", "Rockfall", "Body Gaurd", "Pirouette",
+	, "Sadistic", "Snowfall", "Spirit Affinity", "Starfall", "Stalker", "Supercharged", "Superconductor", "Slugger", "Slasher",
+	, "Tainted", "Thermal Power", "Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider", "Savage", "Sharp Teeth"
 ];
 
 var typeModAbilities = {
@@ -3163,12 +3165,13 @@ var typeModAbilities = {
         powerMod: false
     },
     
-    combustible: {
-        name: "Combustible",
-        typeModifier: { type: "Fire", modifier: 0 },
+    airborne: {
+        name: "Airborne",
+        typeModifier: { type: "Geo", modifier: 0 },
         powerMod: false
     },
     
+	
     noxiousWeeds: {
         name: "Noxious Weeds",
         typeModifier: { type: "Plant", modifier: 0 },
@@ -3241,9 +3244,9 @@ var typeModAbilities = {
         powerMod: true
     },
 
-    insulated: {
-        name: "Insulated",
-        typeModifier: { type: "Fire", type2: "Ice", modifier: 0.5},
+    chunky: {
+        name: "Chunky",
+        typeModifier: { type: "Pyro", type2: "Ice", modifier: 0.5},
         powerMod: false
     },
 
@@ -3265,21 +3268,15 @@ var typeModAbilities = {
         powerMod: false
     },
 
-    hydrate: {
-        name: "Hydrate",
-        typeModifier: { type: "Water", modifier: 0},
-        powerMod: false
-    },
-
-    sponge: {
-        name: "Sponge",
-        typeModifier: { type: "Water", modifier: 0},
-        powerMod: false
-    },
-
-    hydroVortex: {
-        name: "Hydro Vortex",
-        typeModifier: { type: "Water", modifier: 0},
+    hration: {
+		name: "Hydration",
+		typeModifier: {type: "Hydro", modifier:0},
+		powerMod: false
+	},
+	
+    evaporative: {
+        name: "Evaporative",
+        typeModifier: { type: "Hydro", modifier: 0},
         powerMod: false
     },
 
@@ -3326,7 +3323,7 @@ var typeModAbilities = {
     },
 }
 
-var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Evolutionary Convertor", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
+var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Drop of Youth", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
              "Volcanic Ash", "Rageful Plushie", "Clutch Plushie", "Specialty Boots", "Milkshake", "Kabunga Coffee"];
 
 
