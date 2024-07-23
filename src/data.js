@@ -2345,7 +2345,7 @@ var moves = {
         secondaryEffect: true
     },
 	
-	specialattackRartial: {
+	specialattackmartial: {
         name: "Special Attack Martial",
         power: 60,
         accuracy: 100,
@@ -3127,7 +3127,7 @@ var abilities = [
 	"Empathy", "Enlighten", "Evaporative", "Extremophile", "Floromancy", "Flowerfall", "Godspeed",
 	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon"
 	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Lead Foot", "Mastery", "Mirage", "Mountaineer"
-	, "Night Vision", "Petrifying", "Point Blank","Poisonous", "Quick Wit", "Raw Power", "Rehydrate", "Richochet", "Rockfall" , "Operating Drive",
+	, "Night Vision", "Petrifying", "Point Blank","Poisonous", "Quick Wit", "Raw Power", "Rehydrate", "Richochet", "Rockfall" ,"Oblivious", "Operating Drive",
 	, "Sadistic", "Sharp Teeth", "Savage Striker", "Snowfall","Specialist", "Spirit Affinity", "Spooky", "Starfall", "Stalker", "Supercharged", "Superconductor","Sweet Dreams",
 	, "Tainted", "Thermal Power", "Tread Lightly", "Triple Threat" ,"Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider"
 ];
@@ -3326,7 +3326,7 @@ var typeModAbilities = {
     },
 }
 
-var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Drop of Youth", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
+var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Evolutionary Convertor", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
              "Volcanic Ash", "Rageful Plushie", "Clutch Plushie", "Specialty Boots", "Milkshake", "Kabunga Coffee"];
 
 

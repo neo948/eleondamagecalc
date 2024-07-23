@@ -1162,7 +1162,7 @@ function loadStats() {
     statAtk1.innerHTML = Math.floor(atk1 * multi);
     multi = 1;
     if (ability1 == "Trash Armor" || ability1 == "Hard Candy" || ability1 == "Safety Pot") multi *= 1.5;
-    if (firstItem == "Drop of Youth" && firstLoom.finalEvo == false) multi *= 1.4;
+    if (firstItem == "Evolutionary Convertor" && firstLoom.finalEvo == false) multi *= 1.5;
     if (firstItem == "Heavy Armor") multi *= 1.2;
     statDef1.innerHTML = Math.floor(def1 * multi);
     multi = 1;
@@ -1171,7 +1171,7 @@ function loadStats() {
     multi = 1;
     if (ability1 == "Slick Shell") multi *= 2;
     if (ability1 == "Safety Pot") multi *= 1.5;
-    if (firstItem == "Drop of Youth" && firstLoom.finalEvo == false) multi *= 1.4;
+    if (firstItem == "Evolutionary Convertor" && firstLoom.finalEvo == false) multi *= 1.5;
     if (firstItem == "Heavy Shield") multi *= 1.2;
     statDefR1.innerHTML = Math.floor(defR1 * multi);
     multi = 1;
@@ -1188,7 +1188,7 @@ function loadStats() {
     statAtk2.innerHTML = Math.floor(atk2 * multi);
     multi = 1;
     if (ability2 == "Trash Armor" || ability2 == "Hard Candy" || ability2 == "Safety Pot") multi *= 1.5;
-    if (secondItem == "Drop of Youth" && secondLoom.finalEvo == false) multi *= 1.4;
+    if (secondItem == "Evolutionary Convertor" && secondLoom.finalEvo == false) multi *= 1.5;
     if (secondItem == "Heavy Armor") multi *= 1.2;
     statDef2.innerHTML = Math.floor(def2 * multi);
     multi = 1;
@@ -1197,7 +1197,7 @@ function loadStats() {
     multi = 1;
     if (ability2 == "Slick Shell") multi *= 2;
     if (ability2 == "Safety Pot") multi *= 1.5;
-    if (secondItem == "Drop of Youth" && secondLoom.finalEvo == false) multi *= 1.4;
+    if (secondItem == "Evolutionary Convertorh" && secondLoom.finalEvo == false) multi *= 1.5;
     if (secondItem == "Heavy Shield") multi *= 1.2;
     statDefR2.innerHTML = Math.floor(defR2 * multi);
     multi = 1;
@@ -2275,8 +2275,8 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
         stuffUsed.ability1 = ability1;
     }
 
-    if ((ability1 == "Sharp Claws" && move.contact == true) || 
-       (ability1 == "Brute Force" && move.secondaryEffect == true) ||
+    if ((ability1 == "Savage Striker" && move.contact == true) || 
+       (ability1 == "Raw Power" && move.secondaryEffect == true) ||
        (ability1 == "Overcharged" && tempType == "Electric") ||
        (ability1 == "Watcher" && (stats1.spd < stats2.spd || (btl1 && withoutSlapDown))) ||
        (ability1 == "Gloomy" && fog.checked) ||
@@ -2285,8 +2285,8 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
         stuffUsed.ability1 = ability1;
     }
 
-    if ((ability1 == "Power Jaw" && move.bite == true) ||
-       (ability1 == "Heavy Fists" && (move.punch == true || move.slap == true)) ||
+    if ((ability1 == "Sharp Teeth" && move.bite == true) ||
+       (ability1 == "Slugger" && (move.punch == true || move.slap == true)) ||
        (ability1 == "Guru" && tempPower <= 60 && powerCheck <= 60) ||
        (ability1 == "High Explosive" && move.bomb == true)) {
         multi *= 1.5;
@@ -2402,7 +2402,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
         tempAtk.atk = calculateStat(tempAtk.base,  tempAtk.ev.value, tempAtk.level, undefined, tempAtk.posNat,  tempAtk.name);
     }
 
-    if (ability2 == "Ignorant") {
+    if (ability2 == "Oblivious") {
         tempAtk.atk = calculateStat(tempAtk.base, tempAtk.ev.value, tempAtk.level, undefined, tempAtk.posNat,  tempAtk.name);
         stuffUsed.ability2 = ability2;
     }
@@ -2430,8 +2430,8 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
         multi *= 1.5;
         stuffUsed.item1 = itemA;
     }
-    if (itemA == "Drop of Youth" && loom1.finalEvo == false && (move.mr1 == "Melee Defense" || move.mr1 == "Ranged Defense")) {
-        multi *= 1.4;
+    if (itemA == "Evolutionary Convertor" && loom1.finalEvo == false && (move.mr1 == "Melee Defense" || move.mr1 == "Ranged Defense")) {
+        multi *= 1.5;
         stuffUsed.item1 = itemA;
     }
     if (winds.checked && move.mr1 == "Speed" && loom1.types.includes("Air")) {
@@ -2456,8 +2456,8 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
         multi *= 1.2;
         stuffUsed.item2 = itemB;
     }
-    if (itemB == "Drop of Youth" && loom2.finalEvo == false) {
-        multi *= 1.4;
+    if (itemB == "Evolutionary Convertor" && loom2.finalEvo == false) {
+        multi *= 1.5;
         stuffUsed.item2 = itemB;
     }
     if ((ability2 == "Trash Armor" || ability2 == "Hard Candy" || ability2 == "Safety Pot") && ((move.mr2 == "Melee Defense" && adaptive.mr2 != "Ranged Defense") || adaptive.mr2 == "Melee Defense")) {
