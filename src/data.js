@@ -1707,6 +1707,119 @@ var loomians = {
             speed: 120
         }
     },
+	
+	castoda: {
+        name: "Castoda",
+        number: 83,
+	    types: ["Soul","Toxic"],
+        abilities: ["Spooky"],
+		sAbility: ["Poisonous"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 90,
+            attack: 72,
+            defense: 42,
+            attackR: 23,
+            defenseR: 62,
+            speed: 11
+        }
+    },
+	
+		antladeed: {
+        name: "Antladeed",
+        number: 85,
+	    types: ["Soul","Toxic"],
+        abilities: ["Spooky"],
+		sAbility: ["Poisonous"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 134,
+            attack: 115,
+            defense: 66,
+            attackR: 40,
+            defenseR: 104,
+            speed: 21
+        }
+    },
+	
+	gochurr: {
+        name: "Gochurr",
+        number: 86,
+	    types: ["Nature"],
+        abilities: ["Sharp Teeth"],
+		sAbility: ["Rockfall"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 36,
+            attack: 45,
+            defense: 70,
+            attackR: 24,
+            defenseR: 30,
+            speed: 25
+        }
+    },
+	
+	devunchurr: {
+        name: "Devunchurr",
+        number: 87,
+	    types: ["Nature"],
+        abilities: ["Sharp Teeth"],
+		sAbility: ["Rockfall"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 72,
+            attack: 90,
+            defense: 140,
+            attackR: 48,
+            defenseR: 60,
+            speed: 50
+        }
+    },
+	dunwallow: {
+        name: "Dunwallow",
+        number: 88,
+	    types: ["Basic"],
+        abilities: ["Oblivious"],
+		sAbility: ["Savage Striker"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 40,
+            attack: 63,
+            defense: 45,
+            attackR: 22,
+            defenseR: 32,
+            speed:25
+        }
+    },
+	
+	barbarippo: {
+        name: "Barbarippo",
+        number: 89,
+	    types: ["Basic"],
+        abilities: ["Rehydrate"],
+		sAbility: ["Savage Striker"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 80,
+            attack: 126,
+            defense: 90,
+            attackR: 44,
+            defenseR: 70,
+            speed:50
+        }
+    },
 };
  
 
@@ -2553,8 +2666,8 @@ var abilities = [
 	"Empathy", "Enlighten", "Evaporative", "Extremophile", "Floromancy", "Flowerfall", "Godspeed",
 	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon"
 	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Lead Foot", "Mastery", "Mirage", "Mountaineer"
-	, "Night Vision", "Petrifying", "Point Blank", "Quick Wit", "Raw Power", "Rehydrate", "Richochet", "Rockfall" , "Operating Drive",
-	, "Sadistic", "Sharp Teeth","Snowfall", "Spirit Affinity", "Starfall", "Stalker", "Supercharged", "Superconductor","Sweet Dreams",
+	, "Night Vision", "Petrifying", "Point Blank","Poisonous", "Quick Wit", "Raw Power", "Rehydrate", "Richochet", "Rockfall" , "Operating Drive",
+	, "Sadistic", "Sharp Teeth", "Savage Striker", "Snowfall", "Spirit Affinity", "Spooky", "Starfall", "Stalker", "Supercharged", "Superconductor","Sweet Dreams",
 	, "Tainted", "Thermal Power", "Tread Lightly", "Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider"
 ];
 
