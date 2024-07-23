@@ -1318,8 +1318,8 @@ var loomians = {
         }
     },
 	
-	cattelvinm: {
-        name: "Cattelvin M",
+	"cattelvin-m": {
+        name: "Cattelvin-M",
         number: 69,
 	    types: ["Pyro"],
         abilities: ["Airborne"],
@@ -1337,8 +1337,8 @@ var loomians = {
         }
     },
 	
-	cattelvinf: {
-        name: "Cattelvin F",
+	"cattelvin-f": {
+        name: "Cattelvin-F",
         number: 69,
 	    types: ["Ice"],
         abilities: ["Airborne"],
@@ -1485,6 +1485,226 @@ var loomians = {
             attackR: 115,
             defenseR: 93,
             speed: 123
+        }
+		
+    },
+	somnamuma: {
+        name: "Somnamuma",
+        number: 77,
+	    types: ["Light","Soul"],
+        abilities: ["Sweet Dreams"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 130,
+            attack: 80,
+            defense: 60,
+            attackR: 125,
+            defenseR: 99,
+            speed: 61
+        }
+    },
+	
+	lunatock: {
+        name: "Lunatock",
+        number: 78,
+	    types: ["Dark","Metal"],
+        abilities: ["Stalker"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 72,
+            attack: 100,
+            defense: 98,
+            attackR: 11,
+            defenseR: 53,
+            speed: 110
+        }
+    },
+	
+	"arowem-circle": {
+        name: "Arowem-Circle",
+        number: 79,
+	    types: ["Light","Metal"],
+        abilities: ["Operating Drive"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 80,
+            attack: 80,
+            defense: 80,
+            attackR: 80,
+            defenseR: 80,
+            speed: 80
+        }
+    },
+	
+	"arowem-triangle": {
+        name: "Arowem-Triangle",
+        number: 79,
+	    types: ["Light","Metal"],
+        abilities: ["Operating Drive"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 80,
+            attack: 125,
+            defense: 45,
+            attackR: 80,
+            defenseR: 45,
+            speed: 125
+        }
+    },
+	
+	"arowem-square": {
+        name: "Arowem-Square",
+        number: 79,
+	    types: ["Light","Metal"],
+        abilities: ["Operating Drive"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 80,
+            attack: 30,
+            defense: 130,
+            attackR: 90,
+            defenseR: 130,
+            speed: 40
+        }
+    },
+	
+	"arowem-heart": {
+        name: "Arowem-Heart",
+        number: 79,
+	    types: ["Light","Metal"],
+        abilities: ["Operating Drive"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 80,
+            attack: 50,
+            defense: 120,
+            attackR: 50,
+            defenseR: 120,
+            speed: 80
+        }
+    },
+	
+	"arowem-star": {
+        name: "Arowem-Star",
+        number: 79,
+	    types: ["Light","Metal"],
+        abilities: ["Operating Drive"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 80,
+            attack: 100,
+            defense: 60,
+            attackR: 100,
+            defenseR: 60,
+            speed: 100
+        }
+    },
+	
+	"arowem-diamond": {
+        name: "Arowem-Diamond",
+        number: 79,
+	    types: ["Light","Metal"],
+        abilities: ["Operating Drive"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 80,
+            attack: 130,
+            defense: 80,
+            attackR: 90,
+            defenseR: 80,
+            speed: 40
+        }
+    },
+	
+	yukame: {
+        name: "Yukame",
+        number: 80,
+	    types: ["Dark","Wind"],
+        abilities: ["Extremophile"],
+		sAbility: ["Quick Wit"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 32,
+            attack: 12,
+            defense: 30,
+            attackR: 75,
+            defenseR: 46,
+            speed: 75
+        }
+    },
+	
+	tengoon: {
+        name: "Tengoon",
+        number: 81,
+	    types: ["Dark","Wind"],
+        abilities: ["Wind Rider"],
+		sAbility: ["Quick Wit"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 74,
+            attack: 65,
+            defense: 119,
+            attackR: 75,
+            defenseR: 60,
+            speed: 110
+        }
+    },
+	
+		astrace: {
+        name: "Astrace",
+        number: 82,
+	    types: ["Electric"],
+        abilities: ["Godspeed"],
+		sAbility: ["Tread Lightly"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 25,
+            attack: 65,
+            defense: 50,
+            attackR: 45,
+            defenseR: 65,
+            speed: 150
+        }
+    },
+	
+	astraptar: {
+        name: "Astraptar",
+        number: 82,
+	    types: ["Electric"],
+        abilities: ["Godspeed"],
+		sAbility: ["Lead Foot"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 50,
+            attack: 135,
+            defense: 50,
+            attackR: 80,
+            defenseR: 90,
+            speed: 120
         }
     },
 };
@@ -2270,8 +2490,8 @@ var types = {
     },
 
     psychic: {
-        weaknesses: ["martial", "light", "psychic"],
-        resistances: ["soul", "dark", "mystic"],
+        weaknesses: ["martial", "psychic"],
+        resistances: ["soul", "dark", "mystic", "light", ],
         immunities: [],
         
     },
@@ -2330,12 +2550,12 @@ var abilities = [
     "Abrasive", "Agile", "Airborne", "Altruistic", "Appeal", "Apathy", "Ashfall", 
 	"Ballistic", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", 
 	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", 
-	"Empathy", "Enlighten", "Evaporative", "Floromancy", "Flowerfall", "Godspeed",
+	"Empathy", "Enlighten", "Evaporative", "Extremophile", "Floromancy", "Flowerfall", "Godspeed",
 	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon"
-	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Mastery", "Mirage", "Mountaineer"
-	, "Night Vision", "Petrifying", "Point Blank", "Raw Power", "Rehydrate", "Richochet", "Rockfall"
-	, "Sadistic", "Snowfall", "Spirit Affinity", "Starfall", "Stalker", "Supercharged", "Superconductor"
-	, "Tainted", "Thermal Power", "Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider"
+	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Lead Foot", "Mastery", "Mirage", "Mountaineer"
+	, "Night Vision", "Petrifying", "Point Blank", "Quick Wit", "Raw Power", "Rehydrate", "Richochet", "Rockfall" , "Operating Drive",
+	, "Sadistic", "Sharp Teeth","Snowfall", "Spirit Affinity", "Starfall", "Stalker", "Supercharged", "Superconductor","Sweet Dreams",
+	, "Tainted", "Thermal Power", "Tread Lightly", "Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider"
 ];
 
 var typeModAbilities = {
