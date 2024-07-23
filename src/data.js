@@ -1858,6 +1858,429 @@ var loomians = {
             speed: 75
         }
     },
+	
+	 explogrens: {
+        name: "Explogrens",
+        number: 91,
+	    types: ["Martial"],
+        abilities: ["Ballistic"],
+		sAbility: ["Poisonous"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 50,
+            attack: 52,
+            defense: 25,
+            attackR: 138,
+            defenseR: 70,
+            speed: 75
+       
+	   }
+    },
+	nyorb: {
+        name: "Nyorb",
+        number: 92,
+	    types: ["Ice","Light"],
+        abilities: ["Night Vision"],
+		sAbility: ["Appeal"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 52,
+            attack: 10,
+            defense: 44,
+            attackR: 58,
+            defenseR: 32,
+            speed: 74,
+			
+	   }
+    },
+	garora: {
+        name: "Garora",
+        number: 93,
+	    types: ["Ice","Light"],
+        abilities: ["Night Vision"],
+		sAbility: ["Honor Guard"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 81,
+            attack: 22,
+            defense: 84,
+            attackR: 119,
+            defenseR: 74,
+            speed: 120,
+			
+	   }
+    },
+	
+	glaceol: {
+        name: "Glaceol",
+        number: 94,
+	    types: ["Ice","Wind"],
+        abilities: ["Sadistic"],
+		sAbility: ["Snowfall"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 55,
+            attack: 22,
+            defense: 40,
+            attackR: 55,
+            defenseR: 25,
+            speed: 60,
+			
+	   }
+    },
+	wiceol: {
+        name: "Wiceol",
+        number: 95,
+	    types: ["Ice","Wind"],
+        abilities: ["Sadistic"],
+		sAbility: ["Snowfall"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 85,
+            attack: 55,
+            defense: 70,
+            attackR: 110,
+            defenseR: 65,
+            speed: 85,
+			
+	   }
+    },
+	
+	ninjillo: {
+        name: "Ninjillo",
+        number: 96,
+	    types: ["Electric","Martial"],
+        abilities: ["Lead Foot"],
+		sAbility: ["Superconductor"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 72,
+            attack: 101,
+            defense: 90,
+            attackR: 53,
+            defenseR: 60,
+            speed: 124,
+			
+	   }
+    },
+	
+	terretout: {
+        name: "Terretout",
+        number: 97,
+	    types: ["Wind"],
+        abilities: ["Sadistic"],
+		sAbility: ["Snowfall"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            attackR: 0,
+            defenseR: 0,
+            speed: 0,
+			
+	   }
+    },
+	
+	weasylwird: {
+        name: "Weasylwird",
+        number: 98,
+	    types: ["Wind"],
+        abilities: ["Sadistic"],
+		sAbility: ["Snowfall"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            attackR: 0,
+            defenseR: 0,
+            speed: 0,
+			
+	   }
+    },
+	
+	certus: {
+        name: "Cerctus",
+        number: 99,
+	    types: ["Nature"],
+        abilities: ["Abrasive"],
+		sAbility: ["Hydration"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 35,
+            attack: 50,
+            defense: 40,
+            attackR: 50,
+            defenseR: 55,
+            speed: 60,
+			
+	   }
+    },
+	
+	iguavae: {
+        name: "Iguavae",
+        number: 100,
+	    types: ["Nature","Metal"],
+        abilities: ["Specialist"],
+		sAbility: ["Hydration"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 60,
+            attack: 120,
+            defense: 100,
+            attackR: 75,
+            defenseR: 45,
+            speed: 100,
+			
+	   }
+    },
+	
+	squagua: {
+        name: "Squagua",
+        number: 101,
+	    types: ["Nature","Hydro"],
+        abilities: ["Cheerful"],
+		sAbility: ["Hydration"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 60,
+            attack: 79,
+            defense: 155,
+            attackR: 33,
+            defenseR: 140,
+            speed: 33,
+			
+	   }
+    },
+	
+	occuli: {
+        name: "Occuli",
+        number: 102,
+	    types: ["Hydro","Soul"],
+        abilities: ["Cheerful"],
+		sAbility: ["Hydration"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            attackR: 0,
+            defenseR: 0,
+            speed: 0,
+			
+	   }
+    },
+	
+	occtolus: {
+        name: "Occtolus",
+        number: 103,
+	    types: ["Hydro","Soul"],
+        abilities: ["Sadistic"],
+		sAbility: ["Snowfall"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            attackR: 0,
+            defenseR: 0,
+            speed: 0,
+			
+	   }
+    },
+	
+	nokoal: {
+        name: "Nokoal",
+        number: 104,
+	    types: ["Pyro"],
+        abilities: ["Sadistic"],
+		sAbility: ["Snowfall"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            attackR: 0,
+            defenseR: 0,
+            speed: 0,
+			
+	   }
+    },
+	
+	rattlurn: {
+        name: "Rattlurn",
+        number: 105,
+	    types: ["Pyro","Dark"],
+        abilities: ["Sadistic"],
+		sAbility: ["Snowfall"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            attackR: 0,
+            defenseR: 0,
+            speed: 0,
+			
+	   }
+    },
+	
+	truplevo: {
+        name: "Truplevo",
+        number: 111,
+        types: ["Basic"],
+        abilities: ["Triple Threat"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 110,
+            attack: 100,
+            defense: 71,
+            attackR: 130,
+            defenseR: 91,
+            speed: 98,
+        }
+    },
+ 
+    "lagosta-lightside": {
+        name: "Lagosta-Lightside",
+        number: 112,
+        types: ["Light", "Soul"],
+        abilities: ["Crystal Clear"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 105,
+            attack: 35,
+            defense: 105,
+            attackR: 80,
+            defenseR: 105,
+            speed: 120
+        }
+    },
+ 
+     "lagosta-darkside": {
+        name: "Lagosta-Darkside",
+        number: 112,
+        types: ["Light", "Dark"],
+        abilities: ["Sweet Dreams"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 63,
+            attack: 120,
+            defense: 63,
+            attackR: 110,
+            defenseR: 63,
+            speed: 131
+        }
+    },
+ 
+    draglo: {
+        name: "Draglo",
+        number: 113,
+        types: ["Mystic"],
+        abilities: ["Appeal"],
+        finalEvo: false,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            attackR: 0,
+            defenseR: 0,
+            speed: 0
+        }
+    },
+
+    drakrona: {
+        name: "Drakrona",
+        number: 114,
+        types: ["Mystic"],
+        abilities: ["Unnerving"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            attackR: 0,
+            defenseR: 0,
+            speed: 0
+        }
+    },
+
+    seribal: {
+        name: "Seribal",
+        number: 115,
+        types: ["Nature", "Mystic"],
+        abilities: ["Shed Away"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 109,
+            attack: 72,
+            defense: 56,
+            attackR: 137,
+            defenseR: 131,
+            speed: 95
+        }
+    },
+	
+	  "seribal-timbered": {
+        name: "Seribal-Timbered",
+        number: 115,
+        types: ["Nature", "Mystic"],
+        abilities: ["Dirty Fighter"],
+        finalEvo: true,
+        weight: 39,
+        height: 59,
+        baseStats: {
+            hp: 109,
+            attack: 137,
+            defense: 101,
+            attackR: 72,
+            defenseR: 56,
+            speed: 125
+        }
+    },
 };
  
 
@@ -2705,8 +3128,8 @@ var abilities = [
 	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon"
 	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Lead Foot", "Mastery", "Mirage", "Mountaineer"
 	, "Night Vision", "Petrifying", "Point Blank","Poisonous", "Quick Wit", "Raw Power", "Rehydrate", "Richochet", "Rockfall" , "Operating Drive",
-	, "Sadistic", "Sharp Teeth", "Savage Striker", "Snowfall", "Spirit Affinity", "Spooky", "Starfall", "Stalker", "Supercharged", "Superconductor","Sweet Dreams",
-	, "Tainted", "Thermal Power", "Tread Lightly", "Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider"
+	, "Sadistic", "Sharp Teeth", "Savage Striker", "Snowfall","Specialist", "Spirit Affinity", "Spooky", "Starfall", "Stalker", "Supercharged", "Superconductor","Sweet Dreams",
+	, "Tainted", "Thermal Power", "Tread Lightly", "Triple Threat" ,"Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider"
 ];
 
 var typeModAbilities = {
