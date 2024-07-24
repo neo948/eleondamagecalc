@@ -3019,6 +3019,7 @@ var moves = {
         mr1: "Melee Attack",
         mr2: "Melee Defense",
 		contact: true,
+		slash: true
 	},
 	
 	blazeRush: {
@@ -3031,6 +3032,7 @@ var moves = {
         mr2: "Melee Defense",
 		contact: true,
 		dash: true,
+		secondaryEffect: true
 	},
 	
 	blazePunch: {
@@ -3043,6 +3045,7 @@ var moves = {
         mr2: "Melee Defense",
 		contact: true,
 		punch: true,
+		secondaryEffect: true
 	},
 	
 	burningBite: {
@@ -3055,6 +3058,7 @@ var moves = {
         mr2: "Melee Defense",
 		contact: true,
 		bite: true,
+		secondaryEffect: true
 	},
 	
 	explosiveFury: {
@@ -3096,6 +3100,7 @@ var moves = {
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
+		secondaryEffect: true
 	},
 	
 	sparkShower: {
@@ -3106,6 +3111,7 @@ var moves = {
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
+		secondaryEffect: true
 	},
 	
 	pyroTechnics: {
@@ -3127,6 +3133,7 @@ var moves = {
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
+		secondaryEffect: true
 	},
 	
 	fireBall: {
@@ -3138,6 +3145,7 @@ var moves = {
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
 		bomb: true,
+		secondaryEffect: true
 
 	},
 	
@@ -3151,6 +3159,311 @@ var moves = {
         mr2: "Ranged Defense",
         contact: true,
     },
+	
+	breach: {
+        name: "Breach",
+        power: 40,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		dash: true,
+		secondaryEffect: true
+	},
+	
+	waveBreaker: {
+        name: "Wave Breaker",
+        power: 60,
+        accuracy: 95,
+        type: "Hydro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		secondaryEffect: true,
+	},
+	
+	waveSlash: {
+        name: "Wave Slash",
+        power: 75,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		slash: true,
+	},
+	
+	wateryBite: {
+        name: "Watery Bite",
+        power: 80,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		bite: true,
+		secondaryEffect: true,
+	},
+	
+	hydroForce: {
+        name: "Hydro Force",
+        power: 95,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		dash: true,
+	},
+	
+	rogueWave: {
+        name: "Rogue Wave",
+        power: 120,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		dash: true,
+		recoil: 1/2
+	},
+	
+	washdown: {
+        name: "Washdown",
+        power: 60,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		bomb:true,
+	},
+	
+	foam: {
+        name: "Foam",
+        power: 45,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		bomb:true,
+	},
+	
+	slimeBall: {
+        name: "Slimeball",
+        power: 65,
+        accuracy: 95,
+        type: "Hydro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		bomb:true,
+		secondaryEffect: true,
+	},
+	
+	spiralDrain: {
+        name: "Spiral Drain",
+        power: 75,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mr2: "Ranged Defense",
+		drain: 1/2
+	},
+	
+	tidalWave: {
+        name: "Tidal Wave",
+        power: 85,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+		mr2: "Ranged Defense",
+	},
+	
+	marineBeam: {
+        name: "Marine Beam",
+        power: 90,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+		mr2: "Ranged Defense",
+	},
+	
+	deluge: {
+        name: "Deluge",
+        power: 120,
+        accuracy: 85,
+        type: "Hydro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+		mr2: "Ranged Defense",
+		bomb:true,
+	},
+	
+    circuit: {
+        name: "circuit",
+        power: 50,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Melee",
+        mr1: "Melee Attack",
+		mr2: "Melee Defense",
+		contact:true,
+		dash:true,
+	},
+	
+	staticSlash: {
+        name: "Static Slash",
+        power: 75,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Melee",
+        mr1: "Melee Attack",
+		mr2: "Melee Defense",
+		contact:true,
+		slash:true,
+	},
+	
+	lightningPunch: {
+        name: "Lightning Punch",
+        power: 75,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Melee",
+        mr1: "Melee Attack",
+		mr2: "Melee Defense",
+		contact:true,
+		punch:true,
+		secondaryEffect: true
+	},
+	
+	magnetStrike: {
+        name: "Magnet Strike",
+        power: 90,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Melee",
+        mr1: "Melee Attack",
+		mr2: "Melee Defense",
+		contact:true,
+		dash:true,
+	},
+	
+	thunderRush: {
+        name: "Magnet Strike",
+        power: 120,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Melee",
+        mr1: "Melee Attack",
+		mr2: "Melee Defense",
+		contact:true,
+		dash:true,
+		recoil: 1/2
+	},
+	
+	zap: {
+        name: "Zap",
+        power: 40,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		bomb:true,
+		secondaryEffect: true,
+	},
+	
+	shockWave: {
+        name: "Shock Wave",
+        power: 60,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		bomb:true,
+		secondaryEffect: true,
+	},
+	
+	Bolt: {
+        name: "Bolt",
+        power: 70,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mr2: "Ranged Defense",
+		pivot:true,
+	},
+	
+	brainStorm: {
+        name: "Brain Storm",
+        power: 70,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+		mr2: "Ranged Defense",
+	},
+	
+	plasmaBlast: {
+        name: "Plasma Blast",
+        power: 80,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+		mr2: "Ranged Defense",
+		secondaryEffect: true,
+		bomb:true,
+
+	},
+	
+	lightningStrike: {
+        name: "Lightning Strike",
+        power: 90,
+        accuracy: 100,
+        type: "Electric",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        secondaryEffect: true,
+	},
+	
+	raigeki: {
+        name: "Raigeki",
+        power: 110,
+        accuracy: 80,
+        type: "Electric",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+		mr2: "Ranged Defense",
+		secondaryEffect: true,
+		bomb:true,
+
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -3186,6 +3499,8 @@ var moves = {
     },
 	
 	};
+	
+	
 var types = {
     basic: {
         weaknesses: ["martial"],
