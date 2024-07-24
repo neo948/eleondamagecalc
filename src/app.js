@@ -627,12 +627,12 @@ function updateItem(item) {
     let firstLoom = loomians[pokeDropdown1.value.toLowerCase()];
     let secondLoom = loomians[pokeDropdown2.value.toLowerCase()];
     if (item == "item1") {
-        if (item1.value == "Thunder Orb" && !firstLoom.types.includes("Electric")) status1.value = "paralasis";
-        else if (item1.value == "Volcanic Ash" && !firstLoom.types.includes("Fire")) status1.value = "burned";
+        if (item1.value == "Shock Stone" && !firstLoom.types.includes("Electric")) status1.value = "paralasis";
+        else if (item1.value == "Scorch Stone" && !firstLoom.types.includes("Fire")) status1.value = "burned";
         else status1.value = "healthy";
     } else if (item == "item2") {
-        if (item2.value == "Thunder Orb" && !secondLoom.types.includes("Electric")) status2.value = "paralasis";
-        else if (item2.value == "Volcanic Ash" && !secondLoom.types.includes("Fire")) status2.value = "burned";
+        if (item2.value == "Shock Stone" && !secondLoom.types.includes("Electric")) status2.value = "paralasis";
+        else if (item2.value == "Scorch Stone" && !secondLoom.types.includes("Fire")) status2.value = "burned";
         else status2.value = "healthy";
     }
     update();
@@ -1162,8 +1162,8 @@ function loadStats() {
     statAtk1.innerHTML = Math.floor(atk1 * multi);
     multi = 1;
     if (ability1 == "Trash Armor" || ability1 == "Hard Candy" || ability1 == "Safety Pot") multi *= 1.5;
-    if (firstItem == "Drop of Youth" && firstLoom.finalEvo == false) multi *= 1.4;
-    if (firstItem == "Heavy Armor") multi *= 1.2;
+    if (firstItem == "Evolutionary Convertor" && firstLoom.finalEvo == false) multi *= 1.5;
+    if (firstItem == "Weighty Pauldrons") multi *= 1.5;
     statDef1.innerHTML = Math.floor(def1 * multi);
     multi = 1;
     if (firstLoom.name == "Shawchi" && firstItem == "Mystic Wand") multi *= 1.5;
@@ -1171,8 +1171,8 @@ function loadStats() {
     multi = 1;
     if (ability1 == "Slick Shell") multi *= 2;
     if (ability1 == "Safety Pot") multi *= 1.5;
-    if (firstItem == "Drop of Youth" && firstLoom.finalEvo == false) multi *= 1.4;
-    if (firstItem == "Heavy Shield") multi *= 1.2;
+    if (firstItem == "Evolutionary Convertor" && firstLoom.finalEvo == false) multi *= 1.5;
+    if (firstItem == "Weighty Shield") multi *= 1.5;
     statDefR1.innerHTML = Math.floor(defR1 * multi);
     multi = 1;
     if (firstItem == "Specialty Boots") multi *= 1.5;
@@ -1188,8 +1188,8 @@ function loadStats() {
     statAtk2.innerHTML = Math.floor(atk2 * multi);
     multi = 1;
     if (ability2 == "Trash Armor" || ability2 == "Hard Candy" || ability2 == "Safety Pot") multi *= 1.5;
-    if (secondItem == "Drop of Youth" && secondLoom.finalEvo == false) multi *= 1.4;
-    if (secondItem == "Heavy Armor") multi *= 1.2;
+    if (secondItem == "Evolutionary Convertor" && secondLoom.finalEvo == false) multi *= 1.5;
+    if (secondItem == "Weighty Pauldrons") multi *= 1.5;
     statDef2.innerHTML = Math.floor(def2 * multi);
     multi = 1;
     if (secondLoom.name == "Shawchi" && secondItem == "Mystic Wand") multi *= 1.5;
@@ -1197,8 +1197,8 @@ function loadStats() {
     multi = 1;
     if (ability2 == "Slick Shell") multi *= 2;
     if (ability2 == "Safety Pot") multi *= 1.5;
-    if (secondItem == "Drop of Youth" && secondLoom.finalEvo == false) multi *= 1.4;
-    if (secondItem == "Heavy Shield") multi *= 1.2;
+    if (secondItem == "Evolutionary Convertor" && secondLoom.finalEvo == false) multi *= 1.5;
+    if (secondItem == "Weighty Shield") multi *= 1.5;
     statDefR2.innerHTML = Math.floor(defR2 * multi);
     multi = 1;
     if (secondItem == "Specialty Boots") multi *= 1.5;
@@ -2328,7 +2328,7 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
     (ability1 == "Specialist" && tempPower <= 60 && powerCheck <= 60) ||
     (ability1 == "Hyper Cannon" && move.bomb == true) ||
     (ability1 == "Slasher" && move.slash == true)) {
-    multi *= 1.3;
+    multi *= 1.5;
     stuffUsed.ability1 = ability1;
 }
     if ((ability1 == "Bloodsucker" && move.drain) ||
@@ -2358,8 +2358,8 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
 
     if ((move.name == "Gloominous Roar" && loom1.name == "Tiklipse" && ability1 != "Circadian" && itemA.includes("Light")) ||
        (itemA.includes(tempType) && itemA.includes("Essence")) ||
-       (itemA == "Power Cuffs")) {
-        multi *= 1.2;
+       (itemA == "Power Glove")) {
+        multi *= 1.3;
         stuffUsed.item1 = itemA;
     }
 
@@ -2455,9 +2455,9 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
         multi *= 1.5;
         stuffUsed.ability1 = ability1;
     }   
-    if ((move.mr1 == "Melee Defense" && itemA == "Heavy Armor") ||
-       (move.mr1 == "Ranged Defense" && itemA == "Heavy Shield")) {
-            multi *= 1.2;
+    if ((move.mr1 == "Melee Defense" && itemA == "Weighty Pauldrons") ||
+       (move.mr1 == "Ranged Defense" && itemA == "Weighty Shield")) {
+            multi *= 1.5;
             stuffUsed.item1 = itemA;
     }
 	
@@ -2470,8 +2470,8 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
         multi *= 1.5;
         stuffUsed.item1 = itemA;
     }
-    if (itemA == "Drop of Youth" && loom1.finalEvo == false && (move.mr1 == "Melee Defense" || move.mr1 == "Ranged Defense")) {
-        multi *= 1.4;
+    if (itemA == "Evolutionary Convertor" && loom1.finalEvo == false && (move.mr1 == "Melee Defense" || move.mr1 == "Ranged Defense")) {
+        multi *= 1.5;
         stuffUsed.item1 = itemA;
     }
     if (winds.checked && move.mr1 == "Speed" && loom1.types.includes("Air")) {
@@ -2491,13 +2491,13 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
         tempDef.def = calculateStat(tempDef.base,  tempDef.ev.value, tempDef.level, undefined, tempDef.posNat,  tempDef.name, tempDef.rest);
         stuffUsed.ability1 = ability1;
     }
-    if ((itemB == "Heavy Shield" && ((move.mr2 == "Ranged Defense" && adaptive.mr2 != "Melee Defense") || adaptive.mr2 == "Ranged Defense")) ||
-       (itemB == "Heavy Armor" && ((move.mr2 == "Melee Defense" && adaptive.mr2 != "Ranged Defense") || adaptive.mr2 == "Melee Defense"))) {
-        multi *= 1.2;
+    if ((itemB == "Weighty Shield" && ((move.mr2 == "Ranged Defense" && adaptive.mr2 != "Melee Defense") || adaptive.mr2 == "Ranged Defense")) ||
+       (itemB == "Weighty Pauldrons" && ((move.mr2 == "Melee Defense" && adaptive.mr2 != "Ranged Defense") || adaptive.mr2 == "Melee Defense"))) {
+        multi *= 1.5;
         stuffUsed.item2 = itemB;
     }
-    if (itemB == "Drop of Youth" && loom2.finalEvo == false) {
-        multi *= 1.4;
+    if (itemB == "Evolutionary Convertor" && loom2.finalEvo == false) {
+        multi *= 1.5;
         stuffUsed.item2 = itemB;
     }
     if ((ability2 == "Trash Armor" || ability2 == "Hard Candy" || ability2 == "Safety Pot") && ((move.mr2 == "Melee Defense" && adaptive.mr2 != "Ranged Defense") || adaptive.mr2 == "Melee Defense")) {
@@ -3032,7 +3032,7 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
     multi *= 1.2;
 }
 	
-    if (item == "Drain Orb") {
+    if (item == "Drain Fang") {
         multi *= 1.2;
     }
     
@@ -3166,7 +3166,7 @@ function checkIceTrap(move, l, u, hp, item, ability, ability2) {
             else drain += 1/4;
         }
 		
-        let drainMI = (item == "Drain Orb" ? 1.2 : 1);
+        let drainMI = (item == "Drain Fang" ? 1.2 : 1);
         let drainMA = (ability == "Drainage" ? 1.5 : 1); 
         let drainL = Math.max(Math.floor(l * drain * drainMI * drainMA), 1);
         let drainU = Math.max(Math.floor(u * drain * drainMI * drainMA), 1);

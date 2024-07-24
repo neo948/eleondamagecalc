@@ -3406,7 +3406,6 @@ var moves = {
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
-		mr2: "Ranged Defense",
 		pivot:true,
 	},
 	
@@ -3456,7 +3455,98 @@ var moves = {
 
 	},
 	
+	ambush: {
+        name: "Ambush",
+        power: 40,
+        accuracy: 100,
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+	},
 	
+	sneakAttack: {
+        name: "Sneak Attack",
+        power: 40,
+        accuracy: 100,
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+	},
+	
+	stickUp: {
+        name: "Stickup",
+        power: 65,
+        accuracy: 95,
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+	},
+	
+	shadowSlash: {
+        name: "Shadow Slash",
+        power: 75,
+        accuracy: 90,
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+		slash: true,
+	},
+	
+	brutalBite: {
+        name: "Brutal Bite",
+        power: 80,
+        accuracy: 100,
+        type: "Nature",
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+		secondaryEffect: true,
+		bite: true,
+	},
+	
+	cheapShot: {
+        name: "Cheap Shot",
+        power: 90,
+        accuracy: 85,
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+	},
+	
+	beatDown: {
+        name: "Beat Down",
+        power: 120,
+        accuracy: 90,
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+	},
+	
+	darkDescent: {
+        name: "Dark Descent",
+        power: 120,
+        accuracy: 100,
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        contact: true,
+       
+	},
 	
 	
 	
@@ -3618,7 +3708,7 @@ var types = {
 var abilities = [
     "Abrasive", "Agile", "Altruistic", "Appeal", "Apathy", "Ashfall", "Prioritize", "Airborne", "Blood Drinker", "Last Stand", "Oblivious", "Snatcher", "Sweet Dreams",
 	"Ballistic", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", "Operating Drive", "Cacophony", "Blistering", "Observant", "Syncopate", "Tender", "Unflappable",
-	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "High Velocity", "Readjust", "Tread Lightly", "Ricochet",
+	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "Readjust", "Tread Lightly", "Ricochet",
 	"Empathy", "Enlighten", "Evaporative", "Floromancy", "Flowerfall", "Godspeed", "Triple Threat", "Extremophile", "Lead Foot", "Quick Wit", "Spurred Action",
 	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon", "Blood Rush", "Specialist", "Poisonous", "Rigid", "Tunnel Vision",
 	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Mastery", "Mirage", "Mountaineer", "Soft Served", "Menacing", "Reflective", "Two Heads",
@@ -3816,8 +3906,8 @@ var typeModAbilities = {
     },
 }
 
-var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Drop of Youth", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
-             "Volcanic Ash", "Rageful Plushie", "Clutch Plushie", "Specialty Boots", "Milkshake", "Kabunga Coffee"];
+var items = ["Weighty Shield", "Weighty Pauldrons", "Power Glove", "Philosopher's Pebble", "Drain Fang",  "Evolutionary Convertor","Shock Stone",
+             "Scorch Stone", "Spiked Bands", "Ballistic Armor", "Laser Pointer", "Calm Balm"];
 
 
 for (let loo in loomians) {
