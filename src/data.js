@@ -1295,7 +1295,7 @@ var loomians = {
             defense: 110,
             attackR: 100,
             defenseR: 54,
-            speed: 34
+            speed: 60
         }
     },
 	
@@ -1908,10 +1908,10 @@ var loomians = {
         height: 59,
         baseStats: {
             hp: 81,
-            attack: 22,
-            defense: 84,
-            attackR: 119,
-            defenseR: 74,
+            attack: 32,
+            defense: 89,
+            attackR: 109,
+            defenseR: 79,
             speed: 120,
 			
 	   }
@@ -2080,18 +2080,18 @@ var loomians = {
         name: "Occuli",
         number: 102,
 	    types: ["Hydro","Soul"],
-        abilities: ["Cheerful"],
-		sAbility: ["Hydration"],
+        abilities: ["Tainted"],
+		sAbility: ["Blood Drinker"],
         finalEvo: false,
         weight: 39,
         height: 59,
         baseStats: {
-            hp: 0,
-            attack: 0,
-            defense: 0,
-            attackR: 0,
-            defenseR: 0,
-            speed: 0,
+            hp: 43,
+            attack: 55,
+            defense: 41,
+            attackR: 27,
+            defenseR: 40,
+            speed: 44,
 			
 	   }
     },
@@ -2100,18 +2100,18 @@ var loomians = {
         name: "Occtolus",
         number: 103,
 	    types: ["Hydro","Soul"],
-        abilities: ["Sadistic"],
-		sAbility: ["Snowfall"],
+        abilities: ["Tainted"],
+		sAbility: ["Blood Drinker"],
         finalEvo: true,
         weight: 39,
         height: 59,
         baseStats: {
-            hp: 0,
-            attack: 0,
-            defense: 0,
-            attackR: 0,
-            defenseR: 0,
-            speed: 0,
+            hp: 86,
+            attack: 129,
+            defense: 94,
+            attackR: 41,
+            defenseR: 77,
+            speed: 83,
 			
 	   }
     },
@@ -2998,6 +2998,171 @@ var moves = {
         mr2: "Ranged Defense"
 	},
 	
+	hotPoke: {
+        name: "Hot Poke",
+        power: 60,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense"
+	},
+	
+	burningSlash: {
+        name: "Burning Slash",
+        power: 75,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense"
+	},
+	
+	blazeRush: {
+        name: "Blaze Rush",
+        power: 65,
+        accuracy: 95,
+        type: "Pyro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense"
+	},
+	
+	blazePunch: {
+        name: "Blaze Punch",
+        power: 75,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense"
+	},
+	
+	burningBite: {
+        name: "Burning Bite",
+        power: 80,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense"
+	},
+	
+	explosiveFury: {
+        name: "Explosive Fury",
+        power: 120,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense"
+	},
+	
+	ventRage: {
+        name: "Vent Rage",
+        power: 20,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	flashFire: {
+        name: "Flash Fire",
+        power: 40,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	singe: {
+        name: "Singe",
+        power: 40,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	sparkShower: {
+        name: "Sparkshower",
+        power: 60,
+        accuracy: 95,
+        type: "Pyro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	pyroTechnics: {
+        name: "Pyrotechnics",
+        power: 75,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	fireBreathing: {
+        name: "Firebreathing",
+        power: 90,
+        accuracy: 100,
+        type: "Pyro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	fireBall: {
+        name: "Fireball",
+        power: 110,
+        accuracy: 80,
+        type: "Pyro",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense"
+	},
+	
+	rapidRush: {
+        name: "Rapid Rush",
+        power: 80,
+        accuracy: 100,
+        type: "Hydro",
+        mr: "Various",
+        mr1: "Melee Defense",
+        mr2: "Ranged Defense",
+        contact: true,
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
 	noMove: {
         name: "(No Move)",
         power: 0,
@@ -3123,15 +3288,15 @@ var types = {
 };
 
 var abilities = [
-    "Abrasive", "Agile", "Altruistic", "Appeal", "Apathy", "Ashfall", "Prioritize", "Airborne", "Blood Drinker", "Last Stand", "Oblivious",
-	"Ballistic", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", "Operating Drive", "Cacophony", "Blistering", "Observant",
-	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "High Velocity",
-	"Empathy", "Enlighten", "Evaporative", "Floromancy", "Flowerfall", "Godspeed", "Triple Threat", "Extremophile", "Lead Foot",
-	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon", "Blood Rush", "Specialist",
-	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Mastery", "Mirage", "Mountaineer", "Soft Served", "Menacing",
-	, "Night Vision", "Petrifying", "Point Blank", "Raw Power", "Rehydrate", "Richochet", "Rockfall", "Body Gaurd", "Pirouette",
-	, "Sadistic", "Snowfall", "Spirit Affinity", "Starfall", "Stalker", "Supercharged", "Superconductor", "Slugger", "Slasher",
-	, "Tainted", "Thermal Power", "Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider", "Savage", "Sharp Teeth"
+    "Abrasive", "Agile", "Altruistic", "Appeal", "Apathy", "Ashfall", "Prioritize", "Airborne", "Blood Drinker", "Last Stand", "Oblivious", "Snatcher", "Sweet Dreams",
+	"Ballistic", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", "Operating Drive", "Cacophony", "Blistering", "Observant", "Syncopate", "Tender", "Unflappable",
+	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "High Velocity", "Readjust", "Tread Lightly", "Ricochet",
+	"Empathy", "Enlighten", "Evaporative", "Floromancy", "Flowerfall", "Godspeed", "Triple Threat", "Extremophile", "Lead Foot", "Quick Wit", "Spurred Action",
+	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon", "Blood Rush", "Specialist", "Poisonous", "Rigid", "Tunnel Vision",
+	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Mastery", "Mirage", "Mountaineer", "Soft Served", "Menacing", "Reflective", "Two Heads",
+	, "Night Vision", "Petrifying", "Point Blank", "Raw Power", "Rehydrate", "Richochet", "Rockfall", "Body Gaurd", "Pirouette", "Recompose", "Unfiltered",
+	, "Sadistic", "Snowfall", "Spirit Affinity", "Starfall", "Stalker", "Supercharged", "Superconductor", "Slugger", "Slasher", "Power Buster", "Spooky",
+	, "Tainted", "Thermal Power", "Unnerving", "Victory Lap", "Water Membrane", "Well-Polished", "Wind Rider", "Savage", "Sharp Teeth", "Self Healing",
 ];
 
 var typeModAbilities = {
@@ -3202,20 +3367,20 @@ var typeModAbilities = {
         powerMod: false
     },
     
-    rechargeable: {
-        name: "Rechargeable",
-        typeModifier: { type: "Electric", modifier: 0},
+    windRider: {
+        name: "Wind Rider",
+        typeModifier: { type: "Wind", modifier: 0},
         powerMod: false
     },
 
-    totalEclipse: {
-        name: "Total Eclipse",
-        typeModifier: { type: "Light", type2: "Dark", modifier: 0},
+    nightVision: {
+        name: "Night Vision",
+        typeModifier: { type: "Dark", modifier: 0},
         powerMod: false
     },
 
-    toxicFilter: {
-        name: "Toxic Filter",
+    detox: {
+        name: "Detox",
         typeModifier: { type: "Toxic", modifier: 0},
         powerMod: false
     },
@@ -3250,9 +3415,9 @@ var typeModAbilities = {
         powerMod: false
     },
 
-    fanningTheFlame: {
-        name: "Fanning Flame",
-        typeModifier: { type: "Air", modifier: 0.5},
+    waterMembrane: {
+        name: "Water Membrane",
+        typeModifier: { type: "Pyro", modifier: 0.5},
         powerMod: false
     },
 

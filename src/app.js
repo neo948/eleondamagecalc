@@ -2152,7 +2152,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
     if (ability1 == "Idiosyncratic") stuffUsed.ability1 = ability1;
     if (ability2 == "Idiosyncratic") stuffUsed.ability2 = ability2;
 
-    if ((ability1 == "Devious") || 
+    if ((ability1 == "Power Buster") || 
        (ability1 == "Bully" && loom1.height > loom2.height)) {
         ability2 = "None";
         stuffUsed.ability1 = ability1;
@@ -2165,11 +2165,11 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
 
     if (ability1 == "Royal Decree" && loom2.types.includes("Earth")) stuffUsed.ability1 = ability1;
 
-    if (ability1 == "Sly") {
+    if (ability1 == "Unfiltered") {
         itemB = "None";
         stuffUsed.ability1 = ability1;
     }
-    if (ability2 == "Sly") {
+    if (ability2 == "Unfiltered") {
         itemA = "None";
         stuffUsed.ability2 = ability2;
     }
@@ -2218,6 +2218,11 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
         multi *= 1.2;
         stuffUsed.ability1 = ability1;
     }
+	else if (ability1 == "Enlighten" && tempType == "Basic") {
+        tempType = "Light";
+        multi *= 1.2;
+        stuffUsed.ability1 = ability1;
+	}
     else if (ability1 == "Firepower" && tempType == "Basic") {
         tempType = "Pyro";
         multi *= 1.2;
@@ -2290,8 +2295,30 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
        multi *= 1.5;
        stuffUsed.ability1 = ability1;
 }	
+ if (ability1 == "Ballistic" && move.recoil == true) {
+       multi *= 1.3;
+       stuffUsed.ability1 = ability1;
+ }
  
+ if (ability1 == "Breakneck" && move.dash == true) {
+       multi *= 1.3;
+       stuffUsed.ability1 = ability1;
+ }
  
+    if (ability1 == "Tunnel Vision" && move.aoe == true) {
+       multi *= 1.5;
+       stuffUsed.ability1 = ability1;
+}	
+ if (ability1 == "Stalker") {
+       multi *= 2;
+       stuffUsed.ability1 = ability1;
+}	
+ 
+ if (ability1 == "Two Heads") {
+       multi *= 1.25;
+       stuffUsed.ability1 = ability1;
+}	
+
 if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro" || tempType == "Hydro")) {
     multi *= 1.25;
     stuffUsed.ability1 = ability1;
@@ -2312,7 +2339,7 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
         stuffUsed.ability1 = ability1;
     }
 
-    if (ability2 == "Overcharged" && tempType == "Electric") {
+    if (ability2 == "Supercharged" && tempType == "Electric") {
         multi *= 1.3;
         stuffUsed.ability2 = ability2;
     }
@@ -2341,7 +2368,7 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
         stuffUsed.item2 = itemB;
         stuffUsed.ability2 = (ability2 == "Clingy" ? ability2 : stuffUsed.ability2);
     }
-    else if (ability1 == "Sly" && move.knockOff == true) {
+    else if (ability1 == "Unfiltered" && move.knockOff == true) {
         tempItem = (second == false ? item2.value : item1.value);
         if (tempItem != "None" && withoutSlapDown) {
             multi *= 1.5;
@@ -2531,7 +2558,7 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
 
     //Type -------------------------------
 
-    if((ability1 == "Devious") || 
+    if((ability1 == "Power Buster") || 
        (ability1 == "Bully" && loom1.height > loom2.height) ||
        (fog.checked && !loom2.types.includes("Spirit"))) {
         typeModAbility2 = undefined;
@@ -2648,8 +2675,8 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
         multi *= 0.5;
         stuffUsed.item2 = itemB;
     }
-    if (effectiveness > 1 && ability2 == "Enchanted Coat") {
-        multi *= 0.75;
+    if (effectiveness > 1 && ability2 == "Cheerful") {
+        multi *= 0.5;
         stuffUsed.ability2 = ability2;
     }
     if (isDouble && guardian) {
@@ -3069,7 +3096,13 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
 		if (ability == "Ill Revital" && (status == "poisoned" || status == "diseased")) {
             newHP -= Math.floor(hp1 * 1 / 8);
             hazardString += "Ill Revital's recovery and ";
+		}
+		
+		if (ability == "Sweet Dreams" && (status == "asleep")) {
+            newHP -= Math.floor(hp1 * 1 / 8);
+            hazardString += "Sweet Dreams' recovery and ";
         }
+		
 		
         if (loom2.types.includes("Nature") && rain.checked) {
             newHP -= Math.floor(hp1 * 1 / 16);
@@ -3087,7 +3120,7 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
     }
     
     let otherAbility = (second ? abilities.find((x) => x == abilityDropdown2.value) : abilities.find((x) => x == abilityDropdown1.value));
-    if (status == "burned" && !loom2.types.includes("Fire") && ability != "Aqua Body" && ability != "One of Many") {
+    if (status == "burned" && !loom2.types.includes("Fire") && ability != "Water Membrane" && ability != "One of Many") {
         if (otherAbility == "Third-Degree Burn") newHP += Math.floor(hp1 * 1 / 8);
         else newHP += Math.floor(hp1 * 1 / 16);
         hazardString += "burn damage and ";
