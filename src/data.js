@@ -2995,7 +2995,7 @@ var moves = {
         type: "Nature",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
 	},
 	
 	hotPoke: {
@@ -3005,7 +3005,9 @@ var moves = {
         type: "Pyro",
         mr: "Melee",
         mr1: "Melee Attack",
-        mr2: "Melee Defense"
+        mr2: "Melee Defense",
+        contact: true,
+       
 	},
 	
 	burningSlash: {
@@ -3015,7 +3017,8 @@ var moves = {
         type: "Pyro",
         mr: "Melee",
         mr1: "Melee Attack",
-        mr2: "Melee Defense"
+        mr2: "Melee Defense",
+		contact: true,
 	},
 	
 	blazeRush: {
@@ -3025,7 +3028,9 @@ var moves = {
         type: "Pyro",
         mr: "Melee",
         mr1: "Melee Attack",
-        mr2: "Melee Defense"
+        mr2: "Melee Defense",
+		contact: true,
+		dash: true,
 	},
 	
 	blazePunch: {
@@ -3035,7 +3040,9 @@ var moves = {
         type: "Pyro",
         mr: "Melee",
         mr1: "Melee Attack",
-        mr2: "Melee Defense"
+        mr2: "Melee Defense",
+		contact: true,
+		punch: true,
 	},
 	
 	burningBite: {
@@ -3045,7 +3052,9 @@ var moves = {
         type: "Pyro",
         mr: "Melee",
         mr1: "Melee Attack",
-        mr2: "Melee Defense"
+        mr2: "Melee Defense",
+		contact: true,
+		bite: true,
 	},
 	
 	explosiveFury: {
@@ -3055,7 +3064,8 @@ var moves = {
         type: "Pyro",
         mr: "Melee",
         mr1: "Melee Attack",
-        mr2: "Melee Defense"
+        mr2: "Melee Defense",
+		contact: true,
 	},
 	
 	ventRage: {
@@ -3065,7 +3075,7 @@ var moves = {
         type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
 	},
 	
 	flashFire: {
@@ -3075,7 +3085,7 @@ var moves = {
         type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
 	},
 	
 	singe: {
@@ -3085,7 +3095,7 @@ var moves = {
         type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
 	},
 	
 	sparkShower: {
@@ -3095,7 +3105,7 @@ var moves = {
         type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
 	},
 	
 	pyroTechnics: {
@@ -3105,7 +3115,8 @@ var moves = {
         type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
+		bomb: true,
 	},
 	
 	fireBreathing: {
@@ -3115,7 +3126,7 @@ var moves = {
         type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
 	},
 	
 	fireBall: {
@@ -3125,7 +3136,9 @@ var moves = {
         type: "Pyro",
         mr: "Ranged",
         mr1: "Ranged Attack",
-        mr2: "Ranged Defense"
+        mr2: "Ranged Defense",
+		bomb: true,
+
 	},
 	
 	rapidRush: {
