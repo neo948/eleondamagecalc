@@ -124,7 +124,7 @@
             <fieldset>
 
                 <legend align="center">
-                    Loomian 1
+                    Eleon 1
                 </legend>
 
                 <select class="pokeselect" id="pokes1" onchange="loadSets(true)">
@@ -373,7 +373,6 @@
                             <option value="strong">Strong</option>
                             <option value="resilient ">Resilient </option>
                             <option value="adept">Adept</option>
-                            <option value="clever">Clever</option>
                             <option value="tenacious">Tenacious</option>
 							<option value="swift">Swift</option>
                             
@@ -592,15 +591,17 @@
                     <input type="radio" class="hiddenToUser" name="weather" value="0" id="noWeather" checked="checked" onchange="update()">
                     <label class="radiolbl fieldlbl btn-left" for="noWeather" title="Select the current weather condition">None</label>
                     <input type="radio" class="hiddenToUser" name="weather" value="1" id="rain" onchange="update()">
-                    <label class="radiolbl fieldlbl btn-mid" for="rain" title="Select the current weather condition">Rainfall</label>
-                    <input type="radio" class="hiddenToUser" name="weather" value="2" id="winds" onchange="update()">
-                    <label class="radiolbl fieldlbl btn-mid" for="winds" title="Select the current weather condition">Strong Gusts</label>
-                    <input type="radio" class="hiddenToUser" name="weather" value="3" id="fog" onchange="update()">
-                    <label class="radiolbl fieldlbl btn-mid" for="fog" title="Select the current weather condition">Fog</label>
+                    <label class="radiolbl fieldlbl btn-mid" for="rain" title="Select the current weather condition">Flooding</label>
+                    <input type="radio" class="hiddenToUser" name="weather" value="2" id="rocky" onchange="update()">
+                    <label class="radiolbl fieldlbl btn-mid" for="rocky" title="Select the current weather condition">Rocky</label>
+                    <input type="radio" class="hiddenToUser" name="weather" value="3" id="overgrown" onchange="update()">
+                    <label class="radiolbl fieldlbl btn-mid" for="overgrown" title="Select the current weather condition">Overgrown</label>
                     <input type="radio" class="hiddenToUser" name="weather" value="3" id="heat" onchange="update()">
-                    <label class="radiolbl fieldlbl btn-mid" for="heat" title="Select the current weather condition">Heat Wave</label>
-                    <input type="radio" class="hiddenToUser" name="weather" value="4" id="storm" onchange="update()">
-                    <label class="radiolbl fieldlbl btn-right" for="storm" title="Select the current weather condition">Thunderstorm</label>
+                    <label class="radiolbl fieldlbl btn-mid" for="heat" title="Select the current weather condition">Burning</label>
+                    <input type="radio" class="hiddenToUser" name="weather" value="4" id="enchanted" onchange="update()">
+                    <label class="radiolbl fieldlbl btn-mid" for="enchanted" title="Select the current weather condition">Enchanted</label>
+					<input type="radio" class="hiddenToUser" name="weather" value="5" id="icy" onchange="update()">
+                    <label class="radiolbl fieldlbl btn-right" for="icy" title="Select the current weather condition">Icy</label>
                 </div>
                 <hr>
                 <div class="fieldTraps">
@@ -800,15 +801,26 @@
                     <div>
                         <div class="left">
                             <input type="checkbox" class="hiddenToUser" id="guardian1" onchange="update()">
-                            <label class="radiolbl fieldlbl entered" for="guardian1">Ally Has Guardian</label>
+                            <label class="radiolbl fieldlbl entered" for="guardian1">Ally Has Honor Guard</label>
                         </div>
 
                         <div class="right">
                             <input type="checkbox" class="hiddenToUser" id="guardian2" onchange="update()">
-                            <label class="radiolbl fieldlbl entered" for="guardian2">Ally Has Guardian</label>
+                            <label class="radiolbl fieldlbl entered" for="guardian2">Ally Has Honor Guard</label>
                         </div>
                     </div>
-                    
+					<div>
+                        <div class="left">
+                            <input type="checkbox" class="hiddenToUser" id="altruistic1" onchange="update()">
+                            <label class="radiolbl fieldlbl entered" for="altruistic1">Ally Has Altruistic</label>
+                        </div>
+
+                        <div class="right">
+                            <input type="checkbox" class="hiddenToUser" id="altruistic2" onchange="update()">
+                            <label class="radiolbl fieldlbl entered" for="altruistic2">Ally Has Altruistic</label>
+                        </div>
+                    </div>
+					
                 </div>
 
                 <hr>
@@ -827,7 +839,7 @@
         <div class="panel loomian-info">
             <fieldset>
                 <legend align="center">
-                    Loomian 2
+                    Eleon 2
                 </legend>
                 <select class="pokeselect" id="pokes2" onchange="loadSets(undefined, true)"></select>
 
@@ -1074,7 +1086,6 @@
                             <option value="strong">Strong</option>
                             <option value="resilient ">Resilient </option>
                             <option value="adept">Adept</option>
-                            <option value="clever">Clever</option>
                             <option value="tenacious">Tenacious</option>
 							<option value="swift">Swift</option>
                         </select>
