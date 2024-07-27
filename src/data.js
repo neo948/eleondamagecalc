@@ -3717,7 +3717,7 @@ var types = {
 var abilities = [
     "Abrasive", "Agile", "Altruistic", "Appeal", "Apathy", "Ashfall", "Prioritize", "Airborne", "Blood Drinker", "Last Stand", "Oblivious", "Snatcher", "Sweet Dreams",
 	"Ballistic", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", "Operating Drive", "Cacophony", "Blistering", "Observant", "Syncopate", "Tender", "Unflappable",
-	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "Readjust", "Tread Lightly", "Ricochet",
+	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "High Velocity", "Readjust", "Tread Lightly", "Ricochet",
 	"Empathy", "Enlighten", "Evaporative", "Floromancy", "Flowerfall", "Godspeed", "Triple Threat", "Extremophile", "Lead Foot", "Quick Wit", "Spurred Action",
 	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon", "Blood Rush", "Specialist", "Poisonous", "Rigid", "Tunnel Vision",
 	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Mastery", "Mirage", "Mountaineer", "Soft Served", "Menacing", "Reflective", "Two Heads",
@@ -3727,196 +3727,201 @@ var abilities = [
 ];
 
 var typeModAbilities = {
-    coursingVenom: {
-        name: "Coursing Venom",
-        typeModifier: { type: "Toxic", modifier: 0 },
-        powerMod: false
+    coursingVenom:  {
+        name:  "Coursing Venom",
+        typeModifier:  { type:  "Toxic", modifier:  0 },
+        powerMod:  false
     },
     
-    lightningRod: {
-        name: "Lightning Rod",
-        typeModifier: { type: "Electric", modifier: 0 },
-        powerMod: false
+    lightningRod:  {
+        name:  "Lightning Rod",
+        typeModifier:  { type:  "Electric", modifier:  0 },
+        powerMod:  false
     },
     
-    prismatic: {
-        name: "Prismatic",
-        typeModifier: { type: "Light", modifier: 0 },
-        powerMod: false
+    prismatic:  {
+        name:  "Prismatic",
+        typeModifier:  { type:  "Light", modifier:  0 },
+        powerMod:  false
     },
 
-    reflective: {
-        name: "Reflective",
-        typeModifier: { type: "Light", modifier: 0 },
-        powerMod: false
+    reflective:  {
+        name:  "Reflective",
+        typeModifier:  { type:  "Light", modifier:  0 },
+        powerMod:  false
     },
     
-    woodsman: {
-        name: "Woodsman",
-        typeModifier: { type: "Plant", modifier: 0 },
-        powerMod: false
+    woodsman:  {
+        name:  "Woodsman",
+        typeModifier:  { type:  "Plant", modifier:  0 },
+        powerMod:  false
     },
     
-    airborne: {
-        name: "Airborne",
-        typeModifier: { type: "Geo", modifier: 0 },
-        powerMod: false
+    airborne:  {
+        name:  "Airborne",
+        typeModifier:  { type:  "Geo", modifier:  0 },
+        powerMod:  false
     },
     
 	
-    noxiousWeeds: {
-        name: "Noxious Weeds",
-        typeModifier: { type: "Plant", modifier: 0 },
-        powerMod: false
+    noxiousWeeds:  {
+        name:  "Noxious Weeds",
+        typeModifier:  { type:  "Plant", modifier:  0 },
+        powerMod:  false
     },
     
-    pyro: {
-        name: "Pyro",
-        typeModifier: { type: "Fire", modifier: 1.5 },
-        powerMod: true
+    pyro:  {
+        name:  "Pyro",
+        typeModifier:  { type:  "Fire", modifier:  1.5 },
+        powerMod:  true
     },
 
-    pyroPro: {
-        name: "Pyro Pro",
-        typeModifier: { type: "Fire", modifier: 1.5 },
-        powerMod: true
+    pyroPro:  {
+        name:  "Pyro Pro",
+        typeModifier:  { type:  "Fire", modifier:  1.5 },
+        powerMod:  true
     },
     
-    volcanic: {
-        name: "Volcanic",
-        typeModifier: { type: "Fire", modifier: 2 },
-        powerMod: true
+    volcanic:  {
+        name:  "Volcanic",
+        typeModifier:  { type:  "Fire", modifier:  2 },
+        powerMod:  true
     },
 
-    ragingFire: {
-        name: "Raging Fire",
-        typeModifier: { type: "Fire", modifier: 0},
-        powerMod: false
+    ragingFire:  {
+        name:  "Raging Fire",
+        typeModifier:  { type:  "Fire", modifier:  0},
+        powerMod:  false
     },
     
-    windRider: {
-        name: "Wind Rider",
-        typeModifier: { type: "Wind", modifier: 0},
-        powerMod: false
+    windRider:  {
+        name:  "Wind Rider",
+        typeModifier:  { type:  "Wind", modifier:  0},
+        powerMod:  false
     },
 
-    nightVision: {
-        name: "Night Vision",
-        typeModifier: { type: "Dark", modifier: 0},
-        powerMod: false
+    nightVision:  {
+        name:  "Night Vision",
+        typeModifier:  { type:  "Dark", modifier:  0},
+        powerMod:  false
     },
 
-    detox: {
-        name: "Detox",
-        typeModifier: { type: "Toxic", modifier: 0},
-        powerMod: false
+    detox:  {
+        name:  "Detox",
+        typeModifier:  { type:  "Toxic", modifier:  0},
+        powerMod:  false
     },
 
-    aquaBody: {
-        name: "Aqua Body",
-        typeModifier: { type: "Fire", modifier: 0.5},
-        powerMod: false
+    aquaBody:  {
+        name:  "Aqua Body",
+        typeModifier:  { type:  "Fire", modifier:  0.5},
+        powerMod:  false
     },
 
-    hardCandy: {
-        name: "Hard Candy",
-        typeModifier: { type: "Water", modifier: 2},
-        powerMod: false
+    hardCandy:  {
+        name:  "Hard Candy",
+        typeModifier:  { type:  "Water", modifier:  2},
+        powerMod:  false
     },
 
-    incandescent: {
-        name: "Incandescent",
-        typeModifier: { type: "Light", modifier: 1.5},
-        powerMod: true
+    incandescent:  {
+        name:  "Incandescent",
+        typeModifier:  { type:  "Light", modifier:  1.5},
+        powerMod:  true
     },
 
-    'pitch-black': {
-        name: "Pitch-Black",
-        typeModifier: { type: "Dark", modifier: 1.5},
-        powerMod: true
+    'pitch-black':  {
+        name:  "Pitch-Black",
+        typeModifier:  { type:  "Dark", modifier:  1.5},
+        powerMod:  true
     },
 
-    chunky: {
-        name: "Chunky",
-        typeModifier: { type: "Pyro", type2: "Ice", modifier: 0.5},
-        powerMod: false
+    chunky:  {
+        name:  "Chunky",
+        typeModifier:  { type:  "Pyro", type2:  "Ice", modifier:  0.5},
+        powerMod:  false
     },
 
-    waterMembrane: {
-        name: "Water Membrane",
-        typeModifier: { type: "Pyro", modifier: 0.5},
-        powerMod: false
+    waterMembrane:  {
+        name:  "Water Membrane",
+        typeModifier:  { type:  "Pyro", modifier:  0.5},
+        powerMod:  false
     },
 
-    forge: {
-        name: "Forge",
-        typeModifier: { type: "Fire", modifier: 0.5},
-        powerMod: false
+    forge:  {
+        name:  "Forge",
+        typeModifier:  { type:  "Fire", modifier:  0.5},
+        powerMod:  false
     },
 
-    wholesome: {
-        name: "Wholesome",
-        typeModifier: { type: "Brawler", type2: "Mind", modifier: 0.5},
-        powerMod: false
+    wholesome:  {
+        name:  "Wholesome",
+        typeModifier:  { type:  "Brawler", type2:  "Mind", modifier:  0.5},
+        powerMod:  false
     },
 
-    hration: {
-		name: "Hydration",
-		typeModifier: {type: "Hydro", modifier:0},
-		powerMod: false
+    hration:  {
+		name:  "Hydration",
+		typeModifier:  {type:  "Hydro", modifier: 0},
+		powerMod:  false
 	},
 	
-    evaporative: {
-        name: "Evaporative",
-        typeModifier: { type: "Hydro", modifier: 0},
-        powerMod: false
+    evaporative:  {
+        name:  "Evaporative",
+        typeModifier:  { type:  "Hydro", modifier:  0},
+        powerMod:  false
     },
 
-    railgun: {
-        name: "Railgun",
-        typeModifier: { type: "Electric", modifier: 1.5},
-        powerMod: true
+    railgun:  {
+        name:  "Railgun",
+        typeModifier:  { type:  "Electric", modifier:  1.5},
+        powerMod:  true
     },
 
-    burningRage: {
-        name: "Burning Rage",
-        typeModifier: { type: "Fire", modifier: 1.5},
-        powerMod: true
+    burningRage:  {
+        name:  "Burning Rage",
+        typeModifier:  { type:  "Fire", modifier:  1.5},
+        powerMod:  true
     },
 
-    chillingPassion: {
-        name: "Chilling Passion",
-        typeModifier: { type: "Ice", modifier: 1.5},
-        powerMod: true
+    chillingPassion:  {
+        name:  "Chilling Passion",
+        typeModifier:  { type:  "Ice", modifier:  1.5},
+        powerMod:  true
     },
 
-    obsidianHeart: {
-        name: "Obsidian Heart",
-        typeModifier: { type: "Ancient", modifier: 1.5},
-        powerMod: true
+    obsidianHeart:  {
+        name:  "Obsidian Heart",
+        typeModifier:  { type:  "Ancient", modifier:  1.5},
+        powerMod:  true
     },
 
-    'sky-borne': {
-        name: "Sky-Borne",
-        typeModifier: { type: "Air", modifier: 1.25},
-        powerMod: true
+    'sky-borne':  {
+        name:  "Sky-Borne",
+        typeModifier:  { type:  "Air", modifier:  1.25},
+        powerMod:  true
     },
 
-    'land-borne': {
-        name: "Land-Borne",
-        typeModifier: { type: "Earth", modifier: 1.25},
-        powerMod: true
+    'land-borne':  {
+        name:  "Land-Borne",
+        typeModifier:  { type:  "Earth", modifier:  1.25},
+        powerMod:  true
     },
 
-    'depths-borne': {
-        name: "Depths-Borne",
-        typeModifier: { type: "Water", modifier: 1.25},
-        powerMod: true
+    'depths-borne':  {
+        name:  "Depths-Borne",
+        typeModifier:  { type:  "Water", modifier:  1.25},
+        powerMod:  true
     },
 }
 
-var items = ["Weighty Shield", "Weighty Pauldrons", "Power Glove", "Philosopher's Pebble", "Drain Fang",  "Evolutionary Convertor","Shock Stone",
-             "Scorch Stone", "Spiked Bands", "Ballistic Armor", "Laser Pointer", "Calm Balm"];
+var items = ["Weighty Shield", "Weighty Pauldrons", "Power Glove", "Philosopher's Pebble", "Drain Fang",  "Evolutionary Convertor","Shock Stone", "Leather Cuirass", 
+             "Scorch Stone", "Spiked Bands", "Ballistic Armor", "Laser Pointer", "Calm Balm", "Fiery Amulet", "Balance Amulet", "Biotic Amulet", "Fluid Amulet", 
+			 "Charged Amulet", "Umbral Amulet", "Radiant Amulet", "Earthen Amulet", "Turbulent Amulet", "Caustic Amulet", "Courage Amulet", "Glacial Amulet", 
+			 "Neural Amulet", "Spirited Amulet", "Adamant Amulet", "Arcane Amulet", "Gardening Apron", "Heatproof Suit", "Snorkel Mask", "Rubber Gloves", 
+			 "High-Vis Vest", "Tinted Sunglasses", "Hard Hat", "Pilot Goggles", "Face Shield", "Headgear", "Cozy Sweater", "Tinfoil Hat", "Warding Charms",
+			 "Breaker Pauldrons", "Crystal Medallion", "Acid Stone", "Chill Stone", "Evolutionary Transformer", "Evolutionary Invertor", "Amplifier", 
+			 "Steel-Toed Boot", "Padded Vest", "Shiv of Overkill"];
 
 
 for (let loo in loomians) {
