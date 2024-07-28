@@ -678,7 +678,7 @@ $(".dmg").change(function() {
         let loomi = $(this).closest(".loomian-info");
         let moveHits = (loomi.find(".trait").val() == "Capoeira") ? 5 : 3;
         moveGroupObj.children(".move-hits").val(moveHits + " hits");
-        if (move.name == "Pepper Burst" || move.name == "Double Beat" || move.name == "Rapid Fire") moveGroupObj.children(".move-hits").hide();
+        if (move.name == "Pepper Burst" || move.name == "Double Beat" || move.name == "Bi-Icicle") moveGroupObj.children(".move-hits").hide();
     } else if (move.name == "Expert Onslaught") {
         moveGroupObj.children(".move-hits").hide();
         moveGroupObj.children(".swarm").show();
@@ -1673,7 +1673,7 @@ function detailedReport() {
     let adaptive = { mr: "", mr1: "", mr2: ""};
     let adaptiveResult;
     let atkDef;
-    if ((move.name == "Last Resort" || move.name.includes("Special Attack")) && atks.ranged > atks.melee ) {
+    if ((move.name == "Last Resort" || move.name == "Special Serving" || move.name.includes("Special Attack")) && atks.ranged > atks.melee ) {
         adaptive.mr = "Ranged";
         adaptive.mr1 = "Ranged Attack";
         adaptive.mr2 = "Ranged Defense";
@@ -2123,7 +2123,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
 
     let immuneBoostCheck1 = (second == false ? immuneAbilityBoost1.checked : immuneAbilityBoost2.checked);
     
-    if (move.name.includes("Special Attack") || move.name == "Last Resort") {
+    if (move.name.includes("Special Attack") || move.name == "Last Resort" || move.name == "Special Serving") {
         if (stats1.atkR > stats1.atk) {
             adaptive.mr = "Ranged";
             adaptive.mr1 = "Ranged Attack";
@@ -2215,7 +2215,9 @@ function getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm,
 
     
 
-    if (ability1 == "Royal Decree" && loom2.types.includes("Earth")) stuffUsed.ability1 = ability1;
+    if (move.name == "Power Drill" && loom2.types.includes("Earth")) stuffUsed.ability1 = ability1;
+	
+
 
     if (ability1 == "Unfiltered") {
         itemB = "None";
@@ -2420,7 +2422,7 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
         stuffUsed.item1 = itemA;
 	}
 	
-	if (itemA == "Fiery Amulet" && move.type == "Pyro") {
+	if (itemA == "Fiery Amulet" && (move.type == "Pyro" || move.name == "Frost Burn")) {
 		multi *= 1.2;
         stuffUsed.item1 = itemA;
     }
@@ -2680,7 +2682,11 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
     if (isDouble && move.aoe == true) {
         multi *= 0.75;
     }
-
+	
+	if (isDouble && move.aoeh == true) {
+        multi *= 0.5;
+    }
+	
     dmg = Math.floor(dmg * multi);
     multi = 1;
 
@@ -2765,10 +2771,10 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
 	multi *= 0.5;
     stuffUsed.ability2 = ability2;
 	}
-    if (types[types2.primary.toLowerCase()].immunities.includes(tempType.toLowerCase()) && !(ability1 == "Royal Decree" && tempType == "Electric")) {
+    if (types[types2.primary.toLowerCase()].immunities.includes(tempType.toLowerCase()) && !(move.name == "Power Drill" && tempType == "Electric")) {
         multi *= 0;
     }
-    if (types2.secondary != "None" && types[types2.secondary.toLowerCase()].immunities.includes(tempType.toLowerCase()) && !(ability1 == "Royal Decree" && tempType == "Electric")) {
+    if (types2.secondary != "None" && types[types2.secondary.toLowerCase()].immunities.includes(tempType.toLowerCase()) && !(move.name == "Power Drill" && tempType == "Electric")) {
         multi *= 0;
     }
 	if (ability2 == "Spirit Affinity" && types["soul"].immunities.includes (tempType.toLowerCase())) { 
@@ -2779,21 +2785,65 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
         multi *= move.typeModifier.modifier;
     }
 
-    if (move.name == "Gloominous Roar" && loom1.name == "Tiklipse" && ability1 != "Circadian") {
+    if (move.name == "Dustdevil") {
         multi = 1;
-        if (types2.primary == "Ancient" || types2.secondary == "Ancient") {
+        if (types2.primary == "Geo" || types2.secondary == "Geo") {
             multi = 2;
         }
-        if (types2.primary == "Bug" || types2.secondary == "Bug") {
+        if (types2.primary == "Electric" || types2.secondary == "Electric") {
             multi *= 0.5;
         }
-        if (types2.primary == "Plant" || types2.secondary == "Plant") {
-            multi *= 0;
+		if (types2.primary == "Metal" || types2.secondary == "Metal") {
+            multi *= 0.5;
         }
-        if (typeModAbility2 != undefined && tempType == typeModAbility2.typeModifier.type2 && typeModAbility2.powerMod == false) {
-            multi = 0;
+		if (types2.primary == "Ice" || types2.secondary == "Ice") {
+            multi *= 0.5;
+        }
+        if (types2.primary == "Nature" || types2.secondary == "Nature") {
+            multi *= 2;
+        }
+		if (types2.primary == "Pyro" || types2.secondary == "Pyro") {
+            multi *= 2;
         }
     }
+	
+	    if (move.name == "Frost Burn") {
+        multi = 1;
+		if(ability2 == "Water Membrane") {
+			multi *= 0.5;
+		}
+        if (types2.primary == "Nature" || types2.secondary == "Nature") {
+            multi *= 4;
+        }
+        if (types2.primary == "Pyro" || types2.secondary == "Pyro") {
+            multi *= 0.25;
+        }
+		if (types2.primary == "Hydro" || types2.secondary == "Hydro") {
+            multi *= 0.25;
+        }
+		if (types2.primary == "Light" || types2.secondary == "Light") {
+            multi *= 0.5;
+        }
+		if (types2.primary == "Mystic" || types2.secondary == "Mystic") {
+            multi *= 0.5;
+        }
+        if (types2.primary == "Wind" || types2.secondary == "Wind") {
+            multi *= 2;
+        }
+		if (types2.primary == "Geo" || types2.secondary == "Geo") {
+            multi *= 2;
+        }
+		if (types2.primary == "Metal" || types2.secondary == "Metal") {
+            multi *= 2;
+        }
+		if (types2.primary == "Dark" || types2.secondary == "Dark") {
+            multi *= 2;
+		
+		}
+		
+    }
+	
+	
     if (ability2 == "Gummy" && move.bomb) {
         multi *= 0;
         stuffUsed.ability2 = ability2;
@@ -2867,7 +2917,7 @@ if (ability1 == "Triple Threat" && (tempType == "Electric" || tempType == "Pyro"
     }
 }	
 		if (itemB == "Heatproof Suit") {
-    if (move.type == "Pyro") {
+    if (move.type == "Pyro" || move.name == "Frost Burn") {
         multi *= 0.8; 
 	stuffUsed.item2 = itemB;
     }
@@ -2994,8 +3044,8 @@ if (itemB == "Crystal Medallion") {
     let multiDmg = 0;
     if (move.hits && !hitConfirmer) {
         hits = hits.charAt(0);
-        if (move.name == "Pepper Burst" || move.name == "Double Beat") hits = 2;
-        if (move.name == "Rapid Fire") hits = 3;
+        if (move.name == "Pepper Burst" || move.name == "Bi-Icicle") hits = 2;
+        
         for (let i = 0; i < hits - 1; i++) {
             multiDmg = multiDmg + getMultiplier(loom1, loom2, move, movePower, crit, repeat, hits, swarm, snowball, true, level, ul, second, detailed, false);
         }
@@ -3007,7 +3057,7 @@ if (itemB == "Crystal Medallion") {
         let multiHits = 1;
         if (move.hits) {
             if (move.name == "Pepper Burst" || move.name == "Double Beat") hits = 2;
-            if (move.name == "Rapid Fire") hits = 3;
+            if (move.name == "Bi-Icicle") hits = 2;
             multiDmg = multiDmg / (hits - 1);
             multiHits = hits - 1;
         }

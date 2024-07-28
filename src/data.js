@@ -1635,7 +1635,7 @@ var loomians = {
 	yukame: {
         name: "Yukame",
         number: 80,
-	    types: ["Dark","Wind"],
+	    types: ["Dark"],
         abilities: ["Extremophile"],
 		sAbility: ["Quick Wit"],
         finalEvo: false,
@@ -1654,7 +1654,7 @@ var loomians = {
 	tengoon: {
         name: "Tengoon",
         number: 81,
-	    types: ["Dark","Wind"],
+	    types: ["Dark"],
         abilities: ["Wind Rider"],
 		sAbility: ["Quick Wit"],
         finalEvo: true,
@@ -1979,19 +1979,19 @@ var loomians = {
 	terretout: {
         name: "Terretout",
         number: 97,
-	    types: ["Wind"],
-        abilities: ["Sadistic"],
-		sAbility: ["Snowfall"],
+	    types: ["Wind","Dark"],
+        abilities: ["Weasel Out"],
+		sAbility: ["Slasher"],
         finalEvo: false,
         weight: 39,
         height: 59,
         baseStats: {
-            hp: 0,
-            attack: 0,
-            defense: 0,
-            attackR: 0,
-            defenseR: 0,
-            speed: 0,
+            hp: 53,
+            attack: 70,
+            defense: 46,
+            attackR: 70,
+            defenseR: 40,
+            speed: 78,
 			
 	   }
     },
@@ -1999,19 +1999,19 @@ var loomians = {
 	weasylwird: {
         name: "Weasylwird",
         number: 98,
-	    types: ["Wind"],
-        abilities: ["Sadistic"],
-		sAbility: ["Snowfall"],
+	    types: ["Wind","Dark"],
+        abilities: ["Weasel Out"],
+		sAbility: ["Slasher"],
         finalEvo: true,
         weight: 39,
         height: 59,
         baseStats: {
-            hp: 0,
-            attack: 0,
-            defense: 0,
-            attackR: 0,
-            defenseR: 0,
-            speed: 0,
+            hp: 64,
+            attack: 109,
+            defense: 70,
+            attackR: 75,
+            defenseR: 60,
+            speed: 122,
 			
 	   }
     },
@@ -2291,7 +2291,7 @@ var moves = {
         power:  50,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2303,7 +2303,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Pyro",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2315,7 +2315,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Hydro",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2327,7 +2327,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Nature",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2339,7 +2339,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Geo",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2351,7 +2351,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Martial",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2363,7 +2363,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Electric",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2375,7 +2375,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Soul",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2387,7 +2387,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Psychic",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2399,7 +2399,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Toxic",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2411,7 +2411,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Metal",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2422,7 +2422,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Wind",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2434,7 +2434,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Mystic",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2446,7 +2446,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Ice",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2458,7 +2458,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Light",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2470,7 +2470,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Dark",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2482,7 +2482,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Melee",
+        mr:  "Various",
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  false,
@@ -2629,7 +2629,7 @@ var moves = {
         power:  40,
         accuracy:  "N/A",
         type:  "Basic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		sound:  true
@@ -2640,7 +2640,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2650,7 +2650,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2660,7 +2660,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Pyro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2670,7 +2670,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2680,7 +2680,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Nature",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2690,7 +2690,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Wind",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2700,7 +2700,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Geo",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2710,7 +2710,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Electric",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2720,7 +2720,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Martial",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2730,7 +2730,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Soul",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2740,7 +2740,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Psychic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2750,7 +2750,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Metal",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2760,7 +2760,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Ice",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2770,7 +2770,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Toxic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2780,7 +2780,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Dark",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2790,7 +2790,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Light",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2800,7 +2800,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Mystic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2810,7 +2810,7 @@ var moves = {
         power:  80,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		aoe:  true,
@@ -2822,7 +2822,7 @@ var moves = {
         power:  100,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		bomb: true
@@ -2833,7 +2833,7 @@ var moves = {
         power:  120,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		bomb:  true
@@ -2844,7 +2844,7 @@ var moves = {
         power:  150,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense"
 	},
@@ -2854,7 +2854,7 @@ var moves = {
         power:  300,
         accuracy:  100,
         type:  "Basic",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		aoe:  true,
@@ -2904,6 +2904,7 @@ var moves = {
         mr2:  "Melee Defense",
         contact:  true,
         bite:  true,
+		piercing: true,
         drain:  1/2
 	},
 	
@@ -2917,6 +2918,7 @@ var moves = {
         mr2:  "Melee Defense",
         contact:  true,
         punch:  true,
+		piercing: true,
         slash:  true
 	},
 	
@@ -2937,7 +2939,7 @@ var moves = {
         power:  45,
         accuracy:  100,
         type:  "Nature",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		drain:  1/2
@@ -2948,7 +2950,7 @@ var moves = {
         power:  65,
         accuracy:  95,
         type:  "Nature",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		aoe:  true,
@@ -2960,7 +2962,7 @@ var moves = {
         power:  80,
         accuracy:  90,
         type:  "Nature",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		dance:  true
@@ -2971,7 +2973,7 @@ var moves = {
         power:  80,
         accuracy:  100,
         type:  "Nature",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		bomb: true
@@ -2982,7 +2984,7 @@ var moves = {
         power:  110,
         accuracy:  85,
         type:  "Nature",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		bomb: true,
@@ -2993,7 +2995,7 @@ var moves = {
         power:  120,
         accuracy:  90,
         type:  "Nature",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 	},
@@ -3007,6 +3009,7 @@ var moves = {
         mr1:  "Melee Attack",
         mr2:  "Melee Defense",
         contact:  true,
+		piercing: true,
        
 	},
 	
@@ -3077,7 +3080,7 @@ var moves = {
         power:  20,
         accuracy:  100,
         type:  "Pyro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		
@@ -3088,7 +3091,7 @@ var moves = {
         power:  40,
         accuracy:  100,
         type:  "Pyro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		priority:  true
@@ -3099,7 +3102,7 @@ var moves = {
         power:  40,
         accuracy:  100,
         type:  "Pyro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		secondaryEffect:  true
@@ -3111,7 +3114,7 @@ var moves = {
         power:  75,
         accuracy:  100,
         type:  "Pyro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		bomb:  true
@@ -3122,7 +3125,7 @@ var moves = {
         power:  90,
         accuracy:  100,
         type:  "Pyro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		secondaryEffect:  true
@@ -3133,7 +3136,7 @@ var moves = {
         power:  110,
         accuracy:  80,
         type:  "Pyro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		bomb:  true,
@@ -3146,7 +3149,7 @@ var moves = {
         power:  80,
         accuracy:  100,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
         contact:  true,
@@ -3233,7 +3236,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		bomb: true,
@@ -3244,7 +3247,7 @@ var moves = {
         power:  45,
         accuracy:  100,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		aoe: true,
@@ -3255,7 +3258,7 @@ var moves = {
         power:  65,
         accuracy:  95,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		bomb:  true,
@@ -3268,7 +3271,7 @@ var moves = {
         power:  75,
         accuracy:  100,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		mr2:  "Ranged Defense",
@@ -3281,7 +3284,7 @@ var moves = {
         power:  85,
         accuracy:  100,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
 		mr2:  "Ranged Defense",
 		aoe:  true,
@@ -3292,7 +3295,7 @@ var moves = {
         power:  90,
         accuracy:  100,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
 		mr2:  "Ranged Defense",
 	},
@@ -3302,7 +3305,7 @@ var moves = {
         power:  120,
         accuracy:  85,
         type:  "Hydro",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
 		mr2:  "Ranged Defense",
 		bomb: true,
@@ -3347,6 +3350,17 @@ var moves = {
 		secondaryEffect:  true
 	},
 	
+	powerDrill:  {
+        name:  "Power Drill",
+        power:  80,
+        accuracy:  100,
+        type:  "Electric",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+	},
+	
 	magnetStrike:  {
         name:  "Magnet Strike",
         power:  90,
@@ -3356,6 +3370,19 @@ var moves = {
         mr1:  "Melee Attack",
 		mr2:  "Melee Defense",
 		contact: true,
+		dash: true,
+	},
+	
+	overdrive:  {
+        name:  "Overdrive",
+        power:  130,
+        accuracy:  90,
+        type:  "Electric",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+		secondaryEffect: true,
 		dash: true,
 	},
 	
@@ -3389,7 +3416,7 @@ var moves = {
         power:  40,
         accuracy:  100,
         type:  "Electric",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		secondaryEffect:  true,
@@ -3400,7 +3427,7 @@ var moves = {
         power:  60,
         accuracy:  100,
         type:  "Electric",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		secondaryEffect:  true,
@@ -3411,7 +3438,7 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Electric",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
         mr2:  "Ranged Defense",
 		pivot: true,
@@ -3422,10 +3449,10 @@ var moves = {
         power:  70,
         accuracy:  100,
         type:  "Electric",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
 		mr2:  "Ranged Defense",
-		secondaryEffect:  true,
+		secondaryEffect:  true
 	},
 	
 	plasmaBlast:  {
@@ -3433,7 +3460,7 @@ var moves = {
         power:  80,
         accuracy:  100,
         type:  "Electric",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
 		mr2:  "Ranged Defense",
 		secondaryEffect:  true,
@@ -3446,8 +3473,9 @@ var moves = {
         power:  90,
         accuracy:  100,
         type:  "Electric",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
         secondaryEffect:  true,
 	},
 	
@@ -3456,7 +3484,7 @@ var moves = {
         power:  110,
         accuracy:  80,
         type:  "Electric",
-        mr:  "Ranged",
+        mr:  "Magic",
         mr1:  "Ranged Attack",
 		mr2:  "Ranged Defense",
 		secondaryEffect:  true,
@@ -3464,101 +3492,977 @@ var moves = {
 
 	},
 	
-	ambush: {
-        name: "Ambush",
-        power: 40,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
+	ambush:  {
+        name:  "Ambush",
+        power:  40,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+		
+
 	},
 	
-	sneakAttack: {
-        name: "Sneak Attack",
-        power: 40,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
+	sneakAttack:  {
+        name:  "Sneak Attack",
+        power:  40,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+		secondaryEffect: true
 	},
 	
-	stickUp: {
-        name: "Stickup",
-        power: 65,
-        accuracy: 100,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
- 	},
+	stickup:  {
+        name:  "Stickup",
+        power:  50,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+
+	},
 	
-	shadowSlash: {
-        name: "Shadow Slash",
-        power: 75,
-        accuracy: 90,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
+	shadowSlash:  {
+        name:  "Shadow Slash",
+        power:  40,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+        slash: true
+	},
+
+	brutalBite:  {
+        name:  "Brutal Bite",
+        power:  80,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+        bite: true,
+		secondaryEffect: true
+	},
+    
+	cheapShot:  {
+        name:  "Cheap Shot",
+        power:  90,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+        
+	},
+	
+	beatdown:  {
+        name:  "Beatdown",
+        power:  120,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+        
+	},
+	
+	darkDescent:  {
+        name:  "Dark Descent",
+        power:  120,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+        
+	},
+	
+	jumpscare:  {
+        name:  "Jumpscare",
+        power:  40,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		sound: true, 
+		priority: true
+        
+	},
+	
+	badVibes:  {
+        name:  "Bad Vibes",
+        power:  45,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+        
+	},
+	
+	shadowStitching:  {
+        name:  "Shadow Stitching",
+        power:  50,
+        accuracy:  90,
+        type:  "Dark",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
         contact: true,
+		
+	},
+	
+	shadowSurge: {
+        name:  "Shadow Surge",
+        power:  75,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		aoe: true,
+		secondaryEffect: true
+        
+	},
+	
+	moonbeam: {
+        name:  "Moonbeam",
+        power:  90,
+        accuracy:  100,
+        type:  "Dark",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+      
+	},
+	
+	blackMagic: {
+        name:  "Black Magic",
+        power:  110,
+        accuracy:  85,
+        type:  "Dark",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+      
+	},
+	
+	wickedWail: {
+        name:  "Wicked Wail",
+        power:  120,
+        accuracy:  90,
+        type:  "Dark",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+        sound: true,
+		
+	},
+	
+	flashBang:  {
+        name:  "Flash Bang",
+        power:  40,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+	},
+	
+	flashBang:  {
+        name:  "Flash Bang",
+        power:  40,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+	},
+	
+	lightspeed:  {
+        name:  "Lightspeed",
+        power:  40,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+		priority: true,
+	},
+	
+	neutralize:  {
+        name:  "Neutralize",
+        power:  60,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+		secondaryEffect: true,
+	},
+	
+	purePower:  {
+        name:  "Pure Power",
+        power:  95,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+	},
+	
+	meteorImpact:  {
+        name:  "Meteor Impact",
+        power:  120,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+		recoil: 1/5,
+	},
+	
+	starstrike:  {
+        name:  "Starstrike",
+        power:  120,
+        accuracy:  90,
+        type:  "Light",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true, 
+	},
+	
+	shineBright:  {
+        name:  "Shine Bright",
+        power:  40,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		aoe: true,
+        
+	},
+	
+	neutrinoStorm:  {
+        name:  "Neutrino Storm",
+        power:  65,
+        accuracy:  85,
+        type:  "Light",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+        
+	},
+	
+	blindingShine:  {
+        name:  "Blinding Shine",
+        power:  80,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		aoe: true,
+        
+	},
+	
+	mirageDance:  {
+        name:  "Mirage Dance",
+        power:  90,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		dance: true,
+        
+	},
+	
+	sunbeam:  {
+        name:  "Sunbeam",
+        power:  90,
+        accuracy:  100,
+        type:  "Light",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+        
+	},
+	
+	uvRaze:  {
+        name:  "UV Raze",
+        power:  100,
+        accuracy:  90,
+        type:  "Light",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+        secondaryEffect: true,
+	},
+	
+	luminousBeam:  {
+        name:  "Luminous Beam",
+        power:  150,
+        accuracy:  90,
+        type:  "Light",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+        
+	},
+	
+	gravelrocks:  {
+        name:  "Gravelrocks",
+        power:  15,
+        accuracy:  90,
+        type:  "Geo",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		hits: 5,
+	},
+	
+	stoneThrow:  {
+        name:  "Stone Throw",
+        power:  40,
+        accuracy:  90,
+        type:  "Geo",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		secondaryEffect: true
+	},
+	
+	crystalClaw:  {
+        name:  "Crystal Claw",
+        power:  65,
+        accuracy:  100,
+        type:  "Geo",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		secondaryEffect: true,
+		contact: true
+	},
+	
+	landslide:  {
+        name:  "Landslide",
+        power:  75,
+        accuracy:  90,
+        type:  "Geo",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		secondaryEffect: true,
+		aoe: true
+	},
+	
+	stoneSpike:  {
+        name:  "Stone Spike",
+        power:  85,
+        accuracy:  90,
+        type:  "Geo",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+		piercing: true
+	},
+	
+	tremor:  {
+        name:  "Tremor",
+        power:  100,
+        accuracy:  100,
+        type:  "Geo",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+	},
+	
+	rushdown:  {
+        name:  "Rushdown",
+        power:  120,
+        accuracy:  100,
+        type:  "Geo",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+	},
+	
+	mudball:  {
+        name:  "Mudball",
+        power:  35,
+        accuracy:  100,
+        type:  "Geo",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+	},
+	
+	diamondDust:  {
+        name:  "Diamond Dust",
+        power:  70,
+        accuracy:  95,
+        type:  "Geo",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+	},
+	
+	sandblast:  {
+        name:  "Sandblast",
+        power:  85,
+        accuracy:  100,
+        type:  "Geo",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+	},
+
+	greatVibration:  {
+        name:  "Great Vibration",
+        power:  90,
+        accuracy:  100,
+        type:  "Geo",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+		aoe: true
+	},
+	
+	sandstorm:  {
+        name:  "Sandstorm",
+        power:  110,
+        accuracy:  85,
+        type:  "Geo",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+	},
+	
+	peck:  {
+        name:  "Peck",
+        power:  40,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+	},
+
+		sickleWind:  {
+        name:  "Sickle Wind",
+        power:  60,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		piercing: true,
+	},
+
+	wingBeat:  {
+        name:  "Wing Beat",
+        power:  65,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+	},
+
+	roundTrip:  {
+        name:  "Round Trip",
+        power:  70,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+		pivot: true,
+	},
+
+	upperPunch:  {
+        name:  "Upper Punch",
+        power:  75,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+		punch: true,
+		secondaryEffect: true,
+	},
+
+	aerialImpact:  {
+        name:  "Aerial Impact",
+        power:  95,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+	},
+	
+	terminalVelocity:  {
+        name:  "Terminal Velocity",
+        power:  120,
+        accuracy:  90,
+        type:  "Wind",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		contact: true,
+	},
+	
+	springWind:  {
+        name:  "Spring Wind",
+        power:  40,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		aoe: true,
+	},
+	
+	airburst:  {
+        name:  "Airburst",
+        power:  65,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+	},
+	
+	dustdevil:  {
+        name:  "Dustdevil",
+        power:  70,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+	},
+	
+	flutterWings:  {
+        name:  "Flutter Wings",
+        power:  80,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+	},
+	
+	whirlwind:  {
+        name:  "Whirlwind",
+        power:  90,
+        accuracy:  100,
+        type:  "Wind",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+	},
+	
+	tornado:  {
+        name:  "Tornado",
+        power:  110,
+        accuracy:  80,
+        type:  "Wind",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+	},
+	
+	specialServing:  {
+        name:  "Special Serving",
+        power:  70,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Various",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+	},
+	
+	pelletPelt:  {
+        name:  "Pellet Pelt",
+        power:  20,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+		hits: 5
+	},
+	
+	iciclePoke:  {
+        name:  "Icicle Poke",
+        power:  60,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+	    contact: true,
+		peircing: true,
+	},
+	
+	slushSlash: {
+        name:  "Slush Slash",
+        power:  60,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+	    contact: true,
 		slash: true,
 	},
 	
-	brutalBite: {
-        name: "Brutal Bite",
-        power: 80,
-        accuracy: 100,
-        type: "Nature",
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
+	freezePunch: {
+        name:  "Freeze Punch",
+        power:  75,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+	    contact: true,
+		punch: true,
 		secondaryEffect: true,
+	},
+	
+	frostBite: {
+        name:  "Frost Bite",
+        power:  80,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+	    contact: true,
 		bite: true,
+		secondaryEffect: true,
 	},
 	
-	cheapShot: {
-        name: "Cheap Shot",
+	crystalCrash: {
+        name:  "Crystal Crash",
+        power:  95,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+	    contact: true,
+	},
+	
+	avalanche: {
+        name:  "Avalanche",
+        power:  110,
+        accuracy:  85,
+        type:  "Ice",
+        mr:  "Melee",
+        mr1:  "Melee Attack",
+		mr2:  "Melee Defense",
+	    aoe: true,
+	},
+	
+	frostBurn: {
+        name:  "Frost Burn",
+        power:  75,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+	},
+	
+	snowThrow: {
+        name:  "Snow Throw",
+        power:  40,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		secondaryEffect: true,
+	},
+	
+	biicicle: {
+        name:  "Bi-Icicle",
+        power:  50,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+		aoeh: true,
+		hits: 2,
+	},
+	
+	iceSlip: {
+        name:  "Ice Slip",
+        power:  55,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+        secondaryEffect: true
+	},
+	
+	iceSlip: {
+        name:  "Ice Slip",
+        power:  55,
+        accuracy:  100,
+        type:  "Ice",
+        mr:  "Magic",
+        mr1:  "Ranged Attack",
+		mr2:  "Ranged Defense",
+        secondaryEffect: true
+	},
+	
+	sublimate: {
+        name: "Sublimate",
+        power: 70,
+        accuracy: 100,
+        type: "Ice",
+        mr: "Magic",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        secondaryEffect: true,
+        typeModifier: { type: "Hydro", modifier: 4 }
+    },
+	
+	freezeBeam: {
+        name: "Freeze Beam",
         power: 90,
-        accuracy: 85,
-        type: "Dark",
-        mr: "Melee",
-        mr1: "Melee Attack",
-        mr2: "Melee Defense",
-        contact: true,
-	},
+        accuracy: 100,
+        type: "Ice",
+        mr: "Magic",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        secondaryEffect: true,
+    },
 	
-	beatDown: {
-        name: "Beat Down",
-        power: 120,
+	snowstorm: {
+        name: "Snowstorm",
+        power: 110,
+        accuracy: 80,
+        type: "Ice",
+        mr: "Magic",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        secondaryEffect: true,
+    },
+	
+	spineShot: {
+        name: "Spine Shot",
+        power: 20,
         accuracy: 90,
-        type: "Dark",
+        type: "Toxic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
-        contact: true,
-	},
+        secondaryEffect: true,
+		contact: true
+    },
 	
-	darkDescent: {
-        name: "Dark Descent",
+	toxicSwipe: {
+        name: "Toxic Swipe",
+        power: 40,
+        accuracy: 90,
+        type: "Toxic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        secondaryEffect: true,
+		contact: true
+    },
+	
+	toxicSlash: {
+        name: "Toxic Slash",
+        power: 75,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        secondaryEffect: true,
+		contact: true,
+		slash: true
+    },
+	
+	noxiousFangs: {
+        name: "Noxious Fangs",
+        power: 65,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        secondaryEffect: true,
+		contact: true,
+		bite: true
+    },
+	
+	poisonPunch: {
+        name: "Poison Punch",
+        power: 75,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        secondaryEffect: true,
+		contact: true,
+		punch: true
+    },
+	
+	bloodDrain: {
+        name: "Blood Drain",
+        power: 75,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		drain: 1/2
+    },
+	
+	barbLash: {
+        name: "Barb Lash",
+        power: 95,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+    },
+	
+	acidCrash: {
+        name: "Acid Crash",
         power: 120,
         accuracy: 100,
-        type: "Dark",
+        type: "Toxic",
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
+		contact: true,
+		recoil: 1/2,
+		secondaryEffect: true
+    },
+	
+	cnidoblast: {
+        name: "Cnidoblast",
+        power: 40,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Magic",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
         contact: true,
-       
-	},
+		priority: true
+    },
 	
+	spraySludge: {
+        name: "Spray Sludge",
+        power: 55,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Magic",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+    },
 	
+	corrosion: {
+        name: "Corrosion",
+        power: 75,
+        accuracy: 95,
+        type: "Toxic",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+    },
 	
+	oozeDeluge: {
+        name: "Ooze Deluge",
+        power: 90,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+    },
+	
+	devenomate: {
+        name: "Devenomate",
+        power: 100,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+    },
+	
+	plasmShot: {
+        name: "Plasm Shot",
+        power: 100,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+		recoil: 1/2,
+		bomb: true
+    },
+
 	
 	
 	
