@@ -2234,8 +2234,9 @@ var loomians = {
         }
     },
 };
+	
+	
  
-
 
 var moves = {
 		lastResort:  {
@@ -3316,7 +3317,7 @@ var moves = {
 	magnetStrike:  {
         name:  "Magnet Strike",
         power:  90,
-        accuracy:  100,
+        accuracy:  "N/A",
         type:  "Electric",
         mr:  "Melee",
         mr1:  "Melee Attack",
@@ -3483,8 +3484,8 @@ var moves = {
 	
 	shadowSlash:  {
         name:  "Shadow Slash",
-        power:  75,
-        accuracy:  100,
+        power:  40,
+        accuracy:  "N/A",
         type:  "Dark",
         mr:  "Melee",
         mr1:  "Melee Attack",
@@ -3509,7 +3510,7 @@ var moves = {
 	cheapShot:  {
         name:  "Cheap Shot",
         power:  90,
-        accuracy:  100,
+        accuracy:  "N/A",
         type:  "Dark",
         mr:  "Melee",
         mr1:  "Melee Attack",
@@ -3745,7 +3746,7 @@ var moves = {
 	mirageDance:  {
         name:  "Mirage Dance",
         power:  90,
-        accuracy:  100,
+        accuracy:  "N/A",
         type:  "Light",
         mr:  "Magic",
         mr1:  "Ranged Attack",
@@ -4369,12 +4370,24 @@ var moves = {
 		secondaryEffect: true,
     },
 	
+	toxicShock: {
+        name: "Toxic Shock",
+        power: 65,
+        accuracy: 100,
+        type: "Toxic",
+        mr: "Magic",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+    },
+	
+	
 	corrosion: {
         name: "Corrosion",
         power: 75,
         accuracy: 95,
         type: "Toxic",
-        mr: "Ranged",
+        mr: "Magic",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
 		secondaryEffect: true,
@@ -4385,7 +4398,7 @@ var moves = {
         power: 90,
         accuracy: 100,
         type: "Toxic",
-        mr: "Ranged",
+        mr: "Magic",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
 		secondaryEffect: true,
@@ -4396,7 +4409,7 @@ var moves = {
         power: 100,
         accuracy: 100,
         type: "Toxic",
-        mr: "Ranged",
+        mr: "Magic",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
 		secondaryEffect: true,
@@ -4407,165 +4420,898 @@ var moves = {
         power: 100,
         accuracy: 100,
         type: "Toxic",
-        mr: "Ranged",
+        mr: "Magic",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
 		secondaryEffect: true,
 		recoil: 1/2,
 		bomb: true
     },
+	
+	strikeBack: {
+		name: "Strike Back",
+		power: 0,
+		accuracy: "N/A",
+		type: "Martial",
+		mr:  "Melee"
+	},
+	
+	flurryPunch: {
+		name: "Flurry Punch",
+		power: 20,
+		accuracy: 90,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		hits: 5,
+		punch: true,
+	},
+	
+	speedJab: {
+		name: "Speed Jab",
+		power: 40,
+		accuracy: 100,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		priority: true,
+		punch: true,
+	},
+	
+	hurl: {
+		name: "Hurl",
+		power: 65,
+		accuracy: 100,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+	},
+	
+	headbutt: {
+		name: "Headbutt",
+		power: 70,
+		accuracy: 100,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		recoil: 1/10
+	},
+	
+	reoundhouseKick: {
+		name: "Roundhouse Kick",
+		power: 70,
+		accuracy: 100,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		kick: true
+	},
+	
+	starPunch: {
+		name: "Star Punch",
+		power: 80,
+		accuracy: 100,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		punch: true, 
+		secondaryEffect: true,
+	},
+	
+	piercingSlahs: {
+		name: "Piercing Slash",
+		power: 75,
+		accuracy: 100,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		slash: true,
+		peircing: true,
+		},
+	
+	haymaker: {
+		name: "Haymaker",
+		power: 110,
+		accuracy: 80,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		punch: true
+		},
+	
+	onslaught: {
+		name: "Onslaught",
+		power: 120,
+		accuracy: 100,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		punch: true
+		},
 
+	calamitousKick: {
+		name: "Calamitous Kick",
+		power: 120,
+		accuracy: 90,
+		type: "Martial",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		kick: true
+		},
+		
+	shoutofpower: {
+		name: "Shout of Power",
+		power: 40,
+		accuracy: 100,
+		type: "Martial",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+		
+		},
+		
+	shockwave: {
+		name: "Shockwave",
+		power: 75,
+		accuracy: "N/A",
+		type: "Martial",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},	
+		
+	shockwave: {
+		name: "Shockwave",
+		power: 90,
+		accuracy: "N/A",
+		type: "Martial",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},
+		
+		vitalCannon: {
+		name: "Vital Cannon",
+		power: 130,
+		accuracy: 90,
+		type: "Martial",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},
+		
+	kineticSmash: {
+		name: "Kinetic Smash",
+		power: 50,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		secondaryEffect: true,
+		},
+		
+	psychOut: {
+		name: "Psych Out",
+		power: 70,
+		accuracy: "N/A",
+		type: "Psychic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		},	
+		
+	counterPunch: {
+		name: "Counter Punch",
+		power: 75,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		secondaryEffect: true,
+		},	
+		
+	psychoSlam: {
+		name: "Psycho Slam",
+		power: 75,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		},	
+		
+	headRush: {
+		name: "Head Rush",
+		power: 120,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		dash: true,
+		secondaryEffect: true
+		},	
+		
+	neuroburst: {
+		name: "Neuroburst",
+		power: 0,
+		accuracy: "N/A",
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mental: true,
+		},
+		
+	brainWave: {
+		name: "Brain Wave",
+		power: 40,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mental: true,
+		aoe: true,
+		},
+		
+	incantation: {
+		name: "Incantation",
+		power: 60,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mental: true,
+		aoehe: true,
+		},	
+		
+	psychoSurge: {
+		name: "Psycho Surge",
+		power: 80,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mental: true,
+		piercing: true,
+		},	
+		
+	neuralNoise: {
+		name: "Neural Noise",
+		power: 90,
+		accuracy: "N/A",
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mental: true,
+		},
+		
+	psychokinesis: {
+		name: "Psychokinesis",
+		power: 90,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mental: true,
+		},	
+		
+	premeditate: {
+		name: "Premeditate",
+		power: 110,
+		accuracy: "N/A",
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		mental: true,
+		},	
+		
+	somniloquy: {
+		name: "Somniloquy",
+		power: 130,
+		accuracy: 100,
+		type: "Psychic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},	
+		
+	mechaMash: {
+		name: "Mecha Mash",
+		power: 50,
+		accuracy: 90,
+		type: "Metal",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		secondaryEffect:true,
+		contact: true,
+		},	
+		
+	shrapnel: {
+		name: "Shrapnel",
+		power: 65,
+		accuracy: 100,
+		type: "Metal",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		},		
+		
+	hammerDown: {
+		name: "Hammer Down",
+		power: 70,
+		accuracy: 100,
+		type: "Metal",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		},	
+		
+	swordSlash: {
+		name: "Sword Slash",
+		power: 75,
+		accuracy: 100,
+		type: "Metal",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		slash: true,
+		contact: true,
+		},	
+		
+	shieldBash: {
+		name: "Shield Bash",
+		power: 80,
+		accuracy: 100,
+		type: "Metal",
+		mr:  "Melee",
+	    mr1: "Melee Defense",
+        mr2: "Melee Defense",
+		contact: true,
+		},
+		
+	ironFist: {
+		name: "Iron Fist",
+		power: 95,
+		accuracy: 100,
+		type: "Metal",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		punch: true,
+		},	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	obliterate: {
+		name: "Obliterate",
+		power: 120,
+		accuracy: 90,
+		type: "Metal",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		},	
+		
+	drone: {
+		name: "Drone",
+		power: 40,
+		accuracy: 100,
+		type: "Metal",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		aoe: true,
+		},
+		
+	quickDraw: {
+		name: "Quick Draw",
+		power: 50,
+		accuracy: 100,
+		type: "Metal",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		priority: true,
+		},
+		
+	precisionShot: {
+		name: "Precision Shot",
+		power: 65,
+		accuracy: "N/A",
+		type: "Metal",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},
+		
+	radioWave: {
+		name: "Quick Draw",
+		power: 85,
+		accuracy: 90,
+		type: "Metal",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+		},	
+		
+	neonBeam: {
+		name: "Neon Beam",
+		power: 90,
+		accuracy: 100,
+		type: "Metal",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},		
+		
+	neonBeam: {
+		name: "Neon Beam",
+		power: 100,
+		accuracy: "N/A",
+		type: "Metal",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},	
+		
+	thousandCuts: {
+		name: "Thousand Cuts",
+		power: 30,
+		accuracy: 85,
+		type: "Mystic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		},
+		
+	tailLash: {
+		name: "Tail Lash",
+		power: 35,
+		accuracy: 95,
+		type: "Mystic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		hits: 2
+		},
+		
+	hornRush: {
+		name: "Horn Rush",
+		power: 75,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		peircing: true,
+		},
+		
+	beastBite: {
+		name: "Beast Bite",
+		power: 75,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		bite: true,
+		secondaryEffect: true,
+		},	
+		
+	smite: {
+		name: "Smite",
+		power: 95,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		},	
 
+		
+	ramge2: {
+		name: "Rampage",
+		power: 120,
+		accuracy: 90,
+		type: "Mystic",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		},	
+		
+	laserEyes: {
+		name: "Laser Eyes",
+		power: 35,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		hits: 2
+		},
+		
+	furiousRoar: {
+		name: "Furious Roar",
+		power: 65,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		aoe: true,
+		secondaryEffect: true,
+		},	
+		
+	elementalFury: {
+		name: "Elemental Fury",
+		power: 70,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},	
+		
+	elementalFury: {
+		name: "Elemental Fury",
+		power: 70,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},
+		
+	elementalFury: {
+		name: "Elemental Fury",
+		power: 70,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},
+		
+	myriadAssault: {
+		name: "Myriad Assault",
+		power: 80,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true
+		},
+		
+	mightyBreath: {
+		name: "Mighty Breath",
+		power: 90,
+		accuracy: 100,
+		type: "Mystic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true
+		},	
+		
+	destructionBeam: {
+		name: "Destruction Beam",
+		power: 150,
+		accuracy: 90,
+		type: "Mystic",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},	
+		
+	furiousFists: {
+		name: "Furious Fists",
+		power: 15,
+		accuracy: 90,
+		type: "Soul",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		hits: 10,
+		punch: true,
+		contact: true,
+		},
+		
+	siritStrike: {
+		name: "Spirit Strike",
+		power: 50,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		secondaryEffect: true,
+		contact: true,
+		},
+		
+	oulCrusher: {
+		name: "Soul Crusher",
+		power: 65,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		secondaryEffect: true,
+		contact: true,
+		},
+		
+	oulCrusher: {
+		name: "Soul Crusher",
+		power: 65,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		secondaryEffect: true,
+		contact: true,
+		},	
+		
+	Revenge: {
+		name: "Revenge",
+		power: 80,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		},
+		
+	ghastlyGash: {
+		name: "Ghastly Gash",
+		power: 95,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		},
+		
+	lifeForce: {
+		name: "Life Force",
+		power: 120,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Melee",
+	    mr1: "Melee Attack",
+        mr2: "Melee Defense",
+		contact: true,
+		},	
+		
+	howl: {
+		name: "Howl",
+		power: 40,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+		},
+		
+	eerieAura: {
+		name: "Eerie Aura",
+		power: 65,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		secondaryEffect: true,
+		aoe: true,
+		},
+		
+	torment: {
+		name: "Torment",
+		power: 70,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},
 	
-	noMove: {
-        name: "(No Move)",
-        power: 0,
-        energy: 0,
-        accuracy: 100,
-        type: "Basic",
-        mr: "Support"
+	lifeSteal: {
+		name: "Life Steal",
+		power: 75,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		drain: 1/2
+		},
+		
+	spiritBurst: {
+		name: "Spirit Burst",
+		power: 90,
+		accuracy: 100,
+		type: "Soul",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		},
+		
+	irresoluteSoul: {
+		name: "Irresolute Soul",
+		power: 110,
+		accuracy: 80,
+		type: "Soul",
+		mr:  "Magic",
+	    mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+		aoe: true,
+		secondaryEffect: true,
+		},
+		
+		
+	noMove:  {
+        name:  "(No Move)",
+        power:  0,
+        accuracy:  100,
+        type:  "Basic",
+        mr:  "Support"
     },
 	
 	};
 	
-	
 var types = {
-    basic: {
-        weaknesses: ["martial"],
-        resistances: [],
-        immunities: ["soul"],
+    basic:  {
+        weaknesses:  ["martial"],
+        resistances:  [],
+        immunities:  ["soul"],
         
     },
 
-    pyro: {
-        weaknesses: ["hydro", "wind", "geo", "light", "mystic"],
-        resistances: ["pyro", "nature", "ice", "metal", "dark"],
-        immunities: [],
+    pyro:  {
+        weaknesses:  ["hydro", "wind", "geo", "light", "mystic"],
+        resistances:  ["pyro", "nature", "ice", "metal", "dark"],
+        immunities:  [],
         
     },
 
-    hydro: {
-        weaknesses: ["nature", "electric", "mystic"],
-        resistances: ["pyro", "hydro", "ice", "metal"],
-        immunities: [],
+    hydro:  {
+        weaknesses:  ["nature", "electric", "mystic"],
+        resistances:  ["pyro", "hydro", "ice", "metal"],
+        immunities:  [],
        
     },
 
-    nature: {
-        weaknesses: ["pyro", "wind", "ice", "dark", "toxic"],
-        resistances: ["nature", "hydro", "geo", "electric", "light", "mystic"],
-        immunities: [],
+    nature:  {
+        weaknesses:  ["pyro", "wind", "ice", "dark", "toxic"],
+        resistances:  ["nature", "hydro", "geo", "electric", "light", "mystic"],
+        immunities:  [],
         
     },
 
-    electric: {
-        weaknesses: ["geo"],
-        resistances: ["electric", "metal", "wind"],
-        immunities: [],
+    electric:  {
+        weaknesses:  ["geo"],
+        resistances:  ["electric", "metal", "wind"],
+        immunities:  [],
+        
+    },
+	
+    martial:  {
+        weaknesses:  ["psychic", "toxic"],
+        resistances:  ["mystic"],
+        immunities:  [],
         
     },
 
-    martial: {
-        weaknesses: ["psychic", "toxic"],
-        resistances: ["mystic"],
-        immunities: [],
+    geo:  {
+        weaknesses:  ["hydro", "nature", "ice"],
+        resistances:  ["toxic", "wind"],
+        immunities:  ["electric"],
         
     },
 
-    geo: {
-        weaknesses: ["hydro", "nature", "ice"],
-        resistances: ["toxic", "wind"],
-        immunities: ["electric"],
+    soul:  {
+        weaknesses:  ["soul", "light"],
+        resistances:  ["toxic", "dark"],
+        immunities:  ["basic", "martial"],
         
     },
 
-    soul: {
-        weaknesses: ["soul", "light"],
-        resistances: ["toxic", "dark"],
-        immunities: ["basic", "martial"],
+    psychic:  {
+        weaknesses:  ["soul", "dark", "mystic"],
+        resistances:  ["martial", "light", "psychic"],
+        immunities:  [],
         
     },
 
-    psychic: {
-        weaknesses: ["soul", "dark", "mystic"],
-        resistances: ["light", "psychic", "martial"],
-        immunities: [],
+    ice:  {
+        weaknesses:  ["pyro", "martial", "metal"],
+        resistances:  ["wind", "ice"],
+        immunities:  [],
         
     },
 
-    ice: {
-        weaknesses: ["pyro", "martial", "metal"],
-        resistances: ["wind", "ice"],
-        immunities: [],
+    metal:  {
+        weaknesses:  ["pyro", "electric", "geo", "martial"],
+        resistances:  ["basic", "nature", "metal", "wind", "mystic", "psychic"],
+        immunities:  [],
         
     },
 
-    metal: {
-        weaknesses: ["pyro", "electric", "geo", "martial"],
-        resistances: ["basic", "nature", "metal", "wind", "mystic", "psychic"],
-        immunities: [],
+    wind:  {
+        weaknesses:  ["ice", "electric"],
+        resistances:  ["martial", "nature"],
+        immunities:  ["geo"],
         
     },
 
-    wind: {
-        weaknesses: ["ice", "electric"],
-        resistances: ["martial", "nature"],
-        immunities: ["geo"],
+    toxic:  {
+        weaknesses:  ["geo", "psychic"],
+        resistances:  ["toxic", "nature", "martial"],
+        immunities:  [],
         
     },
 
-    toxic: {
-        weaknesses: ["geo", "psychic"],
-        resistances: ["toxic", "nature", "martial"],
-        immunities: [],
+    dark:  {
+        weaknesses:  ["light", "pyro", "martial"],
+        resistances:  ["dark", "soul",],
+        immunities:  [],
         
     },
 
-    dark: {
-        weaknesses: ["light", "pyro", "martial"],
-        resistances: ["dark", "soul",],
-        immunities: [],
-        
-    },
-
-    light: {
-        weaknesses: ["dark", "soul", ],
-        resistances: ["pyro", "martial", "light"],
-        immunities: [],
+    light:  {
+        weaknesses:  ["dark", "soul", ],
+        resistances:  ["pyro", "martial", "light"],
+        immunities:  [],
        
     },
 
-    mystic: {
-        weaknesses: ["nature", "metal", "mystic"],
-        resistances: ["pyro", "hydro", "soul", "psychic", "electric"],
-        immunities: [],
+    mystic:  {
+        weaknesses:  ["nature", "metal", "mystic"],
+        resistances:  ["pyro", "hydro", "soul", "psychic", "electric"],
+        immunities:  [],
         
     },
 };
@@ -4573,7 +5319,7 @@ var types = {
 var abilities = [
     "Abrasive", "Agile", "Altruistic", "Appeal", "Apathy", "Ashfall", "Prioritize", "Airborne", "Blood Drinker", "Last Stand", "Oblivious", "Snatcher", "Sweet Dreams",
 	"Ballistic", "Brightside", "Breakneck", "Captivating", "Cheerful", "Chunky", "Operating Drive", "Cacophony", "Blistering", "Observant", "Syncopate", "Tender", "Unflappable",
-	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "High Velocity", "Incendiary", "Readjust", "Tread Lightly", "Ricochet",
+	"Cleaner", "Crystal Clear", "Detox", "Dirty Fighter", "Emergency Rations", "Foresight", "Aromatic", "Firepower", "High Velocity", "Readjust", "Tread Lightly", "Ricochet",
 	"Empathy", "Enlighten", "Evaporative", "Floromancy", "Flowerfall", "Godspeed", "Triple Threat", "Extremophile", "Lead Foot", "Quick Wit", "Spurred Action",
 	"High Reign", "High Velocity", "Honor Guard", "Hydration", "Hydrodynamic", "Hyper Cannon", "Blood Rush", "Specialist", "Poisonous", "Rigid", "Tunnel Vision",
 	, "Ill Fortune", "Ill Revital", "Incompatible", "Inheritence", "Mastery", "Mirage", "Mountaineer", "Soft Served", "Menacing", "Reflective", "Two Heads",
@@ -4620,9 +5366,9 @@ var typeModAbilities = {
     },
     
 	
-    incendiary:  {
-        name:  "Incendiary",
-        typeModifier:  { type:  "Pyro", modifier:  0 },
+    noxiousWeeds:  {
+        name:  "Noxious Weeds",
+        typeModifier:  { type:  "Plant", modifier:  0 },
         powerMod:  false
     },
     
@@ -4786,4 +5532,4 @@ for (let loo in loomians) {
 
 var sets = [];
 
-var changelog = "Loomunity Loomians added.";
+var changelog = "Eleons Calculator WIP";
