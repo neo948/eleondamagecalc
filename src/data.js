@@ -1635,7 +1635,7 @@ var loomians = {
 	yukame: {
         name: "Yukame",
         number: 80,
-	    types: ["Dark"],
+	    types: ["Wind","Dark"],
         abilities: ["Extremophile"],
 		sAbility: ["Quick Wit"],
         finalEvo: false,
@@ -1654,7 +1654,7 @@ var loomians = {
 	tengoon: {
         name: "Tengoon",
         number: 81,
-	    types: ["Dark"],
+	    types: ["Wind","Dark"],
         abilities: ["Wind Rider"],
 		sAbility: ["Quick Wit"],
         finalEvo: true,
@@ -1962,7 +1962,7 @@ var loomians = {
 	terretout: {
         name: "Terretout",
         number: 97,
-	    types: ["Wind","Dark"],
+	    types: ["Wind"],
         abilities: ["Weasel Out"],
 		sAbility: ["Slasher"],
         finalEvo: false,
@@ -1982,7 +1982,7 @@ var loomians = {
 	weasylwird: {
         name: "Weasylwird",
         number: 98,
-	    types: ["Wind","Dark"],
+	    types: ["Wind"],
         abilities: ["Weasel Out"],
 		sAbility: ["Slasher"],
         finalEvo: true,
